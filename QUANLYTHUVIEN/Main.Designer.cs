@@ -87,6 +87,7 @@
             this.btnMoFormQLPhieu.Padding = new System.Windows.Forms.Padding(10);
             this.btnMoFormQLPhieu.Size = new System.Drawing.Size(234, 53);
             this.btnMoFormQLPhieu.Text = "Quản lý mượn trả";
+            this.btnMoFormQLPhieu.Click += new System.EventHandler(this.btnMoFormQLPhieu_Click);
             // 
             // btnMoFormQLDocGia
             // 

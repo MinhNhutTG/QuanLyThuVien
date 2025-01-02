@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace QUANLYTHUVIEN
 {
@@ -9,11 +10,11 @@ namespace QUANLYTHUVIEN
         XuLyFormMuonTra s = new XuLyFormMuonTra();
         public delegate void LoadHandler();
         public event LoadHandler sendData;
-        public QuanLyMuonTraForm_Update(string MaThuThu, bool b)
+        public QuanLyMuonTraForm_Update(string UserName, bool b)
         {
-
+            XuLyLogin xl = new XuLyLogin();
             InitializeComponent();
-            txtMathuthu.Text = MaThuThu;
+            txtMathuthu.Text = xl.LayMaThuThu(UserName); 
             SetButton(b);
             DataTable dt = s.LayDSSearchOfSach(txtSearchSach.Text); s.LayDSSearchOfDocGia(txtMadocgia.Text) ;
             LoadDSSach(dt);
@@ -33,7 +34,7 @@ namespace QUANLYTHUVIEN
             HienThiThongTinPhieu(dt);
             HienThiChiTietPhieu(ctpm);
         }
-
+      
         public void SetButton(bool b)
         {
             btnAdd.Enabled = b;

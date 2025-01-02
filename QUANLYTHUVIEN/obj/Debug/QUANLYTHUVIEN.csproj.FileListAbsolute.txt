@@ -23,3 +23,6 @@ C:\Users\tuhin\Desktop\WorkSpace\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHU
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIEN\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.frmQuanLySach_ThemSach.resources
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIEN\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.mainPicture.resources
 C:\Users\tuhin\Desktop\WorkSpace\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.frmQuanLySachXemChiTiet.resources
+C:\Users\tuhin\Desktop\WorkSpace\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.QuanLyMuonTraForm.resources
+C:\Users\tuhin\Desktop\WorkSpace\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.QuanLyMuonTraForm_Update.resources
+C:\Users\tuhin\Desktop\WorkSpace\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.QuanLyPhieuMuonForm_ChiTiet.resources

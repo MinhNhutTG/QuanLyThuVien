@@ -77,8 +77,27 @@
     <Compile Include="mainPicture.Designer.cs">
       <DependentUpon>mainPicture.cs</DependentUpon>
     </Compile>
+    <Compile Include="PhieuMuon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLyMuonTraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyMuonTraForm.Designer.cs">
+      <DependentUpon>QuanLyMuonTraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyMuonTraForm_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyMuonTraForm_Update.Designer.cs">
+      <DependentUpon>QuanLyMuonTraForm_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyPhieuMuonForm_ChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyPhieuMuonForm_ChiTiet.Designer.cs">
+      <DependentUpon>QuanLyPhieuMuonForm_ChiTiet.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuanLySachForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +105,7 @@
       <DependentUpon>QuanLySachForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Sach.cs" />
+    <Compile Include="XuLyFormMuonTra.cs" />
     <Compile Include="XuLyFormSach.cs" />
     <Compile Include="XuLyLogin.cs" />
     <EmbeddedResource Include="frmQuanLySachXemChiTiet.resx">
@@ -112,6 +132,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QuanLyMuonTraForm.resx">
+      <DependentUpon>QuanLyMuonTraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyMuonTraForm_Update.resx">
+      <DependentUpon>QuanLyMuonTraForm_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyPhieuMuonForm_ChiTiet.resx">
+      <DependentUpon>QuanLyPhieuMuonForm_ChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuanLySachForm.resx">
       <DependentUpon>QuanLySachForm.cs</DependentUpon>
     </EmbeddedResource>

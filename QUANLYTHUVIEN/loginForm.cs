@@ -46,21 +46,23 @@ namespace QUANLYTHUVIEN
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
+           
             DataTable dt = login.TimTaiKhoan(txtUserName.Text);
 
             if (dt != null && dt.Rows.Count > 0) { 
                 if (dt.Rows[0][0].ToString() == txtUserName.Text){
                     if (dt.Rows[0][1].ToString() == txtPassword.Text) {
-                        MessageBox.Show("Đăng nhập thành công!!");
+                     
+
                         if (dt.Rows[0][2].ToString() == "admin") {
-                            Form frmmain = new Main("admin");
+                            Form frmmain = new Main("admin", dt.Rows[0][0].ToString());
                             frmmain.Show();
                             this.Hide();
 
                         }
                         else if (dt.Rows[0][2].ToString() == "nhanvien")
                         {
-                            Form frmmain = new Main("nhanvien");
+                            Form frmmain = new Main("nhanvien", dt.Rows[0][0].ToString());
                             frmmain.Show();
                             this.Hide();
 

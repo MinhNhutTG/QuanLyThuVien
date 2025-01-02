@@ -12,8 +12,8 @@ using System.Windows.Forms;
 namespace QUANLYTHUVIEN
 {
     public partial class Main : Form
-    {   
-        
+    {
+        public string MaNhanVienDangSuDungHeThong {  get; set; }
         public Main()
         {
             InitializeComponent();
@@ -21,11 +21,11 @@ namespace QUANLYTHUVIEN
             setButton(true, true);
 
         }
-        public Main(string quyen)
+        public Main(string quyen , string maNhanVien)
         {
             InitializeComponent();
             MainStart();
-           
+            
             if (quyen == "admin") {
                 setButton(true, true);
             }
@@ -33,7 +33,8 @@ namespace QUANLYTHUVIEN
             {
                 setButton(false, true);
             }
-
+            MaNhanVienDangSuDungHeThong = maNhanVien;
+           
         }
 
         private void MainStart()
@@ -111,6 +112,24 @@ namespace QUANLYTHUVIEN
         {
            
             
+        }
+
+        private void btnMoFormQLPhieu_Click(object sender, EventArgs e)
+        {
+            foreach (Form frm in this.MdiChildren)
+            {
+                if (frm.Name == "QuanLyMuonTraForm")
+                {
+                    frm.Activate();
+                    return;
+                }
+            }
+            Form frmSach = new QuanLyMuonTraForm(MaNhanVienDangSuDungHeThong);
+
+            frmSach.MdiParent = this;
+
+            frmSach.Dock = DockStyle.Fill;
+            frmSach.Show();
         }
     }
 }

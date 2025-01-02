@@ -13,13 +13,21 @@ namespace QUANLYTHUVIEN
     public partial class QuanLyMuonTraForm : Form
     {
 
-        string MaThuThu = "TT1";
+        private string MaThuThu {get; set; }
         XuLyFormMuonTra m = new XuLyFormMuonTra();
         public QuanLyMuonTraForm()
         {
             XuLyFormMuonTra m = new XuLyFormMuonTra(); 
             DataTable dt = m.LayDSPhieuMuon();
             InitializeComponent();
+            HienThiDanhSach(dt);
+        }
+        public QuanLyMuonTraForm(string mnv)
+        {
+            XuLyFormMuonTra m = new XuLyFormMuonTra();
+            DataTable dt = m.LayDSPhieuMuon();
+            InitializeComponent();
+            MaThuThu = mnv;
             HienThiDanhSach(dt);
         }
 
@@ -125,7 +133,9 @@ namespace QUANLYTHUVIEN
            
         }
 
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
 
-
+        }
     }
 }

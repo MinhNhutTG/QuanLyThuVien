@@ -58,15 +58,15 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-1, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1198, 62);
+            this.panel1.Size = new System.Drawing.Size(1281, 76);
             this.panel1.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(518, 11);
+            this.label1.Location = new System.Drawing.Point(487, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(210, 29);
             this.label1.TabIndex = 0;
@@ -75,7 +75,7 @@
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(412, 102);
+            this.txtSearch.Location = new System.Drawing.Point(503, 102);
             this.txtSearch.MaxLength = 6;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(315, 28);
@@ -86,7 +86,7 @@
             this.btnSearch.BackColor = System.Drawing.Color.DarkCyan;
             this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(758, 94);
+            this.btnSearch.Location = new System.Drawing.Point(849, 94);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(124, 42);
             this.btnSearch.TabIndex = 5;
@@ -102,17 +102,18 @@
             this.panel2.Controls.Add(this.btnDelete);
             this.panel2.Controls.Add(this.btnUpdate);
             this.panel2.Controls.Add(this.btnAdd);
-            this.panel2.Location = new System.Drawing.Point(923, 94);
+            this.panel2.Location = new System.Drawing.Point(1042, 102);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(241, 660);
+            this.panel2.Size = new System.Drawing.Size(212, 574);
             this.panel2.TabIndex = 6;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // btnView
             // 
             this.btnView.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnView.Location = new System.Drawing.Point(39, 269);
+            this.btnView.Location = new System.Drawing.Point(29, 264);
             this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(164, 67);
+            this.btnView.Size = new System.Drawing.Size(164, 48);
             this.btnView.TabIndex = 4;
             this.btnView.Text = "Xem";
             this.btnView.UseVisualStyleBackColor = true;
@@ -121,9 +122,9 @@
             // btnOut
             // 
             this.btnOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOut.Location = new System.Drawing.Point(39, 497);
+            this.btnOut.Location = new System.Drawing.Point(29, 440);
             this.btnOut.Name = "btnOut";
-            this.btnOut.Size = new System.Drawing.Size(164, 67);
+            this.btnOut.Size = new System.Drawing.Size(164, 48);
             this.btnOut.TabIndex = 3;
             this.btnOut.Text = "Thoát";
             this.btnOut.UseVisualStyleBackColor = true;
@@ -132,9 +133,9 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(39, 385);
+            this.btnDelete.Location = new System.Drawing.Point(29, 352);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(164, 67);
+            this.btnDelete.Size = new System.Drawing.Size(164, 48);
             this.btnDelete.TabIndex = 2;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -143,9 +144,9 @@
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(39, 158);
+            this.btnUpdate.Location = new System.Drawing.Point(29, 159);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(164, 67);
+            this.btnUpdate.Size = new System.Drawing.Size(164, 48);
             this.btnUpdate.TabIndex = 1;
             this.btnUpdate.Text = "Sửa";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -154,9 +155,9 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(39, 47);
+            this.btnAdd.Location = new System.Drawing.Point(29, 63);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(164, 67);
+            this.btnAdd.Size = new System.Drawing.Size(164, 48);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -178,9 +179,9 @@
             this.lsvPhieuMuon.FullRowSelect = true;
             this.lsvPhieuMuon.GridLines = true;
             this.lsvPhieuMuon.HideSelection = false;
-            this.lsvPhieuMuon.Location = new System.Drawing.Point(27, 183);
+            this.lsvPhieuMuon.Location = new System.Drawing.Point(12, 154);
             this.lsvPhieuMuon.Name = "lsvPhieuMuon";
-            this.lsvPhieuMuon.Size = new System.Drawing.Size(872, 571);
+            this.lsvPhieuMuon.Size = new System.Drawing.Size(1007, 493);
             this.lsvPhieuMuon.TabIndex = 7;
             this.lsvPhieuMuon.UseCompatibleStateImageBehavior = false;
             this.lsvPhieuMuon.View = System.Windows.Forms.View.Details;
@@ -235,7 +236,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1195, 817);
+            this.ClientSize = new System.Drawing.Size(1280, 672);
             this.Controls.Add(this.lsvPhieuMuon);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnSearch);

@@ -46,10 +46,10 @@
             this.btnXemChiTiet = new System.Windows.Forms.Button();
             this.btnXoaSach = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnThoat = new System.Windows.Forms.Button();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.CbbTheLoai = new System.Windows.Forms.ComboBox();
-            this.btnThoat = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -87,6 +87,7 @@
             this.NamXuatBan,
             this.Gia,
             this.TinhTrang});
+            this.lsvSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lsvSach.FullRowSelect = true;
             this.lsvSach.GridLines = true;
             this.lsvSach.HideSelection = false;
@@ -160,10 +161,10 @@
             // 
             this.btnThemSach.BackColor = System.Drawing.Color.MintCream;
             this.btnThemSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnThemSach.Location = new System.Drawing.Point(41, 99);
+            this.btnThemSach.Location = new System.Drawing.Point(32, 73);
             this.btnThemSach.Margin = new System.Windows.Forms.Padding(4);
             this.btnThemSach.Name = "btnThemSach";
-            this.btnThemSach.Size = new System.Drawing.Size(137, 42);
+            this.btnThemSach.Size = new System.Drawing.Size(151, 50);
             this.btnThemSach.TabIndex = 0;
             this.btnThemSach.Text = "Thêm Sách";
             this.btnThemSach.UseVisualStyleBackColor = false;
@@ -173,10 +174,10 @@
             // 
             this.btnSuaSach.BackColor = System.Drawing.Color.MintCream;
             this.btnSuaSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnSuaSach.Location = new System.Drawing.Point(41, 191);
+            this.btnSuaSach.Location = new System.Drawing.Point(32, 161);
             this.btnSuaSach.Margin = new System.Windows.Forms.Padding(4);
             this.btnSuaSach.Name = "btnSuaSach";
-            this.btnSuaSach.Size = new System.Drawing.Size(137, 42);
+            this.btnSuaSach.Size = new System.Drawing.Size(151, 50);
             this.btnSuaSach.TabIndex = 1;
             this.btnSuaSach.Text = "Sửa Sách";
             this.btnSuaSach.UseVisualStyleBackColor = false;
@@ -186,10 +187,10 @@
             // 
             this.btnXemChiTiet.BackColor = System.Drawing.Color.MintCream;
             this.btnXemChiTiet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnXemChiTiet.Location = new System.Drawing.Point(41, 289);
+            this.btnXemChiTiet.Location = new System.Drawing.Point(32, 258);
             this.btnXemChiTiet.Margin = new System.Windows.Forms.Padding(4);
             this.btnXemChiTiet.Name = "btnXemChiTiet";
-            this.btnXemChiTiet.Size = new System.Drawing.Size(137, 42);
+            this.btnXemChiTiet.Size = new System.Drawing.Size(151, 50);
             this.btnXemChiTiet.TabIndex = 2;
             this.btnXemChiTiet.Text = "Xem Chi Tiết";
             this.btnXemChiTiet.UseVisualStyleBackColor = false;
@@ -199,10 +200,10 @@
             // 
             this.btnXoaSach.BackColor = System.Drawing.Color.MintCream;
             this.btnXoaSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnXoaSach.Location = new System.Drawing.Point(41, 380);
+            this.btnXoaSach.Location = new System.Drawing.Point(32, 345);
             this.btnXoaSach.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoaSach.Name = "btnXoaSach";
-            this.btnXoaSach.Size = new System.Drawing.Size(137, 42);
+            this.btnXoaSach.Size = new System.Drawing.Size(151, 50);
             this.btnXoaSach.TabIndex = 3;
             this.btnXoaSach.Text = "Xóa Sách";
             this.btnXoaSach.UseVisualStyleBackColor = false;
@@ -219,16 +220,30 @@
             this.panel2.Location = new System.Drawing.Point(1040, 103);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(207, 574);
+            this.panel2.Size = new System.Drawing.Size(216, 574);
             this.panel2.TabIndex = 5;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.BackColor = System.Drawing.Color.MintCream;
+            this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnThoat.Location = new System.Drawing.Point(32, 447);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(151, 50);
+            this.btnThoat.TabIndex = 4;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtTimKiem.Location = new System.Drawing.Point(549, 106);
             this.txtTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(317, 28);
+            this.txtTimKiem.Size = new System.Drawing.Size(317, 27);
             this.txtTimKiem.TabIndex = 6;
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             this.txtTimKiem.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTimKiem_KeyDown);
@@ -245,19 +260,6 @@
             this.CbbTheLoai.Size = new System.Drawing.Size(244, 28);
             this.CbbTheLoai.TabIndex = 7;
             this.CbbTheLoai.SelectedIndexChanged += new System.EventHandler(this.CbbTheLoai_SelectedIndexChanged);
-            // 
-            // btnThoat
-            // 
-            this.btnThoat.BackColor = System.Drawing.Color.MintCream;
-            this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnThoat.Location = new System.Drawing.Point(41, 464);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
-            this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(137, 42);
-            this.btnThoat.TabIndex = 4;
-            this.btnThoat.Text = "Thoát";
-            this.btnThoat.UseVisualStyleBackColor = false;
-            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // QuanLySachForm
             // 
