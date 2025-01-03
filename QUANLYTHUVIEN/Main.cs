@@ -90,7 +90,7 @@ namespace QUANLYTHUVIEN
                     return;     // return này là dừng lại để tránh tạo form nữa 
                 }
             }
-            Form frmSach = new QuanLySachForm();        // nếy mà chưa có form dc tạo ra sẳn thì sẽ tạo form mới nè
+            QuanLySachForm frmSach = new QuanLySachForm();        // nếy mà chưa có form dc tạo ra sẳn thì sẽ tạo form mới nè
 
             frmSach.MdiParent = this;  //set cho form là form con
 
@@ -124,12 +124,66 @@ namespace QUANLYTHUVIEN
                     return;
                 }
             }
-            Form frmSach = new QuanLyMuonTraForm(MaNhanVienDangSuDungHeThong);
+            QuanLyMuonTraForm frmPhieu = new QuanLyMuonTraForm(MaNhanVienDangSuDungHeThong);
 
-            frmSach.MdiParent = this;
+            frmPhieu.MdiParent = this;
 
-            frmSach.Dock = DockStyle.Fill;
-            frmSach.Show();
+            frmPhieu.Dock = DockStyle.Fill;
+            frmPhieu.Show();
+        }
+
+        private void btnMoFormQLNhanVien_Click(object sender, EventArgs e)
+        {
+            foreach (Form frm in this.MdiChildren)
+            {
+                if (frm.Name == "QuanLyThuThuForm")
+                {
+                    frm.Activate();
+                    return;
+                }
+            }
+            QuanLyThuThuForm frmThuThu = new QuanLyThuThuForm();
+
+            frmThuThu.MdiParent = this;
+
+            frmThuThu.Dock = DockStyle.Fill;
+            frmThuThu.Show();
+        }
+
+        private void btnMoFormQLDocGia_Click(object sender, EventArgs e)
+        {
+            foreach (Form frm in this.MdiChildren)
+            {
+                if (frm.Name == "QuanLyDocGiaForm")
+                {
+                    frm.Activate();
+                    return;
+                }
+            }
+            QuanLyDocGiaForm frmThuThu = new QuanLyDocGiaForm();
+
+            frmThuThu.MdiParent = this;
+
+            frmThuThu.Dock = DockStyle.Fill;
+            frmThuThu.Show();
+        }
+
+        private void btnThongKe_Click_1(object sender, EventArgs e)
+        {
+            foreach (Form frm in this.MdiChildren)
+            {
+                if (frm.Name == "QuanLyThongkeForm")
+                {
+                    frm.Activate();
+                    return;
+                }
+            }
+            QuanLyThongkeForm frmThuThu = new QuanLyThongkeForm();
+
+            frmThuThu.MdiParent = this;
+
+            frmThuThu.Dock = DockStyle.Fill;
+            frmThuThu.Show();
         }
     }
 }

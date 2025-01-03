@@ -58,9 +58,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(2, 1);
+            this.panel1.Location = new System.Drawing.Point(3, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(883, 79);
+            this.panel1.Size = new System.Drawing.Size(1271, 76);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -68,7 +69,8 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(312, 22);
+            this.label1.Location = new System.Drawing.Point(465, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(287, 31);
             this.label1.TabIndex = 0;
@@ -86,9 +88,10 @@
             this.lsvDocGia.FullRowSelect = true;
             this.lsvDocGia.GridLines = true;
             this.lsvDocGia.HideSelection = false;
-            this.lsvDocGia.Location = new System.Drawing.Point(2, 134);
+            this.lsvDocGia.Location = new System.Drawing.Point(13, 145);
+            this.lsvDocGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lsvDocGia.Name = "lsvDocGia";
-            this.lsvDocGia.Size = new System.Drawing.Size(694, 379);
+            this.lsvDocGia.Size = new System.Drawing.Size(983, 526);
             this.lsvDocGia.TabIndex = 8;
             this.lsvDocGia.UseCompatibleStateImageBehavior = false;
             this.lsvDocGia.View = System.Windows.Forms.View.Details;
@@ -129,18 +132,20 @@
             this.panel2.Controls.Add(this.btnXoa);
             this.panel2.Controls.Add(this.btnSua);
             this.panel2.Controls.Add(this.btnThem);
-            this.panel2.Location = new System.Drawing.Point(707, 134);
+            this.panel2.Location = new System.Drawing.Point(1019, 107);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(169, 379);
+            this.panel2.Size = new System.Drawing.Size(225, 564);
             this.panel2.TabIndex = 9;
             // 
             // btnThoat
             // 
             this.btnThoat.BackColor = System.Drawing.Color.White;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(33, 297);
+            this.btnThoat.Location = new System.Drawing.Point(42, 401);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(109, 51);
+            this.btnThoat.Size = new System.Drawing.Size(145, 46);
             this.btnThoat.TabIndex = 3;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -150,9 +155,10 @@
             // 
             this.btnXoa.BackColor = System.Drawing.Color.White;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(33, 201);
+            this.btnXoa.Location = new System.Drawing.Point(42, 282);
+            this.btnXoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(109, 51);
+            this.btnXoa.Size = new System.Drawing.Size(145, 46);
             this.btnXoa.TabIndex = 2;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
@@ -162,9 +168,10 @@
             // 
             this.btnSua.BackColor = System.Drawing.Color.White;
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Location = new System.Drawing.Point(33, 113);
+            this.btnSua.Location = new System.Drawing.Point(42, 174);
+            this.btnSua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(109, 51);
+            this.btnSua.Size = new System.Drawing.Size(145, 46);
             this.btnSua.TabIndex = 1;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
@@ -174,9 +181,10 @@
             // 
             this.btnThem.BackColor = System.Drawing.Color.White;
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Location = new System.Drawing.Point(33, 23);
+            this.btnThem.Location = new System.Drawing.Point(42, 63);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(109, 51);
+            this.btnThem.Size = new System.Drawing.Size(145, 46);
             this.btnThem.TabIndex = 0;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
@@ -187,9 +195,10 @@
             this.btnTimKiem.BackColor = System.Drawing.Color.DarkCyan;
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnTimKiem.Location = new System.Drawing.Point(648, 91);
+            this.btnTimKiem.Location = new System.Drawing.Point(880, 100);
+            this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(87, 30);
+            this.btnTimKiem.Size = new System.Drawing.Size(116, 37);
             this.btnTimKiem.TabIndex = 10;
             this.btnTimKiem.Text = "Tìm Kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
@@ -197,24 +206,26 @@
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Location = new System.Drawing.Point(443, 97);
+            this.txtTimKiem.Location = new System.Drawing.Point(607, 107);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTimKiem.Multiline = true;
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(199, 19);
+            this.txtTimKiem.Size = new System.Drawing.Size(264, 22);
             this.txtTimKiem.TabIndex = 11;
             // 
             // QuanLyDocGiaForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(881, 583);
+            this.ClientSize = new System.Drawing.Size(1270, 718);
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.lsvDocGia);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "QuanLyDocGiaForm";
             this.Text = "QuanLyDocGiaForm";
             ((System.ComponentModel.ISupportInitialize)(this.dOCGIABindingSource)).EndInit();

@@ -1,4 +1,3 @@
-TL01 -- Truyện Kiều -- Đang mượn
- TL04 -- Tạp chí Khoa học Giáo dục -- Đang mượn
- TL05 -- Tạp chí Sống Khỏe -- Đang mượn
+ TL01 -- Truyện Kiều -- Đang mượn
+  TL04 -- Tạp chí Khoa học Giáo dục -- Đang mượn
  

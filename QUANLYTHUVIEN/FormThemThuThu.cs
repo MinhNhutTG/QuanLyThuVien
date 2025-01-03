@@ -32,9 +32,7 @@ namespace QUANLYTHUVIEN
             SetButton(b);
             HienThiNamNu();
             HienThiThuThu(MaThuThu);
-            
-            LayThongTinThuThu();
-                      
+
         }
   
         
@@ -59,7 +57,13 @@ namespace QUANLYTHUVIEN
             txtMaThuThu.Text = dt.Rows[0][0].ToString();
             txtTenThuThu.Text = dt.Rows[0][1].ToString();
             dateTimePickerNgaySinh.Value = DateTime.Parse(dt.Rows[0][2].ToString());
-            comboBoxGioiTinh.Text = dt.Rows[0][3].ToString();
+            if (dt.Rows[0][3].ToString() == "False"){
+                comboBoxGioiTinh.Text= "Nữ";
+            }
+            else if  (dt.Rows[0][3].ToString() == "True")
+            {
+                comboBoxGioiTinh.Text = "Nam";
+            }
             txtDiaChi.Text = dt.Rows[0][4].ToString();
             txtSodt.Text = dt.Rows[0][5].ToString();
 
@@ -133,18 +137,16 @@ namespace QUANLYTHUVIEN
                     { //Kiểm tra xem thủ thư có tồn tại trong cơ sở dữ liệu hay chưa //Nếu KiemtraThuThu trả về false: Thủ thư chưa tồn tại → Tiến hành thêm mới, Nếu true: Thủ thư đã tồn tại → Thông báo lỗi
 
                         th.ThemThuThu(thuthu); //Gọi phương thức thêm thủ thư mới từ lớp xử lý XuLyFormThuThu. Đối tượng thuthu được truyền vào để thêm thông tin vào cơ sở dữ liệu
-
+                        ResetTextBox();
                         MessageBox.Show("Da Them Thu Thu");
-
+                        if (sendData != null)
+                        {
+                            sendData(); //Một delegate (hoặc event) được sử dụng để thông báo cập nhật dữ liệu lên giao diện hoặc cập nhật danh sách sau khi thêm thành công
+                        }
                     }
                     else
                     {
                         MessageBox.Show("Ma Thu Thu ton tai", "Thong bao", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-
-                    if (sendData != null)
-                    {
-                        sendData(); //Một delegate (hoặc event) được sử dụng để thông báo cập nhật dữ liệu lên giao diện hoặc cập nhật danh sách sau khi thêm thành công
                     }
                 }
                 else
@@ -170,20 +172,21 @@ namespace QUANLYTHUVIEN
                     ThuThu th = LayThongTinThuThu(); //lay thong tin thu thu tu form 
                     XuLyFormThuThu Capnhat = new XuLyFormThuThu(); //tao doi tuong xu ly
                     string ngaysinh = dateTimePickerNgaySinh.Value.ToShortTimeString();
-                    if (Capnhat.KiemtraThuThu(txtUserName.Text, txtPassword.Text, comboBoxPhanquyen.Text, txtMaThuThu.Text, txtTenThuThu.Text, ngaysinh, comboBoxGioiTinh.SelectedValue.ToString(), txtDiaChi.Text, txtSodt.Text))
+                    if (Capnhat.KiemtraThuThu(txtUserName.Text, txtPassword.Text, comboBoxPhanquyen.Text, txtMaThuThu.Text, txtTenThuThu.Text, ngaysinh, comboBoxGioiTinh.Text, txtDiaChi.Text, txtSodt.Text))
                     {
                         Capnhat.CapNhatThuThu(th);
                         MessageBox.Show("Đã cập nhật thủ thư");
+                        if (sendData != null)
+                        {
+                            sendData();
+                        }
                     }           
                 }
                 else
                 {
                     MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông báo", MessageBoxButtons.YesNo);
                 }
-                if (sendData != null)
-                {
-                    sendData();
-                }
+             
             }
             catch (Exception ex)
             {
@@ -194,23 +197,7 @@ namespace QUANLYTHUVIEN
 
 
 
-        /*
-         ThuThu th = LayThongTinThuThu(); //lay thong tin thu thu tu form 
-                    XuLyFormThuThu Capnhat = new XuLyFormThuThu(); //tao doi tuong xu ly
-                    string ngaysinh = dateTimePickerNgaySinh.Value.ToShortTimeString();
-                    if (Capnhat.KiemtraThuThu(txtUserName.Text, txtPassword.Text, comboBoxPhanquyen.Text, txtMaThuThu.Text, txtTenThuThu.Text, ngaysinh, comboBoxGioiTinh.SelectedValue.ToString(), txtDiaChi.Text, txtSodt.Text))
-                    {
-                        Capnhat.CapNhatThuThu(th);
-                        MessageBox.Show("Đã cập nhật thủ thư");
-                    }
-                   if (sendData != null)
-                   {
-                       sendData();
-                   }
-                   */
-
-        // lam moi cac texbox trong formthemthuthu
-        private void btnLamMoi_Click(object sender, EventArgs e)
+        public void ResetTextBox()
         {
             txtMaThuThu.Text = string.Empty;
             txtTenThuThu.Text = string.Empty;
@@ -223,6 +210,12 @@ namespace QUANLYTHUVIEN
             comboBoxPhanquyen.Text = string.Empty;
         }
 
+        // lam moi cac texbox trong formthemthuthu
+        private void btnLamMoi_Click(object sender, EventArgs e)
+        {
+            ResetTextBox();
+        }
+
         // thoat khoi form them thuthu
         private void btnThoat_Click(object sender, EventArgs e)
         {
@@ -232,5 +225,7 @@ namespace QUANLYTHUVIEN
                 this.Close();
             }
         }
+
+       
     }
 }

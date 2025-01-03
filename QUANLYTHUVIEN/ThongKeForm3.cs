@@ -79,6 +79,7 @@ namespace QUANLYTHUVIEN
             string content = "";
             for (int i = 0; i < lsvDanhSach.Items.Count; i++)
             {
+                content += " ";
                 content += lsvDanhSach.Items[i].SubItems[0].Text + " -- ";
                 content += lsvDanhSach.Items[i].SubItems[1].Text + " -- ";
                 content += lsvDanhSach.Items[i].SubItems[2].Text + "\n ";

@@ -149,6 +149,11 @@ namespace QUANLYTHUVIEN
                     XuLyFormDocGia xuLyCapNhat = new XuLyFormDocGia();
                     DocGia dg = LayDocGia();
                     xuLyCapNhat.CapNhatDocGia(dg);
+
+                    if (sendData != null)
+                    {
+                        sendData();
+                    }
                     DialogResult result = MessageBox.Show("Cập nhật thành công độc giả " + txtTenDocGia.Text + " !!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else

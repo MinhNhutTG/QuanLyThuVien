@@ -67,6 +67,7 @@ namespace QUANLYTHUVIEN
             if (lsvDocGia.SelectedItems.Count == 1)
             {
                 frmQuanLyDocGia_Them SuaDocGia = new frmQuanLyDocGia_Them(false, lsvDocGia.SelectedItems[0].SubItems[0].Text);
+                SuaDocGia.sendData += LoadDuLieu;
                 SuaDocGia.Show();
             }
             else
