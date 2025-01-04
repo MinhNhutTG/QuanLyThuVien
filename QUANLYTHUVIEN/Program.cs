@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using QUANLYTHUVIEN.GUI;
 
 namespace QUANLYTHUVIEN
 {
@@ -24,8 +25,9 @@ namespace QUANLYTHUVIEN
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new loginForm());
-            //Application.Run(new Main());
+            //Application.Run(new loginForm());
+            Application.Run(new Main());
+            //Application.Run(new QuanLySachForm());
             //Application.Run(new frmQuanLySach_ThemSach());
             //Application.Run(new frmQuanLySachXemChiTiet());
 

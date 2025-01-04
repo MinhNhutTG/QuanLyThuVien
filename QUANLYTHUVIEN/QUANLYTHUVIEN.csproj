@@ -46,141 +46,69 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database.cs" />
-    <Compile Include="DocGia.cs" />
-    <Compile Include="FormThemThuThu.cs">
+    <Compile Include="BUS\BUS_Login.cs" />
+    <Compile Include="BUS\BUS_Sach.cs" />
+    <Compile Include="DAL\DAL_Login.cs" />
+    <Compile Include="DAL\DAL_QuanLySach.cs" />
+    <Compile Include="DAL\DBConnect.cs" />
+    <Compile Include="DTO\TaiKhoan.cs" />
+    <Compile Include="DTO\Sach.cs" />
+    <Compile Include="GUI\frmQuanLySachXemChiTiet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormThemThuThu.Designer.cs">
-      <DependentUpon>FormThemThuThu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmQuanLyDocGia_Them.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmQuanLyDocGia_Them.Designer.cs">
-      <DependentUpon>frmQuanLyDocGia_Them.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmQuanLySachXemChiTiet.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmQuanLySachXemChiTiet.Designer.cs">
+    <Compile Include="GUI\frmQuanLySachXemChiTiet.Designer.cs">
       <DependentUpon>frmQuanLySachXemChiTiet.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmQuanLySach_ThemSach.cs">
+    <Compile Include="GUI\frmQuanLySach_ThemSach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmQuanLySach_ThemSach.Designer.cs">
+    <Compile Include="GUI\frmQuanLySach_ThemSach.Designer.cs">
       <DependentUpon>frmQuanLySach_ThemSach.cs</DependentUpon>
     </Compile>
-    <Compile Include="loginForm.cs">
+    <Compile Include="GUI\loginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="loginForm.Designer.cs">
+    <Compile Include="GUI\loginForm.Designer.cs">
       <DependentUpon>loginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="GUI\Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
+    <Compile Include="GUI\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="mainPicture.cs">
+    <Compile Include="GUI\mainPicture.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mainPicture.Designer.cs">
+    <Compile Include="GUI\mainPicture.Designer.cs">
       <DependentUpon>mainPicture.cs</DependentUpon>
     </Compile>
-    <Compile Include="PhieuMuon.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QuanLyDocGiaForm.cs">
+    <Compile Include="GUI\QuanLySachForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanLyDocGiaForm.Designer.cs">
-      <DependentUpon>QuanLyDocGiaForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QuanLyMuonTraForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QuanLyMuonTraForm.Designer.cs">
-      <DependentUpon>QuanLyMuonTraForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QuanLyMuonTraForm_Update.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QuanLyMuonTraForm_Update.Designer.cs">
-      <DependentUpon>QuanLyMuonTraForm_Update.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QuanLyPhieuMuonForm_ChiTiet.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QuanLyPhieuMuonForm_ChiTiet.Designer.cs">
-      <DependentUpon>QuanLyPhieuMuonForm_ChiTiet.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QuanLySachForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QuanLySachForm.Designer.cs">
+    <Compile Include="GUI\QuanLySachForm.Designer.cs">
       <DependentUpon>QuanLySachForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="QuanLyThongkeForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QuanLyThongkeForm.Designer.cs">
-      <DependentUpon>QuanLyThongkeForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="QuanLyThuThuForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="QuanLyThuThuForm.Designer.cs">
-      <DependentUpon>QuanLyThuThuForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Sach.cs" />
-    <Compile Include="ThongKeForm1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ThongKeForm1.Designer.cs">
-      <DependentUpon>ThongKeForm1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ThongKeForm2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ThongKeForm2.Designer.cs">
-      <DependentUpon>ThongKeForm2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ThongKeForm3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ThongKeForm3.Designer.cs">
-      <DependentUpon>ThongKeForm3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ThuThu.cs" />
-    <Compile Include="XuLyFormDocGia.cs" />
-    <Compile Include="XuLyFormMuonTra.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XuLyFormSach.cs" />
-    <Compile Include="XuLyFormThuThu.cs" />
-    <Compile Include="XuLyLogin.cs" />
-    <Compile Include="XulyThongKe.cs" />
-    <EmbeddedResource Include="FormThemThuThu.resx">
-      <DependentUpon>FormThemThuThu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmQuanLyDocGia_Them.resx">
-      <DependentUpon>frmQuanLyDocGia_Them.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmQuanLySachXemChiTiet.resx">
+    <EmbeddedResource Include="GUI\frmQuanLySachXemChiTiet.resx">
       <DependentUpon>frmQuanLySachXemChiTiet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmQuanLySach_ThemSach.resx">
+    <EmbeddedResource Include="GUI\frmQuanLySach_ThemSach.resx">
       <DependentUpon>frmQuanLySach_ThemSach.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="loginForm.resx">
+    <EmbeddedResource Include="GUI\loginForm.resx">
       <DependentUpon>loginForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
+    <EmbeddedResource Include="GUI\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mainPicture.resx">
+    <EmbeddedResource Include="GUI\mainPicture.resx">
       <DependentUpon>mainPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLySachForm.resx">
+      <DependentUpon>QuanLySachForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -191,36 +119,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="QuanLyDocGiaForm.resx">
-      <DependentUpon>QuanLyDocGiaForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QuanLyMuonTraForm.resx">
-      <DependentUpon>QuanLyMuonTraForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QuanLyMuonTraForm_Update.resx">
-      <DependentUpon>QuanLyMuonTraForm_Update.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QuanLyPhieuMuonForm_ChiTiet.resx">
-      <DependentUpon>QuanLyPhieuMuonForm_ChiTiet.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QuanLySachForm.resx">
-      <DependentUpon>QuanLySachForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QuanLyThongkeForm.resx">
-      <DependentUpon>QuanLyThongkeForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="QuanLyThuThuForm.resx">
-      <DependentUpon>QuanLyThuThuForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ThongKeForm1.resx">
-      <DependentUpon>ThongKeForm1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ThongKeForm2.resx">
-      <DependentUpon>ThongKeForm2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ThongKeForm3.resx">
-      <DependentUpon>ThongKeForm3.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -234,5 +132,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
