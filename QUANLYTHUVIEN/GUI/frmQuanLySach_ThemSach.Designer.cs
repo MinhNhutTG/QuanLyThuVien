@@ -201,6 +201,7 @@
             this.txtGiaSach.Size = new System.Drawing.Size(205, 26);
             this.txtGiaSach.TabIndex = 15;
             this.txtGiaSach.Text = "0";
+            this.txtGiaSach.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGiaSach_KeyPress);
             // 
             // label9
             // 
@@ -221,6 +222,7 @@
             this.txtNamXuatBan.Name = "txtNamXuatBan";
             this.txtNamXuatBan.Size = new System.Drawing.Size(191, 26);
             this.txtNamXuatBan.TabIndex = 13;
+            this.txtNamXuatBan.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNamXuatBan_KeyPress);
             // 
             // label8
             // 
@@ -441,6 +443,7 @@
             this.btnThoat.TabIndex = 8;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnLamMoi
             // 
@@ -468,6 +471,7 @@
             this.btnCapNhat.TabIndex = 6;
             this.btnCapNhat.Text = "Cập Nhật ";
             this.btnCapNhat.UseVisualStyleBackColor = false;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // btnThem
             // 
@@ -496,6 +500,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmQuanLySach_ThemSach";
+            this.Load += new System.EventHandler(this.frmQuanLySach_ThemSach_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox1.ResumeLayout(false);

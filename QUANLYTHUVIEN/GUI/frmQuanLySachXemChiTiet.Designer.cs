@@ -1,4 +1,4 @@
-﻿namespace QUANLYTHUVIEN
+﻿namespace QUANLYTHUVIEN.GUI
 {
     partial class frmQuanLySachXemChiTiet
     {

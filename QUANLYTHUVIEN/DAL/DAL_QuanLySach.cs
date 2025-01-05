@@ -22,7 +22,14 @@ namespace QUANLYTHUVIEN.DAL
 
             return dt;
         }  
-        
+        public DataTable TimKiemTheoMaCuonSach(string key)
+        {
+            string strSql = string.Format(" Select MaCuonSach , MaSach , TenSach , TacGia, NamXuatBan , NhaXuatBan , Gia , MoTa, TinhTrang,SoLuong,HinhAnh ,TenTheLoai \r\n     " +
+                "                      from SACH  join THE_LOAI ON SACH.MaTheLoai = THE_LOAI.MaTheLoai\r\n        " +
+                "                           where MaCuonSach = '{0}'", key);
+            DataTable dt = db.Execute(strSql);
+            return dt;
+        }
         public DataTable getListTheLoaiSach()
         {
             string sqlListTheLoai = "Select MaTheLoai ,  TenTheLoai from THE_LOAI";
@@ -45,22 +52,23 @@ namespace QUANLYTHUVIEN.DAL
         }
         public bool ThemSach(Sach s)
         {
-            
+
             try
             {
                 string sqlThemSach = string.Format(
                 "Insert into SACH ( MaCuonSach, TenSach, TacGia, NamXuatBan, NhaXuatBan, Gia, MoTa, TinhTrang, SoLuong, HinhAnh, MaTheLoai, MaSach ) " +
-                "Values ('{0}', N'{1}', N'{2}', {3}, N'{4}', {5}, N'{6}', N'{7}', {8}, '{9}', '{10}', '{11}');",
+                "Values (N'{0}', N'{1}', N'{2}', '{3}', N'{4}', {5}, N'{6}', N'{7}', {8}, '{9}', '{10}', '{11}');",
                 s.getMaCuonSach(), s.getTenSach(), s.getTacGia(), s.getNamXuatBan(), s.getNhaXuatBan(), s.getGia(), s.getMota(), s.getTinhTrang(), s.getSoLuong(), s.getHinhAnh(), s.getMaTheLoai(), s.getMaSach());
                 db.ExecuteNonQuery(sqlThemSach);
                 return true;
             }
-          
-            catch (Exception ex) {
+
+            catch (Exception ex)
+            {
                 Console.WriteLine(ex.Message);
                 return false;
             }
-           
+
         }
         public bool XoaSach(string key)
         {
@@ -80,6 +88,25 @@ namespace QUANLYTHUVIEN.DAL
                 return false;
             }
 
+        }
+        public bool CapNhatSach(Sach s)
+        {
+            try
+            {
+                string sqlCapNhatSach = string.Format(
+                "UPDATE SACH SET " +
+                "TenSach = N'{0}', TacGia = N'{1}', NamXuatBan = {2}, NhaXuatBan = N'{3}', Gia = {4}, MoTa = N'{5}', TinhTrang = N'{6}', SoLuong = {7}, HinhAnh = '{8}', MaTheLoai = '{9}' " +
+                "WHERE MaCuonSach = '{10}';",
+                    s.getTenSach(), s.getTacGia(), s.getNamXuatBan(), s.getNhaXuatBan(), s.getGia(), s.getMota(), s.getTinhTrang(), s.getSoLuong(), s.getHinhAnh(), s.getMaTheLoai(), s.getMaCuonSach()
+                );
+                db.ExecuteNonQuery(sqlCapNhatSach);
+                return true;
+            }
+            catch (Exception ex) {
+                Console.WriteLine(ex.Message);
+                return false;
+            }
+            
         }
     }
 }

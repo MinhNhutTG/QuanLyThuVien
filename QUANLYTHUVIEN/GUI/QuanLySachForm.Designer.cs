@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblMessage = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lsvSach = new System.Windows.Forms.ListView();
             this.MaCuonSach = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -57,12 +58,25 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.Controls.Add(this.lblMessage);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-8, -5);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1973, 74);
             this.panel1.TabIndex = 0;
+            // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.BackColor = System.Drawing.Color.DarkCyan;
+            this.lblMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblMessage.ForeColor = System.Drawing.Color.AliceBlue;
+            this.lblMessage.Location = new System.Drawing.Point(39, 29);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(96, 20);
+            this.lblMessage.TabIndex = 1;
+            this.lblMessage.Text = "Message: ";
             // 
             // label1
             // 
@@ -181,6 +195,7 @@
             this.btnSuaSach.TabIndex = 1;
             this.btnSuaSach.Text = "Sửa Sách";
             this.btnSuaSach.UseVisualStyleBackColor = false;
+            this.btnSuaSach.Click += new System.EventHandler(this.btnSuaSach_Click);
             // 
             // btnXemChiTiet
             // 
@@ -193,6 +208,7 @@
             this.btnXemChiTiet.TabIndex = 2;
             this.btnXemChiTiet.Text = "Xem Chi Tiết";
             this.btnXemChiTiet.UseVisualStyleBackColor = false;
+            this.btnXemChiTiet.Click += new System.EventHandler(this.btnXemChiTiet_Click);
             // 
             // btnXoaSach
             // 
@@ -232,6 +248,7 @@
             this.btnThoat.TabIndex = 4;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // txtTimKiem
             // 
@@ -272,7 +289,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "QuanLySachForm";
             this.Text = "QuanLySachForm";
-            this.Load += new System.EventHandler(this.QuanLySachForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -305,5 +321,6 @@
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.ComboBox CbbTheLoai;
         private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.Label lblMessage;
     }
 }

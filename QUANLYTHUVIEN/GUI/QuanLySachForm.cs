@@ -60,13 +60,7 @@ namespace QUANLYTHUVIEN.GUI
         }
        
 
-        private void QuanLySachForm_Load(object sender, EventArgs e)
-        {   
-           
-            
-            //DataTable dt = s.LayDSSach();
-            //LoadDanhSach(dt);
-        }
+   
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
@@ -85,22 +79,69 @@ namespace QUANLYTHUVIEN.GUI
         private void btnThemSach_Click(object sender, EventArgs e)
         {
             frmQuanLySach_ThemSach frm = new frmQuanLySach_ThemSach(true);
+            frm.sendData+= LoadDuLieu;
             frm.ShowDialog();
         }
 
         private void btnXoaSach_Click(object sender, EventArgs e)
         {
-            if (lsvSach.Items.Count > 0) {
+            if (lsvSach.SelectedItems.Count == 1) {
                 DialogResult dg = MessageBox.Show("Bạn có muốn xóa sách?","Thông báo",MessageBoxButtons .YesNo);
                 if (dg == DialogResult.Yes) {
                     if (busSach.XoaSach(lsvSach.SelectedItems[0].Text))
                     {
                         LoadDuLieu();
-                        MessageBox.Show("Đã xóa thành công", "Thông báo", MessageBoxButtons.YesNo);
+                        MessageBox.Show("Đã xóa thành công", "Thông báo");
+                       
                     }
                 }
             }
+            else
+            {
+                MessageBox.Show("Chọn 1 cuốn sách để xóa", "Thông báo");
+            }
         }
+
+        private void btnSuaSach_Click(object sender, EventArgs e)
+        {
+            if (lsvSach.SelectedItems.Count == 1)
+            {
+                frmQuanLySach_ThemSach SuaSach = new frmQuanLySach_ThemSach(false, lsvSach.SelectedItems[0].SubItems[0].Text);
+                SuaSach.sendData += LoadDuLieu;
+                SuaSach.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Chọn sách cần chỉnh sửa!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnXemChiTiet_Click(object sender, EventArgs e)
+        {
+            if (lsvSach.SelectedItems.Count == 1)
+            {
+                frmQuanLySachXemChiTiet Xem = new frmQuanLySachXemChiTiet(lsvSach.SelectedItems[0].SubItems[0].Text);
+                Xem.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Chọn sách cần xem!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult dg = MessageBox.Show("Bạn có muốn trở lại Trang chủ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dg == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
+       
+
+     
+
 
         //private void btnTimKiem_Click(object sender, EventArgs e)
         //{
