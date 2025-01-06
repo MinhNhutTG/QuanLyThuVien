@@ -288,7 +288,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(460, 756);
             this.panel2.TabIndex = 40;
-            //this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label1
             // 
@@ -344,14 +343,12 @@
             // 
             // frmQuanLySachXemChiTiet
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(812, 753);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "frmQuanLySachXemChiTiet";
-            this.Text = "frmQuanLySachXemChiTiet";
-            //this.Load += new System.EventHandler(this.frmQuanLySachXemChiTiet_Load);
+            this.Text = "Xem chi tiết Sách";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureChiTiet)).EndInit();
             this.panel2.ResumeLayout(false);

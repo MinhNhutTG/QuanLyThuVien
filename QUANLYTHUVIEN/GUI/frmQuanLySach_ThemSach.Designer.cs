@@ -130,6 +130,7 @@
             // 
             // cbBTrangThai
             // 
+            this.cbBTrangThai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbBTrangThai.FormattingEnabled = true;
             this.cbBTrangThai.Items.AddRange(new object[] {
             "Còn sẵn",
@@ -266,6 +267,7 @@
             // 
             // cbBTheLoai
             // 
+            this.cbBTheLoai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbBTheLoai.FormattingEnabled = true;
             this.cbBTheLoai.Location = new System.Drawing.Point(676, 28);
             this.cbBTheLoai.Margin = new System.Windows.Forms.Padding(4);
@@ -489,8 +491,7 @@
             // 
             // frmQuanLySach_ThemSach
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(992, 795);
             this.Controls.Add(this.groupBox3);
@@ -500,6 +501,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmQuanLySach_ThemSach";
+            this.Text = "Thêm Sửa Sách";
             this.Load += new System.EventHandler(this.frmQuanLySach_ThemSach_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

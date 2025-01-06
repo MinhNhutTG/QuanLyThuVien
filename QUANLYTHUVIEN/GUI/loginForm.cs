@@ -42,9 +42,9 @@ namespace QUANLYTHUVIEN.GUI
           BUS_Login  busLogin = new BUS_Login();
           TaiKhoan tk = busLogin.Login(txtUserName.Text, txtPassword.Text);
             if (tk != null) {
-
+                
                 MessageBox.Show("Đăng nhập thành công ","Thông báo",MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Main main = new Main();
+                Main main = new Main(tk.getPhanQuyen(),"TT1");
                 main.Show();
                 this.Hide();
             }

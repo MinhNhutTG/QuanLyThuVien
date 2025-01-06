@@ -53,6 +53,12 @@
     <Compile Include="DAL\DBConnect.cs" />
     <Compile Include="DTO\TaiKhoan.cs" />
     <Compile Include="DTO\Sach.cs" />
+    <Compile Include="GUI\CategoryManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\CategoryManagement.Designer.cs">
+      <DependentUpon>CategoryManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmQuanLySachXemChiTiet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +98,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XuLyFormSach.cs" />
+    <EmbeddedResource Include="GUI\CategoryManagement.resx">
+      <DependentUpon>CategoryManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmQuanLySachXemChiTiet.resx">
       <DependentUpon>frmQuanLySachXemChiTiet.cs</DependentUpon>
     </EmbeddedResource>

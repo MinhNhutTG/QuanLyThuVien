@@ -49,3 +49,4 @@ C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUAN
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI.loginForm.resources
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI.frmQuanLySach_ThemSach.resources
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI.frmQuanLySachXemChiTiet.resources
+C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI.CategoryManagement.resources

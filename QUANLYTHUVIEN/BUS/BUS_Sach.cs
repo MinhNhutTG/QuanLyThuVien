@@ -19,12 +19,26 @@ namespace QUANLYTHUVIEN.BUS
             public BusinessLogicException(string message) : base(message) { }
         }
         DAL_QuanLySach DalQLSach = new DAL_QuanLySach();
+       
         public DataTable GetDanhSachSach()
         {
             return DalQLSach.getListSach();
         }
         public DataTable GetTheLoai() { 
             return DalQLSach.getListTheLoaiSach();
+        }
+  
+        public bool ThemTheLoai(string ma,string ten)
+        {
+            return DalQLSach.ThemTheLoaiSach(ma, ten);
+        }
+        public bool XoaTheLoai(string ma)
+        {
+            return DalQLSach.XoaTheLoaiSach(ma);
+        }
+        public bool CapNhatTheLoai(string ma ,string ten)
+        {
+            return DalQLSach.CapNhatTheLoaiSach(ma, ten);
         }
         public DataTable TimKiemSach(string key)
         {
@@ -72,10 +86,7 @@ namespace QUANLYTHUVIEN.BUS
         }
         public bool CapNhatSach(Sach s)
         {
-            if (CheckSach(s.getMaCuonSach()))
-            {
-                throw new BusinessLogicException("Mã cuốn sách này đã tồn tại");
-            }
+           
             if (string.IsNullOrWhiteSpace(s.getMaCuonSach()))
             {
                 throw new BusinessLogicException("Mã cuốn sách không được để trống");
@@ -94,5 +105,6 @@ namespace QUANLYTHUVIEN.BUS
             }
             return DalQLSach.CapNhatSach(s);
         }
+       
     }
 }

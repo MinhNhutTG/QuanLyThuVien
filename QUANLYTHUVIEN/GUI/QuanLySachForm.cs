@@ -138,9 +138,17 @@ namespace QUANLYTHUVIEN.GUI
             }
         }
 
-       
+        private void btnCategory_Click(object sender, EventArgs e)
+        {
+            CategoryManagement frm = new CategoryManagement();
+            frm.ShowDialog();
+        }
 
-     
+
+
+
+
+
 
 
         //private void btnTimKiem_Click(object sender, EventArgs e)

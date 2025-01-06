@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblMessage = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lsvSach = new System.Windows.Forms.ListView();
             this.MaCuonSach = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -47,6 +46,7 @@
             this.btnXemChiTiet = new System.Windows.Forms.Button();
             this.btnXoaSach = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnCategory = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
@@ -58,25 +58,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkCyan;
-            this.panel1.Controls.Add(this.lblMessage);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-8, -5);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1973, 74);
             this.panel1.TabIndex = 0;
-            // 
-            // lblMessage
-            // 
-            this.lblMessage.AutoSize = true;
-            this.lblMessage.BackColor = System.Drawing.Color.DarkCyan;
-            this.lblMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblMessage.ForeColor = System.Drawing.Color.AliceBlue;
-            this.lblMessage.Location = new System.Drawing.Point(39, 29);
-            this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(96, 20);
-            this.lblMessage.TabIndex = 1;
-            this.lblMessage.Text = "Message: ";
             // 
             // label1
             // 
@@ -108,7 +95,7 @@
             this.lsvSach.Location = new System.Drawing.Point(13, 165);
             this.lsvSach.Margin = new System.Windows.Forms.Padding(4);
             this.lsvSach.Name = "lsvSach";
-            this.lsvSach.Size = new System.Drawing.Size(999, 512);
+            this.lsvSach.Size = new System.Drawing.Size(1080, 512);
             this.lsvSach.TabIndex = 1;
             this.lsvSach.UseCompatibleStateImageBehavior = false;
             this.lsvSach.View = System.Windows.Forms.View.Details;
@@ -127,7 +114,7 @@
             // 
             this.TenSach.Text = "Tên sách";
             this.TenSach.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TenSach.Width = 144;
+            this.TenSach.Width = 270;
             // 
             // TheLoai
             // 
@@ -139,7 +126,7 @@
             // 
             this.TacGia.Text = "Tác giả";
             this.TacGia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.TacGia.Width = 114;
+            this.TacGia.Width = 200;
             // 
             // NamXuatBan
             // 
@@ -150,7 +137,7 @@
             // 
             this.Gia.Text = "Giá";
             this.Gia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Gia.Width = 87;
+            this.Gia.Width = 150;
             // 
             // TinhTrang
             // 
@@ -162,7 +149,7 @@
             // 
             this.btnTimKiem.BackColor = System.Drawing.Color.DarkCyan;
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.Location = new System.Drawing.Point(893, 103);
+            this.btnTimKiem.Location = new System.Drawing.Point(976, 100);
             this.btnTimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(117, 38);
@@ -175,7 +162,7 @@
             // 
             this.btnThemSach.BackColor = System.Drawing.Color.MintCream;
             this.btnThemSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnThemSach.Location = new System.Drawing.Point(32, 73);
+            this.btnThemSach.Location = new System.Drawing.Point(36, 48);
             this.btnThemSach.Margin = new System.Windows.Forms.Padding(4);
             this.btnThemSach.Name = "btnThemSach";
             this.btnThemSach.Size = new System.Drawing.Size(151, 50);
@@ -188,7 +175,7 @@
             // 
             this.btnSuaSach.BackColor = System.Drawing.Color.MintCream;
             this.btnSuaSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnSuaSach.Location = new System.Drawing.Point(32, 161);
+            this.btnSuaSach.Location = new System.Drawing.Point(36, 136);
             this.btnSuaSach.Margin = new System.Windows.Forms.Padding(4);
             this.btnSuaSach.Name = "btnSuaSach";
             this.btnSuaSach.Size = new System.Drawing.Size(151, 50);
@@ -201,7 +188,7 @@
             // 
             this.btnXemChiTiet.BackColor = System.Drawing.Color.MintCream;
             this.btnXemChiTiet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnXemChiTiet.Location = new System.Drawing.Point(32, 258);
+            this.btnXemChiTiet.Location = new System.Drawing.Point(36, 229);
             this.btnXemChiTiet.Margin = new System.Windows.Forms.Padding(4);
             this.btnXemChiTiet.Name = "btnXemChiTiet";
             this.btnXemChiTiet.Size = new System.Drawing.Size(151, 50);
@@ -214,7 +201,7 @@
             // 
             this.btnXoaSach.BackColor = System.Drawing.Color.MintCream;
             this.btnXoaSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnXoaSach.Location = new System.Drawing.Point(32, 345);
+            this.btnXoaSach.Location = new System.Drawing.Point(36, 318);
             this.btnXoaSach.Margin = new System.Windows.Forms.Padding(4);
             this.btnXoaSach.Name = "btnXoaSach";
             this.btnXoaSach.Size = new System.Drawing.Size(151, 50);
@@ -226,22 +213,36 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel2.Controls.Add(this.btnCategory);
             this.panel2.Controls.Add(this.btnThoat);
             this.panel2.Controls.Add(this.btnXoaSach);
             this.panel2.Controls.Add(this.btnXemChiTiet);
             this.panel2.Controls.Add(this.btnSuaSach);
             this.panel2.Controls.Add(this.btnThemSach);
-            this.panel2.Location = new System.Drawing.Point(1040, 103);
+            this.panel2.Location = new System.Drawing.Point(1124, 100);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(216, 574);
+            this.panel2.Size = new System.Drawing.Size(216, 604);
             this.panel2.TabIndex = 5;
+            // 
+            // btnCategory
+            // 
+            this.btnCategory.BackColor = System.Drawing.Color.MintCream;
+            this.btnCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnCategory.Location = new System.Drawing.Point(36, 413);
+            this.btnCategory.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCategory.Name = "btnCategory";
+            this.btnCategory.Size = new System.Drawing.Size(151, 50);
+            this.btnCategory.TabIndex = 5;
+            this.btnCategory.Text = "Quản lý thể loại Sách";
+            this.btnCategory.UseVisualStyleBackColor = false;
+            this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
             // 
             // btnThoat
             // 
             this.btnThoat.BackColor = System.Drawing.Color.MintCream;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnThoat.Location = new System.Drawing.Point(32, 447);
+            this.btnThoat.Location = new System.Drawing.Point(36, 505);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(151, 50);
@@ -253,7 +254,7 @@
             // txtTimKiem
             // 
             this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTimKiem.Location = new System.Drawing.Point(549, 106);
+            this.txtTimKiem.Location = new System.Drawing.Point(632, 103);
             this.txtTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(317, 27);
@@ -261,11 +262,12 @@
             // 
             // CbbTheLoai
             // 
+            this.CbbTheLoai.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbbTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.CbbTheLoai.FormattingEnabled = true;
             this.CbbTheLoai.Items.AddRange(new object[] {
             "None"});
-            this.CbbTheLoai.Location = new System.Drawing.Point(240, 108);
+            this.CbbTheLoai.Location = new System.Drawing.Point(323, 105);
             this.CbbTheLoai.Margin = new System.Windows.Forms.Padding(4);
             this.CbbTheLoai.Name = "CbbTheLoai";
             this.CbbTheLoai.Size = new System.Drawing.Size(244, 28);
@@ -274,10 +276,9 @@
             // 
             // QuanLySachForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.ClientSize = new System.Drawing.Size(1283, 697);
+            this.ClientSize = new System.Drawing.Size(1381, 697);
             this.Controls.Add(this.CbbTheLoai);
             this.Controls.Add(this.txtTimKiem);
             this.Controls.Add(this.panel2);
@@ -288,7 +289,7 @@
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "QuanLySachForm";
-            this.Text = "QuanLySachForm";
+            this.Text = "Quản lý sách";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -321,6 +322,6 @@
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.ComboBox CbbTheLoai;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.Label lblMessage;
+        private System.Windows.Forms.Button btnCategory;
     }
 }

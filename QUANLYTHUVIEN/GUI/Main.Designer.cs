@@ -69,7 +69,7 @@
             this.btnMoFormQLSACH.ForeColor = System.Drawing.Color.White;
             this.btnMoFormQLSACH.Image = ((System.Drawing.Image)(resources.GetObject("btnMoFormQLSACH.Image")));
             this.btnMoFormQLSACH.ImageTransparentColor = System.Drawing.Color.BlueViolet;
-            this.btnMoFormQLSACH.Margin = new System.Windows.Forms.Padding(1, 250, 0, 2);
+            this.btnMoFormQLSACH.Margin = new System.Windows.Forms.Padding(1, 300, 0, 2);
             this.btnMoFormQLSACH.Name = "btnMoFormQLSACH";
             this.btnMoFormQLSACH.Padding = new System.Windows.Forms.Padding(10);
             this.btnMoFormQLSACH.Size = new System.Drawing.Size(233, 53);
@@ -168,17 +168,16 @@
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1513, 776);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.toolStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";
-            this.Text = "Form1";
+            this.Text = "Trang chủ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
