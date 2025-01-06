@@ -35,5 +35,17 @@ namespace QUANLYTHUVIEN.DAL
             }
             return null;
         }
+        public string LayMaThuThu(string key)
+        {
+            string matt = string.Empty;
+            string sql = string.Format("Select THU_THU.MaThuThu from THU_THU where THU_THU.UserName ='{0}';", key);
+
+            DataTable dt = db.Execute(sql);
+            if (dt.Rows.Count > 0)
+            {
+                matt = dt.Rows[0]["MaThuThu"].ToString();
+            }
+            return matt;
+        }
     }
 }

@@ -122,12 +122,12 @@ namespace QUANLYTHUVIEN.GUI
                     return;
                 }
             }
-            //QuanLyMuonTraForm frmPhieu = new QuanLyMuonTraForm(MaNhanVienDangSuDungHeThong);
+            QuanLyMuonTraForm frmPhieu = new QuanLyMuonTraForm(MaNhanVienDangSuDungHeThong);
 
-            //frmPhieu.MdiParent = this;
+            frmPhieu.MdiParent = this;
 
-            //frmPhieu.Dock = DockStyle.Fill;
-            //frmPhieu.Show();
+            frmPhieu.Dock = DockStyle.Fill;
+            frmPhieu.Show();
         }
 
         private void btnMoFormQLNhanVien_Click(object sender, EventArgs e)
@@ -140,12 +140,12 @@ namespace QUANLYTHUVIEN.GUI
                     return;
                 }
             }
-            //QuanLyThuThuForm frmThuThu = new QuanLyThuThuForm();
+            QuanLyThuThu  frmThuThu= new QuanLyThuThu();
 
-            //frmThuThu.MdiParent = this;
+            frmThuThu.MdiParent = this;
 
-            //frmThuThu.Dock = DockStyle.Fill;
-            //frmThuThu.Show();
+            frmThuThu.Dock = DockStyle.Fill;
+            frmThuThu.Show();
         }
 
         private void btnMoFormQLDocGia_Click(object sender, EventArgs e)

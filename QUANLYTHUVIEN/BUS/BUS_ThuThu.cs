@@ -90,10 +90,7 @@ namespace QUANLYTHUVIEN.BUS
 
         public bool CapNhatThuThu(ThuThu th)
         {
-            if (CheckThuThu(th.UserName))
-            {
-                throw new BusinessLogicExcepttion("UserName này đã tồn tại !");
-            }
+          
             if (string.IsNullOrWhiteSpace(th.UserName))
             {
                 throw new BusinessLogicExcepttion("UserName không được để trống !");

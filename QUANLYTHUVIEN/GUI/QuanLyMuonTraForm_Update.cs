@@ -183,7 +183,7 @@ namespace QUANLYTHUVIEN
             for (int i = 0; i < lsvListSach.Items.Count; i++)
             {
                 Sach s = new Sach();
-                s.MaCuonSach = lsvListSach.Items[i].SubItems[0].Text;
+                s.setMaCuonSach(lsvListSach.Items[i].SubItems[0].Text);
                 list.Add(s);
             }
             return list;
@@ -241,7 +241,7 @@ namespace QUANLYTHUVIEN
                     // Thêm chi tiết phiếu mượn mới
                     foreach (Sach s in listSach)
                     {
-                        BusPM.AddChiTietPhieu(pm.MaPhieuMuon, s.MaCuonSach);
+                        BusPM.AddChiTietPhieu(pm.MaPhieuMuon, s.getMaCuonSach());
                     }
 
                     MessageBox.Show("Cập nhật phiếu mượn thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -254,7 +254,7 @@ namespace QUANLYTHUVIEN
                     // Cập nhật tình trạng sách
                     foreach (Sach s in listSach)
                     {
-                        BusPM.CapNhatTinhTrangSach(s.MaCuonSach);
+                        BusPM.CapNhatTinhTrangSach(s.getMaCuonSach());
                     }
 
                     MessageBox.Show("Cập nhật phiếu mượn thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -311,7 +311,7 @@ namespace QUANLYTHUVIEN
             
         }
 
-        private void lsvSearchSach_SelectedIndexChanged(object sender, EventArgs e) // Hien thi sach khi search
+        private void lsvSearchSach_SelectedIndexChanged(object sender, EventArgs e)         // Hien thi sach khi search
         {
             if (lsvSearchSach.SelectedItems.Count > 0)
             {
@@ -322,7 +322,7 @@ namespace QUANLYTHUVIEN
                 lsvListSach.Items.Add(clonedItem);
 
                 lsvSearchSach.Items.Remove(selectedItem);
-                nudSoluong.Value = lsvListSach.Items.Count; // vì bắt đầu từ 1 nên dùng đếm số lượng sách trong listview để gán vào số lượng
+                nudSoluong.Value = lsvListSach.Items.Count;         // vì bắt đầu từ 1 nên dùng đếm số lượng sách trong listview để gán vào số lượng
                 //nudSoluong.Value += 1;
             }
             
@@ -350,8 +350,8 @@ namespace QUANLYTHUVIEN
             }
             catch (Exception ex)
             {
-                // Hiển thị thông báo lỗi
-                MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
+                MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error); // Hiển thị thông báo lỗi
             }
         }
 

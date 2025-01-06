@@ -14,7 +14,7 @@ namespace QUANLYTHUVIEN
     public partial class QuanLyMuonTraForm : Form
     {
         BUS_PhieuMuon BusPM = new BUS_PhieuMuon();
-        string MaThuThu = "TT1";
+        string MaThuThu = string.Empty;
 
         public QuanLyMuonTraForm()
         {
@@ -22,7 +22,12 @@ namespace QUANLYTHUVIEN
             InitializeComponent();
             HienThiDanhSach();
         }
-
+        public QuanLyMuonTraForm(string manhanvien)
+        {
+            MaThuThu = manhanvien;
+            InitializeComponent();
+            HienThiDanhSach();
+        }
         public void LoadDuLieu()
         {
             DataTable dt = BusPM.LayDSPhieuMuon();

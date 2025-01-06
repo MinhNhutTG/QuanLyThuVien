@@ -47,17 +47,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\BUS_Login.cs" />
+    <Compile Include="BUS\BUS_PhieuMuon.cs" />
     <Compile Include="BUS\BUS_Sach.cs" />
+    <Compile Include="BUS\BUS_ThuThu.cs" />
     <Compile Include="DAL\DAL_Login.cs" />
+    <Compile Include="DAL\DAL_QuanLyPhieuMuon.cs" />
     <Compile Include="DAL\DAL_QuanLySach.cs" />
+    <Compile Include="DAL\DAL_QuanLyThuThu.cs" />
     <Compile Include="DAL\DBConnect.cs" />
+    <Compile Include="DTO\PhieuMuon.cs" />
     <Compile Include="DTO\TaiKhoan.cs" />
     <Compile Include="DTO\Sach.cs" />
+    <Compile Include="DTO\ThuThu.cs" />
     <Compile Include="GUI\CategoryManagement.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\CategoryManagement.Designer.cs">
       <DependentUpon>CategoryManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormThemThuThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormThemThuThu.Designer.cs">
+      <DependentUpon>FormThemThuThu.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmQuanLySachXemChiTiet.cs">
       <SubType>Form</SubType>
@@ -89,17 +101,44 @@
     <Compile Include="GUI\mainPicture.Designer.cs">
       <DependentUpon>mainPicture.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\QuanLyMuonTraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLyMuonTraForm.Designer.cs">
+      <DependentUpon>QuanLyMuonTraForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLyMuonTraForm_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLyMuonTraForm_Update.Designer.cs">
+      <DependentUpon>QuanLyMuonTraForm_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLyPhieuMuonForm_ChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLyPhieuMuonForm_ChiTiet.Designer.cs">
+      <DependentUpon>QuanLyPhieuMuonForm_ChiTiet.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\QuanLySachForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\QuanLySachForm.Designer.cs">
       <DependentUpon>QuanLySachForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\QuanLyThuThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLyThuThu.Designer.cs">
+      <DependentUpon>QuanLyThuThu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XuLyFormSach.cs" />
     <EmbeddedResource Include="GUI\CategoryManagement.resx">
       <DependentUpon>CategoryManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormThemThuThu.resx">
+      <DependentUpon>FormThemThuThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmQuanLySachXemChiTiet.resx">
       <DependentUpon>frmQuanLySachXemChiTiet.cs</DependentUpon>
@@ -116,8 +155,20 @@
     <EmbeddedResource Include="GUI\mainPicture.resx">
       <DependentUpon>mainPicture.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLyMuonTraForm.resx">
+      <DependentUpon>QuanLyMuonTraForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLyMuonTraForm_Update.resx">
+      <DependentUpon>QuanLyMuonTraForm_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLyPhieuMuonForm_ChiTiet.resx">
+      <DependentUpon>QuanLyPhieuMuonForm_ChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\QuanLySachForm.resx">
       <DependentUpon>QuanLySachForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLyThuThu.resx">
+      <DependentUpon>QuanLyThuThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

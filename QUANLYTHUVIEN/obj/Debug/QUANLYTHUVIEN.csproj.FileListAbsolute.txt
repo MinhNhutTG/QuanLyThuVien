@@ -50,3 +50,8 @@ C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUAN
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI.frmQuanLySach_ThemSach.resources
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI.frmQuanLySachXemChiTiet.resources
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI.CategoryManagement.resources
+C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI.FormThemThuThu.resources
+C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI.QuanLyThuThu.resources
+C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.QuanLyMuonTraForm.resources
+C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.QuanLyMuonTraForm_Update.resources
+C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.QuanLyPhieuMuonForm_ChiTiet.resources

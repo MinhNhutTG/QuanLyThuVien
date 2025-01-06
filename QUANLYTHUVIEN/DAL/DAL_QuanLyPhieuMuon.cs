@@ -103,7 +103,7 @@ namespace QUANLYTHUVIEN.DAL
                 db.ExecuteNonQuery(SqlAdd);
                 foreach (Sach s in list)
                 {
-                    AddChiTietPhieu(m.MaPhieuMuon, s.MaCuonSach);
+                    AddChiTietPhieu(m.MaPhieuMuon, s.getMaCuonSach());
                 }
                 return true;
             }

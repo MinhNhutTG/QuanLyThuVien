@@ -15,5 +15,9 @@ namespace QUANLYTHUVIEN.BUS
         {
             return  dalLogin.checkLogin(us, pw) ;
         }
+        public string LayMaThuThu(string key)
+        {
+            return dalLogin.LayMaThuThu(key) ;
+        }
     }
 }

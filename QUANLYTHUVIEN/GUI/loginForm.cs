@@ -44,7 +44,7 @@ namespace QUANLYTHUVIEN.GUI
             if (tk != null) {
                 
                 MessageBox.Show("Đăng nhập thành công ","Thông báo",MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Main main = new Main(tk.getPhanQuyen(),"TT1");
+                Main main = new Main(tk.getPhanQuyen(), busLogin.LayMaThuThu(tk.getUserName()));
                 main.Show();
                 this.Hide();
             }
