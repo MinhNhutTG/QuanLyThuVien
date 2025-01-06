@@ -46,15 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\BUS_DocGia.cs" />
     <Compile Include="BUS\BUS_Login.cs" />
     <Compile Include="BUS\BUS_PhieuMuon.cs" />
     <Compile Include="BUS\BUS_Sach.cs" />
     <Compile Include="BUS\BUS_ThuThu.cs" />
     <Compile Include="DAL\DAL_Login.cs" />
+    <Compile Include="DAL\DAL_QuanLyDocGia.cs" />
     <Compile Include="DAL\DAL_QuanLyPhieuMuon.cs" />
     <Compile Include="DAL\DAL_QuanLySach.cs" />
     <Compile Include="DAL\DAL_QuanLyThuThu.cs" />
     <Compile Include="DAL\DBConnect.cs" />
+    <Compile Include="DTO\DocGia.cs" />
     <Compile Include="DTO\PhieuMuon.cs" />
     <Compile Include="DTO\TaiKhoan.cs" />
     <Compile Include="DTO\Sach.cs" />
@@ -70,6 +73,12 @@
     </Compile>
     <Compile Include="GUI\FormThemThuThu.Designer.cs">
       <DependentUpon>FormThemThuThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmQuanLyDocGia_Them.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmQuanLyDocGia_Them.Designer.cs">
+      <DependentUpon>frmQuanLyDocGia_Them.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmQuanLySachXemChiTiet.cs">
       <SubType>Form</SubType>
@@ -100,6 +109,12 @@
     </Compile>
     <Compile Include="GUI\mainPicture.Designer.cs">
       <DependentUpon>mainPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLyDocGiaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLyDocGiaForm.Designer.cs">
+      <DependentUpon>QuanLyDocGiaForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\QuanLyMuonTraForm.cs">
       <SubType>Form</SubType>
@@ -140,6 +155,9 @@
     <EmbeddedResource Include="GUI\FormThemThuThu.resx">
       <DependentUpon>FormThemThuThu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmQuanLyDocGia_Them.resx">
+      <DependentUpon>frmQuanLyDocGia_Them.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmQuanLySachXemChiTiet.resx">
       <DependentUpon>frmQuanLySachXemChiTiet.cs</DependentUpon>
     </EmbeddedResource>
@@ -154,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\mainPicture.resx">
       <DependentUpon>mainPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLyDocGiaForm.resx">
+      <DependentUpon>QuanLyDocGiaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\QuanLyMuonTraForm.resx">
       <DependentUpon>QuanLyMuonTraForm.cs</DependentUpon>

@@ -60,10 +60,10 @@ namespace QUANLYTHUVIEN.GUI
 
         private void setButton(bool Admin , bool NhanVien)
         {
-            //btnMoFormQLSACH.Enabled = NhanVien;
-            //btnMoFormQLPhieu.Enabled = NhanVien;
-            //btnMoFormQLNhanVien.Enabled = Admin;
-            //btnMoFormQLDocGia.Enabled = NhanVien;
+            btnMoFormQLSACH.Enabled = NhanVien;
+            btnMoFormQLPhieu.Enabled = NhanVien;
+            btnMoFormQLNhanVien.Enabled = Admin;
+            btnMoFormQLDocGia.Enabled = NhanVien;
         }
 
         private void toolStripButton6_Click(object sender, EventArgs e)
@@ -158,12 +158,12 @@ namespace QUANLYTHUVIEN.GUI
                     return;
                 }
             }
-            //QuanLyDocGiaForm frmThuThu = new QuanLyDocGiaForm();
+            QuanLyDocGiaForm frmThuThu = new QuanLyDocGiaForm();
 
-            //frmThuThu.MdiParent = this;
+            frmThuThu.MdiParent = this;
 
-            //frmThuThu.Dock = DockStyle.Fill;
-            //frmThuThu.Show();
+            frmThuThu.Dock = DockStyle.Fill;
+            frmThuThu.Show();
         }
 
         private void btnThongKe_Click_1(object sender, EventArgs e)

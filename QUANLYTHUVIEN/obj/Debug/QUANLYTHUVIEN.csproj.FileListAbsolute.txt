@@ -55,3 +55,5 @@ C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUAN
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.QuanLyMuonTraForm.resources
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.QuanLyMuonTraForm_Update.resources
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.QuanLyPhieuMuonForm_ChiTiet.resources
+C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI.frmQuanLyDocGia_Them.resources
+C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI.QuanLyDocGiaForm.resources
