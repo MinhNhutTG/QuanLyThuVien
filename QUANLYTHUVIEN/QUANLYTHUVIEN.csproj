@@ -46,11 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BUS\BUS_DocGia.cs" />
-    <Compile Include="BUS\BUS_Login.cs" />
-    <Compile Include="BUS\BUS_PhieuMuon.cs" />
-    <Compile Include="BUS\BUS_Sach.cs" />
-    <Compile Include="BUS\BUS_ThuThu.cs" />
+    <Compile Include="BLL\BUS_ThongKe.cs" />
+    <Compile Include="BLL\BUS_DocGia.cs" />
+    <Compile Include="BLL\BUS_Login.cs" />
+    <Compile Include="BLL\BUS_PhieuMuon.cs" />
+    <Compile Include="BLL\BUS_Sach.cs" />
+    <Compile Include="BLL\BUS_ThuThu.cs" />
+    <Compile Include="DAL\DAL_ThongKe.cs" />
     <Compile Include="DAL\DAL_Login.cs" />
     <Compile Include="DAL\DAL_QuanLyDocGia.cs" />
     <Compile Include="DAL\DAL_QuanLyPhieuMuon.cs" />
@@ -62,134 +64,170 @@
     <Compile Include="DTO\TaiKhoan.cs" />
     <Compile Include="DTO\Sach.cs" />
     <Compile Include="DTO\ThuThu.cs" />
-    <Compile Include="GUI\CategoryManagement.cs">
+    <Compile Include="GUI\QuanLySach\GUI_QuanLyTheLoaiSach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\CategoryManagement.Designer.cs">
-      <DependentUpon>CategoryManagement.cs</DependentUpon>
+    <Compile Include="GUI\QuanLySach\GUI_QuanLyTheLoaiSach.Designer.cs">
+      <DependentUpon>GUI_QuanLyTheLoaiSach.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\FormThemThuThu.cs">
+    <Compile Include="GUI\QuanLyThuThu\GUI_ThemSuaThuThu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\FormThemThuThu.Designer.cs">
-      <DependentUpon>FormThemThuThu.cs</DependentUpon>
+    <Compile Include="GUI\QuanLyThuThu\GUI_ThemSuaThuThu.Designer.cs">
+      <DependentUpon>GUI_ThemSuaThuThu.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmQuanLyDocGia_Them.cs">
+    <Compile Include="GUI\QuanLyDocGia\frmQuanLyDocGia_Them.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmQuanLyDocGia_Them.Designer.cs">
+    <Compile Include="GUI\QuanLyDocGia\frmQuanLyDocGia_Them.Designer.cs">
       <DependentUpon>frmQuanLyDocGia_Them.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmQuanLySachXemChiTiet.cs">
+    <Compile Include="GUI\QuanLySach\GUI_XemChiTietSach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmQuanLySachXemChiTiet.Designer.cs">
-      <DependentUpon>frmQuanLySachXemChiTiet.cs</DependentUpon>
+    <Compile Include="GUI\QuanLySach\GUI_XemChiTietSach.Designer.cs">
+      <DependentUpon>GUI_XemChiTietSach.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\frmQuanLySach_ThemSach.cs">
+    <Compile Include="GUI\QuanLySach\GUI_ThemSuaSach.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\frmQuanLySach_ThemSach.Designer.cs">
-      <DependentUpon>frmQuanLySach_ThemSach.cs</DependentUpon>
+    <Compile Include="GUI\QuanLySach\GUI_ThemSuaSach.Designer.cs">
+      <DependentUpon>GUI_ThemSuaSach.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\loginForm.cs">
+    <Compile Include="GUI\GUI_Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\loginForm.Designer.cs">
-      <DependentUpon>loginForm.cs</DependentUpon>
+    <Compile Include="GUI\GUI_Login.Designer.cs">
+      <DependentUpon>GUI_Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Main.cs">
+    <Compile Include="GUI\GUI_Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="GUI\GUI_Main.Designer.cs">
+      <DependentUpon>GUI_Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\mainPicture.cs">
+    <Compile Include="GUI\GUI_BackgroundMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\mainPicture.Designer.cs">
-      <DependentUpon>mainPicture.cs</DependentUpon>
+    <Compile Include="GUI\GUI_BackgroundMain.Designer.cs">
+      <DependentUpon>GUI_BackgroundMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\QuanLyDocGiaForm.cs">
+    <Compile Include="GUI\QuanLyDocGia\GUI_ReaderManagement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\QuanLyDocGiaForm.Designer.cs">
-      <DependentUpon>QuanLyDocGiaForm.cs</DependentUpon>
+    <Compile Include="GUI\QuanLyDocGia\GUI_ReaderManagement.Designer.cs">
+      <DependentUpon>GUI_ReaderManagement.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\QuanLyMuonTraForm.cs">
+    <Compile Include="GUI\QuanLyMuonTraSach\GUI_QuanLyMuonTra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\QuanLyMuonTraForm.Designer.cs">
-      <DependentUpon>QuanLyMuonTraForm.cs</DependentUpon>
+    <Compile Include="GUI\QuanLyMuonTraSach\GUI_QuanLyMuonTra.Designer.cs">
+      <DependentUpon>GUI_QuanLyMuonTra.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\QuanLyMuonTraForm_Update.cs">
+    <Compile Include="GUI\QuanLyMuonTraSach\GUI_ThemSuaPhieu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\QuanLyMuonTraForm_Update.Designer.cs">
-      <DependentUpon>QuanLyMuonTraForm_Update.cs</DependentUpon>
+    <Compile Include="GUI\QuanLyMuonTraSach\GUI_ThemSuaPhieu.Designer.cs">
+      <DependentUpon>GUI_ThemSuaPhieu.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\QuanLyPhieuMuonForm_ChiTiet.cs">
+    <Compile Include="GUI\QuanLyMuonTraSach\GUI_XemChiTietPhieu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\QuanLyPhieuMuonForm_ChiTiet.Designer.cs">
-      <DependentUpon>QuanLyPhieuMuonForm_ChiTiet.cs</DependentUpon>
+    <Compile Include="GUI\QuanLyMuonTraSach\GUI_XemChiTietPhieu.Designer.cs">
+      <DependentUpon>GUI_XemChiTietPhieu.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\QuanLySachForm.cs">
+    <Compile Include="GUI\QuanLySach\GUI_QuanLySachForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\QuanLySachForm.Designer.cs">
-      <DependentUpon>QuanLySachForm.cs</DependentUpon>
+    <Compile Include="GUI\QuanLySach\GUI_QuanLySachForm.Designer.cs">
+      <DependentUpon>GUI_QuanLySachForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\QuanLyThuThu.cs">
+    <Compile Include="GUI\QuanLyThongKe\GUI_QuanLyThongKe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\QuanLyThuThu.Designer.cs">
-      <DependentUpon>QuanLyThuThu.cs</DependentUpon>
+    <Compile Include="GUI\QuanLyThongKe\GUI_QuanLyThongKe.Designer.cs">
+      <DependentUpon>GUI_QuanLyThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLyThuThu\GUI_QuanLyThuThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLyThuThu\GUI_QuanLyThuThu.Designer.cs">
+      <DependentUpon>GUI_QuanLyThuThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLyThongKe\GUI_ThongKeTaiLieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLyThongKe\GUI_ThongKeTaiLieu.Designer.cs">
+      <DependentUpon>GUI_ThongKeTaiLieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLyThongKe\GUI_ThongKeMuonTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLyThongKe\GUI_ThongKeMuonTra.Designer.cs">
+      <DependentUpon>GUI_ThongKeMuonTra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QuanLyThongKe\GUI_ThongKeViPham.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\QuanLyThongKe\GUI_ThongKeViPham.Designer.cs">
+      <DependentUpon>GUI_ThongKeViPham.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XuLyFormSach.cs" />
-    <EmbeddedResource Include="GUI\CategoryManagement.resx">
-      <DependentUpon>CategoryManagement.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\QuanLySach\GUI_QuanLyTheLoaiSach.resx">
+      <DependentUpon>GUI_QuanLyTheLoaiSach.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\FormThemThuThu.resx">
-      <DependentUpon>FormThemThuThu.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\QuanLyThuThu\GUI_ThemSuaThuThu.resx">
+      <DependentUpon>GUI_ThemSuaThuThu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmQuanLyDocGia_Them.resx">
+    <EmbeddedResource Include="GUI\QuanLyDocGia\frmQuanLyDocGia_Them.resx">
       <DependentUpon>frmQuanLyDocGia_Them.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmQuanLySachXemChiTiet.resx">
-      <DependentUpon>frmQuanLySachXemChiTiet.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\QuanLySach\GUI_XemChiTietSach.resx">
+      <DependentUpon>GUI_XemChiTietSach.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\frmQuanLySach_ThemSach.resx">
-      <DependentUpon>frmQuanLySach_ThemSach.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\QuanLySach\GUI_ThemSuaSach.resx">
+      <DependentUpon>GUI_ThemSuaSach.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\loginForm.resx">
-      <DependentUpon>loginForm.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\GUI_Login.resx">
+      <DependentUpon>GUI_Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\GUI_Main.resx">
+      <DependentUpon>GUI_Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\mainPicture.resx">
-      <DependentUpon>mainPicture.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\GUI_BackgroundMain.resx">
+      <DependentUpon>GUI_BackgroundMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\QuanLyDocGiaForm.resx">
-      <DependentUpon>QuanLyDocGiaForm.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\QuanLyDocGia\GUI_ReaderManagement.resx">
+      <DependentUpon>GUI_ReaderManagement.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\QuanLyMuonTraForm.resx">
-      <DependentUpon>QuanLyMuonTraForm.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\QuanLyMuonTraSach\GUI_QuanLyMuonTra.resx">
+      <DependentUpon>GUI_QuanLyMuonTra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\QuanLyMuonTraForm_Update.resx">
-      <DependentUpon>QuanLyMuonTraForm_Update.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\QuanLyMuonTraSach\GUI_ThemSuaPhieu.resx">
+      <DependentUpon>GUI_ThemSuaPhieu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\QuanLyPhieuMuonForm_ChiTiet.resx">
-      <DependentUpon>QuanLyPhieuMuonForm_ChiTiet.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\QuanLyMuonTraSach\GUI_XemChiTietPhieu.resx">
+      <DependentUpon>GUI_XemChiTietPhieu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\QuanLySachForm.resx">
-      <DependentUpon>QuanLySachForm.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\QuanLySach\GUI_QuanLySachForm.resx">
+      <DependentUpon>GUI_QuanLySachForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\QuanLyThuThu.resx">
-      <DependentUpon>QuanLyThuThu.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\QuanLyThongKe\GUI_QuanLyThongKe.resx">
+      <DependentUpon>GUI_QuanLyThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLyThuThu\GUI_QuanLyThuThu.resx">
+      <DependentUpon>GUI_QuanLyThuThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLyThongKe\GUI_ThongKeTaiLieu.resx">
+      <DependentUpon>GUI_ThongKeTaiLieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLyThongKe\GUI_ThongKeMuonTra.resx">
+      <DependentUpon>GUI_ThongKeMuonTra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\QuanLyThongKe\GUI_ThongKeViPham.resx">
+      <DependentUpon>GUI_ThongKeViPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -16,23 +16,25 @@ namespace QUANLYTHUVIEN.DAL
     {
         DBConnect db = new DBConnect();
 
+       
+
         public DataTable LayDSPhieuMuon()
         {
-            string strSQL = "select PHIEUMUON.MaPhieuMuon, PHIEUMUON.NgayMuon, PHIEUMUON.NgayTra, \r\n       PHIEUMUON.HanTra, PHIEUMUON.SoLuong, PHIEUMUON.TinhTrang, \r\n       PHIEUMUON.PhiPhat, DOCGIA.MaDocGia, THU_THU.MaThuThu\r\nFROM PHIEUMUON\r\nJOIN DOCGIA ON PHIEUMUON.MaDocGia = DOCGIA.MaDocGia\r\nJOIN THU_THU ON PHIEUMUON.MaThuThu = THU_THU.MaThuThu";
+            string strSQL = "select PHIEU_MUON.MaPhieuMuon, PHIEU_MUON.NgayMuon, PHIEU_MUON.NgayTra, \r\n       PHIEU_MUON.HanTra, PHIEU_MUON.SoLuong, PHIEU_MUON.TinhTrang, \r\n       PHIEU_MUON.PhiPhat, DOC_GIA.MaDocGia, THU_THU.MaThuThu\r\nFROM PHIEU_MUON\r\nJOIN DOC_GIA ON PHIEU_MUON.MaDocGia = DOC_GIA.MaDocGia\r\nJOIN THU_THU ON PHIEU_MUON.MaThuThu = THU_THU.MaThuThu";
 
             DataTable dt = db.Execute(strSQL);
             return dt;
         }
         public bool KiemTraDocGia(string maDocGia)
         {
-            string SqlView = string.Format("Select * from DOCGIA where MaDocGia = '{0}';", maDocGia);
+            string SqlView = string.Format("Select * from DOC_GIA where MaDocGia = '{0}';", maDocGia);
             DataTable dt = db.Execute(SqlView);
             return dt.Rows.Count > 0;
-        }   
+        }
 
         public DataTable LayThongTinPhieu(string maPhieuMuon)
         {
-            string SqlView = string.Format("Select * from PHIEUMUON where MaPhieuMuon = '{0}';", maPhieuMuon);
+            string SqlView = string.Format("Select * from PHIEU_MUON where MaPhieuMuon = '{0}';", maPhieuMuon);
             DataTable dt = db.Execute(SqlView);
             return dt;
         }
@@ -52,7 +54,7 @@ namespace QUANLYTHUVIEN.DAL
         public DataTable LayDSSearchOfDocGia(string key)
         {
             string SqlTimKiem = string.Format(@"select  MaDocGia, TenDocGia, Lop, DiaChi, SODT
-                     FROM DOCGIA WHERE TenDocGia LIKE N'%{0}%' or MaDocGia LIKE '{0}'", key);
+                     FROM DOC_GIA WHERE TenDocGia LIKE N'%{0}%' or MaDocGia LIKE '{0}'", key);
             DataTable dtdg = db.Execute(SqlTimKiem);
             return dtdg;
         }
@@ -81,25 +83,25 @@ namespace QUANLYTHUVIEN.DAL
         public DataTable Search(string key)
         {
 
-            string strSearch = string.Format(@"select PHIEUMUON.MaPhieuMuon, PHIEUMUON.NgayMuon, PHIEUMUON.NgayTra, 
-                PHIEUMUON.HanTra, PHIEUMUON.SoLuong, PHIEUMUON.TinhTrang, PHIEUMUON.PhiPhat, DOCGIA.MaDocGia, THU_THU.MaThuThu " +
-                " FROM PHIEUMUON " +
-                " JOIN DOCGIA ON PHIEUMUON.MaDocGia = DOCGIA.MaDocGia " +
-                " JOIN THU_THU ON PHIEUMUON.MaThuThu = THU_THU.MaThuThu " +
-                " WHERE MaPhieuMuon LIKE N'%{0}%'  OR  DOCGIA.MaDocGia = '{0}' OR THU_THU.MaThuThu = '{0}'", key);
+            string strSearch = string.Format(@"select PHIEU_MUON.MaPhieuMuon, PHIEU_MUON.NgayMuon, PHIEU_MUON.NgayTra, 
+                PHIEU_MUON.HanTra, PHIEU_MUON.SoLuong, PHIEU_MUON.TinhTrang, PHIEU_MUON.PhiPhat, DOC_GIA.MaDocGia, THU_THU.MaThuThu " +
+                " FROM PHIEU_MUON " +
+                " JOIN DOC_GIA ON PHIEU_MUON.MaDocGia = DOC_GIA.MaDocGia " +
+                " JOIN THU_THU ON PHIEU_MUON.MaThuThu = THU_THU.MaThuThu " +
+                " WHERE MaPhieuMuon LIKE N'%{0}%'  OR  DOC_GIA.MaDocGia = '{0}' OR THU_THU.MaThuThu = '{0}'", key);
             DataTable dt = db.Execute(strSearch);
             return dt;
         } //tìm kiếm phiếu mượn
 
-        public bool Add(PhieuMuon m , List<Sach> list)
+        public bool Add(PhieuMuon m, List<Sach> list)
         {
             try
             {
-                string SqlAdd = string.Format("INSERT INTO PHIEUMUON " +
+                string SqlAdd = string.Format("INSERT INTO PHIEU_MUON " +
                 "(MaPhieuMuon, NgayMuon, NgayTra, HanTra, SoLuong, TinhTrang, PhiPhat, MaDocGia, MaThuThu) " +
                  "VALUES ('{0}', '{1:yyyy-MM-dd}', '{2:yyyy-MM-dd}', '{3:yyyy-MM-dd}', '{4}', N'{5}', '{6}', '{7}', '{8}');",
                 m.MaPhieuMuon, m.NgayMuon, m.NgayTra, m.HanTra, m.SoLuong, m.TinhTrang, m.PhiPhat, m.MaDocGia, m.MaThuThu);
-               
+
                 db.ExecuteNonQuery(SqlAdd);
                 foreach (Sach s in list)
                 {
@@ -133,7 +135,7 @@ namespace QUANLYTHUVIEN.DAL
 
         public void UpdatePhieu(PhieuMuon m)
         {
-            string SqlUpdate = string.Format("UPDATE PHIEUMUON SET " +
+            string SqlUpdate = string.Format("UPDATE PHIEU_MUON SET " +
                 "NgayMuon = '{0:yyyy-MM-dd}', NgayTra = '{1:yyyy-MM-dd}', HanTra = '{2:yyyy-MM-dd}', SoLuong = '{3}', TinhTrang = N'{4}', PhiPhat = '{5}', MaDocGia = '{6}', MaThuThu = '{7}' " +
                 "WHERE MaPhieuMuon = '{8}';",
                 m.NgayMuon, m.NgayTra, m.HanTra, m.SoLuong, m.TinhTrang, m.PhiPhat, m.MaDocGia, m.MaThuThu, m.MaPhieuMuon);
@@ -141,11 +143,11 @@ namespace QUANLYTHUVIEN.DAL
             db.ExecuteNonQuery(SqlUpdate);
         }
 
-        public void CapNhatTrangThaiPhieu(string maPhieuMuon) 
-        { 
+        public void CapNhatTrangThaiPhieu(string maPhieuMuon)
+        {
             try
             {
-                string SqlUpdate = string.Format("UPDATE PHIEUMUON SET TinhTrang = N'Đã trả' WHERE MaPhieuMuon = '{0}';", maPhieuMuon);
+                string SqlUpdate = string.Format("UPDATE PHIEU_MUON SET TinhTrang = N'Đã trả' WHERE MaPhieuMuon = '{0}';", maPhieuMuon);
                 db.ExecuteNonQuery(SqlUpdate);
             }
             catch (Exception ex)
@@ -153,7 +155,7 @@ namespace QUANLYTHUVIEN.DAL
                 Console.WriteLine(ex.Message);
             }
         }
-        public void CapNhatTinhTrangSach(string maCuonSach) 
+        public void CapNhatTinhTrangSach(string maCuonSach)
         {
             try
             {
@@ -165,7 +167,7 @@ namespace QUANLYTHUVIEN.DAL
                 Console.WriteLine(ex.Message);
             }
         }
-        
+
 
         public void UpdateXoaChiTietPhieu(string maPhieuMuon) //xóa chi tiết phiếu
         {
@@ -174,13 +176,13 @@ namespace QUANLYTHUVIEN.DAL
         }
 
 
-        
+
         public void Delete(string key)
         {
             try
             {
                 string SqlDelete = string.Format("Delete from CHI_TIET_PHIEU_MUON where MaPhieuMuon = '{0}' " +
-                " DELETE FROM PHIEUMUON WHERE MaPhieuMuon = '{0}';", key);
+                " DELETE FROM PHIEU_MUON WHERE MaPhieuMuon = '{0}';", key);
                 db.ExecuteNonQuery(SqlDelete);
             }
             catch (Exception ex)
