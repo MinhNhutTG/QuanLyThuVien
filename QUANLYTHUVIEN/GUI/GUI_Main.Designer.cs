@@ -44,7 +44,7 @@
             // 
             // toolStrip1
             // 
-            this.toolStrip1.BackColor = System.Drawing.Color.DarkCyan;
+            this.toolStrip1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Left;
             this.toolStrip1.Font = new System.Drawing.Font("Segoe UI", 17F);
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -59,7 +59,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0);
-            this.toolStrip1.Size = new System.Drawing.Size(235, 776);
+            this.toolStrip1.Size = new System.Drawing.Size(235, 712);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -154,11 +154,11 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.DarkCyan;
+            this.pictureBox1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(37, 73);
+            this.pictureBox1.Location = new System.Drawing.Point(13, 73);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(152, 178);
@@ -166,17 +166,18 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // Main
+            // GUI_Main
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1513, 776);
+            this.ClientSize = new System.Drawing.Size(1348, 712);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.toolStrip1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Main";
+            this.Name = "GUI_Main";
             this.Text = "Trang chủ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
             this.toolStrip1.ResumeLayout(false);

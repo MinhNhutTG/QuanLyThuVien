@@ -54,12 +54,6 @@ namespace QUANLYTHUVIEN
             HienThiDanhSach();
         }
 
-       
-      
-     
-
-  
-
         private void btnSearch_Click(object sender, EventArgs e)
         {
             DataTable dt = BusPM.Search(txtSearch.Text);

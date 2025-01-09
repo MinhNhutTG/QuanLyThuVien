@@ -43,7 +43,7 @@ namespace QUANLYTHUVIEN.GUI
 
         private void btnThem_Click(object sender, EventArgs e)
         { 
-            frmQuanLyDocGia_Them ThemDocGia = new frmQuanLyDocGia_Them();
+            GUI_ThemSuaDocGia ThemDocGia = new GUI_ThemSuaDocGia();
             ThemDocGia.Show();
             ThemDocGia.sendData += LoadDuLieu;
         }
@@ -69,7 +69,7 @@ namespace QUANLYTHUVIEN.GUI
         {
             if (lsvDocGia.SelectedItems.Count == 1)
             {
-                frmQuanLyDocGia_Them SuaDocGia = new frmQuanLyDocGia_Them(false, lsvDocGia.SelectedItems[0].SubItems[0].Text);
+                GUI_ThemSuaDocGia SuaDocGia = new GUI_ThemSuaDocGia(false, lsvDocGia.SelectedItems[0].SubItems[0].Text);
                 SuaDocGia.sendData += LoadDuLieu;
                 SuaDocGia.Show();
             }

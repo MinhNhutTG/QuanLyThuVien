@@ -14,22 +14,22 @@ using static QUANLYTHUVIEN.BLL.BUS_DocGia;
 
 namespace QUANLYTHUVIEN.GUI
 {
-    public partial class frmQuanLyDocGia_Them : Form
+    public partial class GUI_ThemSuaDocGia : Form
     {
         BUS_DocGia busDocGia = new BUS_DocGia();
         public delegate void LoadHandler();
         public event LoadHandler sendData;
-        public frmQuanLyDocGia_Them()
+        public GUI_ThemSuaDocGia()
         {
             InitializeComponent();
         }
 
-        public frmQuanLyDocGia_Them(bool enable)  
+        public GUI_ThemSuaDocGia(bool enable)  
         {
             InitializeComponent();
             setButton(enable);
         }
-        public frmQuanLyDocGia_Them(bool enable, string MaDocGia)
+        public GUI_ThemSuaDocGia(bool enable, string MaDocGia)
         {
             InitializeComponent();
             setButton(enable);

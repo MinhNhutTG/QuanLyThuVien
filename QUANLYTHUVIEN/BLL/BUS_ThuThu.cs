@@ -69,10 +69,10 @@ namespace QUANLYTHUVIEN.BLL
             {
                 throw new BusinessLogicExcepttion("Giới tính không hợp lệ !");
             }
-            if (string.IsNullOrWhiteSpace(th.DiaChi))
-            {
-                throw new BusinessLogicExcepttion("Địa chỉ không được để trống !");
-            }
+            //if (string.IsNullOrWhiteSpace(th.DiaChi))
+            //{
+            //    throw new BusinessLogicExcepttion("Địa chỉ không được để trống !");
+            //}
             if (string.IsNullOrWhiteSpace(th.SoDT))
             {
                 throw new BusinessLogicExcepttion("Số điện thoại không được để trống !");

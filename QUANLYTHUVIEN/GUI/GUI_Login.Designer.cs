@@ -40,8 +40,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.ForeColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(236, 55);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(260, 52);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 29);
@@ -77,7 +77,8 @@
             // txtUserName
             // 
             this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtUserName.Location = new System.Drawing.Point(279, 129);
+            this.txtUserName.ForeColor = System.Drawing.Color.Black;
+            this.txtUserName.Location = new System.Drawing.Point(265, 129);
             this.txtUserName.Margin = new System.Windows.Forms.Padding(4);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(264, 26);
@@ -86,7 +87,8 @@
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtPassword.Location = new System.Drawing.Point(279, 192);
+            this.txtPassword.ForeColor = System.Drawing.Color.Black;
+            this.txtPassword.Location = new System.Drawing.Point(265, 192);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
@@ -95,7 +97,9 @@
             // 
             // btnDangNhap
             // 
-            this.btnDangNhap.Location = new System.Drawing.Point(404, 241);
+            this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnDangNhap.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.btnDangNhap.Location = new System.Drawing.Point(389, 239);
             this.btnDangNhap.Margin = new System.Windows.Forms.Padding(4);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(140, 43);
@@ -104,10 +108,11 @@
             this.btnDangNhap.UseVisualStyleBackColor = true;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
-            // loginForm
+            // GUI_Login
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.BackColor = System.Drawing.Color.DarkCyan;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(656, 347);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.txtPassword);
@@ -117,7 +122,7 @@
             this.Controls.Add(this.label1);
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "loginForm";
+            this.Name = "GUI_Login";
             this.Text = "Đăng nhập";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LoginForm_KeyDown);
             this.ResumeLayout(false);

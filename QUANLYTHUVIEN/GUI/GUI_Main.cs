@@ -37,6 +37,7 @@ namespace QUANLYTHUVIEN.GUI
                 setButton(false, true);
             }
             MaNhanVienDangSuDungHeThong = maNhanVien;
+            MessageBox.Show(MaNhanVienDangSuDungHeThong);
            
         }
 

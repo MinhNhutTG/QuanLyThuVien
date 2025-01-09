@@ -75,7 +75,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
@@ -86,6 +86,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(371, 11);
@@ -435,7 +436,7 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnThoat.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
             this.btnThoat.Location = new System.Drawing.Point(733, 43);
@@ -449,7 +450,7 @@
             // 
             // btnLamMoi
             // 
-            this.btnLamMoi.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnLamMoi.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnLamMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnLamMoi.ForeColor = System.Drawing.Color.White;
             this.btnLamMoi.Location = new System.Drawing.Point(489, 43);
@@ -463,7 +464,7 @@
             // 
             // btnCapNhat
             // 
-            this.btnCapNhat.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnCapNhat.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnCapNhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnCapNhat.ForeColor = System.Drawing.Color.White;
             this.btnCapNhat.Location = new System.Drawing.Point(269, 43);
@@ -477,7 +478,7 @@
             // 
             // btnThem
             // 
-            this.btnThem.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnThem.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.Location = new System.Drawing.Point(64, 43);
@@ -489,7 +490,7 @@
             this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // frmQuanLySach_ThemSach
+            // GUI_ThemSuaSach
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackColor = System.Drawing.Color.White;
@@ -500,7 +501,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmQuanLySach_ThemSach";
+            this.Name = "GUI_ThemSuaSach";
             this.Text = "Thêm Sửa Sách";
             this.Load += new System.EventHandler(this.frmQuanLySach_ThemSach_Load);
             this.panel1.ResumeLayout(false);

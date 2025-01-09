@@ -97,9 +97,9 @@ namespace QUANLYTHUVIEN.DAL
             try
             {
                 string SqlXoaThuThu = string.Format("DELETE FROM CHI_TIET_PHIEU_MUON " +
-                "WHERE MaPhieuMuon IN(SELECT MaPhieuMuon FROM PHIEUMUON WHERE MaThuThu = '{0}');" +
-                "DELETE FROM PHIEUMUON " +
-                "WHERE PHIEUMUON.MaThuThu = '{0}';" +
+                "WHERE MaPhieuMuon IN(SELECT MaPhieuMuon FROM PHIEU_MUON WHERE MaThuThu = '{0}');" +
+                "DELETE FROM PHIEU_MUON " +
+                "WHERE PHIEU_MUON.MaThuThu = '{0}';" +
                 "DELETE FROM THU_THU " +
                 "WHERE MaThuThu = '{0}';" +
                 "DELETE FROM TAI_KHOAN WHERE TAI_KHOAN.UserName = '{1}'; ", maThuThu, userName);
@@ -112,6 +112,6 @@ namespace QUANLYTHUVIEN.DAL
                 return false;
             }
 
-        }
+}
     }
 }

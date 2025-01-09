@@ -48,19 +48,21 @@
             // 
             // txtTongSoSach
             // 
-            this.txtTongSoSach.Location = new System.Drawing.Point(219, 460);
+            this.txtTongSoSach.Location = new System.Drawing.Point(146, 299);
+            this.txtTongSoSach.Margin = new System.Windows.Forms.Padding(2);
             this.txtTongSoSach.Name = "txtTongSoSach";
             this.txtTongSoSach.ReadOnly = true;
-            this.txtTongSoSach.Size = new System.Drawing.Size(129, 26);
+            this.txtTongSoSach.Size = new System.Drawing.Size(87, 20);
             this.txtTongSoSach.TabIndex = 9;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-1, -1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(802, 85);
+            this.panel1.Size = new System.Drawing.Size(535, 55);
             this.panel1.TabIndex = 7;
             // 
             // label1
@@ -68,27 +70,30 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(195, 20);
+            this.label1.Location = new System.Drawing.Point(130, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(424, 40);
+            this.label1.Size = new System.Drawing.Size(290, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "THỐNG KÊ MƯỢN TRẢ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 460);
+            this.label2.Location = new System.Drawing.Point(26, 299);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(174, 20);
+            this.label2.Size = new System.Drawing.Size(120, 13);
             this.label2.TabIndex = 12;
             this.label2.Text = "Tổng số sách đã mượn:";
             // 
             // rdbMuonTrongNgay
             // 
             this.rdbMuonTrongNgay.AutoSize = true;
-            this.rdbMuonTrongNgay.Location = new System.Drawing.Point(43, 132);
+            this.rdbMuonTrongNgay.Location = new System.Drawing.Point(29, 86);
+            this.rdbMuonTrongNgay.Margin = new System.Windows.Forms.Padding(2);
             this.rdbMuonTrongNgay.Name = "rdbMuonTrongNgay";
-            this.rdbMuonTrongNgay.Size = new System.Drawing.Size(153, 24);
+            this.rdbMuonTrongNgay.Size = new System.Drawing.Size(105, 17);
             this.rdbMuonTrongNgay.TabIndex = 13;
             this.rdbMuonTrongNgay.TabStop = true;
             this.rdbMuonTrongNgay.Text = "Mượn trong ngày";
@@ -98,9 +103,10 @@
             // rdbMuontrongtuan
             // 
             this.rdbMuontrongtuan.AutoSize = true;
-            this.rdbMuontrongtuan.Location = new System.Drawing.Point(234, 132);
+            this.rdbMuontrongtuan.Location = new System.Drawing.Point(156, 86);
+            this.rdbMuontrongtuan.Margin = new System.Windows.Forms.Padding(2);
             this.rdbMuontrongtuan.Name = "rdbMuontrongtuan";
-            this.rdbMuontrongtuan.Size = new System.Drawing.Size(151, 24);
+            this.rdbMuontrongtuan.Size = new System.Drawing.Size(103, 17);
             this.rdbMuontrongtuan.TabIndex = 14;
             this.rdbMuontrongtuan.TabStop = true;
             this.rdbMuontrongtuan.Text = "Mượn trong tuần";
@@ -110,9 +116,10 @@
             // rdbDangmuon
             // 
             this.rdbDangmuon.AutoSize = true;
-            this.rdbDangmuon.Location = new System.Drawing.Point(645, 132);
+            this.rdbDangmuon.Location = new System.Drawing.Point(430, 86);
+            this.rdbDangmuon.Margin = new System.Windows.Forms.Padding(2);
             this.rdbDangmuon.Name = "rdbDangmuon";
-            this.rdbDangmuon.Size = new System.Drawing.Size(117, 24);
+            this.rdbDangmuon.Size = new System.Drawing.Size(80, 17);
             this.rdbDangmuon.TabIndex = 15;
             this.rdbDangmuon.TabStop = true;
             this.rdbDangmuon.Text = "Đang mượn";
@@ -128,9 +135,10 @@
             this.colMaDocGia});
             this.lsvDanhsach.GridLines = true;
             this.lsvDanhsach.HideSelection = false;
-            this.lsvDanhsach.Location = new System.Drawing.Point(12, 174);
+            this.lsvDanhsach.Location = new System.Drawing.Point(8, 113);
+            this.lsvDanhsach.Margin = new System.Windows.Forms.Padding(2);
             this.lsvDanhsach.Name = "lsvDanhsach";
-            this.lsvDanhsach.Size = new System.Drawing.Size(776, 264);
+            this.lsvDanhsach.Size = new System.Drawing.Size(519, 173);
             this.lsvDanhsach.TabIndex = 16;
             this.lsvDanhsach.UseCompatibleStateImageBehavior = false;
             this.lsvDanhsach.View = System.Windows.Forms.View.Details;
@@ -159,9 +167,10 @@
             // rdbMuontrongthang
             // 
             this.rdbMuontrongthang.AutoSize = true;
-            this.rdbMuontrongthang.Location = new System.Drawing.Point(442, 132);
+            this.rdbMuontrongthang.Location = new System.Drawing.Point(295, 86);
+            this.rdbMuontrongthang.Margin = new System.Windows.Forms.Padding(2);
             this.rdbMuontrongthang.Name = "rdbMuontrongthang";
-            this.rdbMuontrongthang.Size = new System.Drawing.Size(160, 24);
+            this.rdbMuontrongthang.Size = new System.Drawing.Size(109, 17);
             this.rdbMuontrongthang.TabIndex = 17;
             this.rdbMuontrongthang.TabStop = true;
             this.rdbMuontrongthang.Text = "Mượn trong tháng";
@@ -171,19 +180,20 @@
             // btnXuatFile
             // 
             this.btnXuatFile.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnXuatFile.Location = new System.Drawing.Point(592, 460);
+            this.btnXuatFile.Location = new System.Drawing.Point(395, 299);
+            this.btnXuatFile.Margin = new System.Windows.Forms.Padding(2);
             this.btnXuatFile.Name = "btnXuatFile";
-            this.btnXuatFile.Size = new System.Drawing.Size(123, 39);
+            this.btnXuatFile.Size = new System.Drawing.Size(82, 25);
             this.btnXuatFile.TabIndex = 18;
             this.btnXuatFile.Text = "Xuất file";
             this.btnXuatFile.UseVisualStyleBackColor = false;
             this.btnXuatFile.Click += new System.EventHandler(this.btnXuatFile_Click);
             // 
-            // ThongKeForm2
+            // GUI_ThongKeMuonTra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 514);
+            this.ClientSize = new System.Drawing.Size(536, 341);
             this.Controls.Add(this.btnXuatFile);
             this.Controls.Add(this.rdbMuontrongthang);
             this.Controls.Add(this.lsvDanhsach);
@@ -194,7 +204,8 @@
             this.Controls.Add(this.txtTongSoSach);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "ThongKeForm2";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "GUI_ThongKeMuonTra";
             this.Text = "ThongKe2";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

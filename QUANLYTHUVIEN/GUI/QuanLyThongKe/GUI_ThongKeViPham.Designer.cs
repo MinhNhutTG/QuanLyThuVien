@@ -46,11 +46,12 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(2, 3);
+            this.panel1.Location = new System.Drawing.Point(1, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(796, 84);
+            this.panel1.Size = new System.Drawing.Size(531, 55);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -58,9 +59,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(96, 20);
+            this.label1.Location = new System.Drawing.Point(64, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(564, 40);
+            this.label1.Size = new System.Drawing.Size(474, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "THỐNG KÊ VI PHẠM THƯ VIỆN";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -76,9 +78,10 @@
             this.colPhiPhat});
             this.lsvDanhSach.GridLines = true;
             this.lsvDanhSach.HideSelection = false;
-            this.lsvDanhSach.Location = new System.Drawing.Point(12, 161);
+            this.lsvDanhSach.Location = new System.Drawing.Point(8, 105);
+            this.lsvDanhSach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lsvDanhSach.Name = "lsvDanhSach";
-            this.lsvDanhSach.Size = new System.Drawing.Size(776, 252);
+            this.lsvDanhSach.Size = new System.Drawing.Size(519, 165);
             this.lsvDanhSach.TabIndex = 1;
             this.lsvDanhSach.UseCompatibleStateImageBehavior = false;
             this.lsvDanhSach.View = System.Windows.Forms.View.Details;
@@ -117,43 +120,47 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(48, 453);
+            this.label2.Location = new System.Drawing.Point(32, 294);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 20);
+            this.label2.Size = new System.Drawing.Size(84, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Tổng vi phạm:";
             // 
             // txtTongViPham
             // 
-            this.txtTongViPham.Location = new System.Drawing.Point(185, 450);
+            this.txtTongViPham.Location = new System.Drawing.Point(123, 292);
+            this.txtTongViPham.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTongViPham.Name = "txtTongViPham";
-            this.txtTongViPham.Size = new System.Drawing.Size(100, 26);
+            this.txtTongViPham.Size = new System.Drawing.Size(68, 20);
             this.txtTongViPham.TabIndex = 4;
             this.txtTongViPham.TextChanged += new System.EventHandler(this.txtTongViPham_TextChanged);
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(607, 434);
+            this.button1.Location = new System.Drawing.Point(405, 282);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 49);
+            this.button1.Size = new System.Drawing.Size(85, 32);
             this.button1.TabIndex = 5;
             this.button1.Text = "Xuất File";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // ThongKeForm3
+            // GUI_ThongKeViPham
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 514);
+            this.ClientSize = new System.Drawing.Size(533, 334);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtTongViPham);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lsvDanhSach);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "ThongKeForm3";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "GUI_ThongKeViPham";
             this.Text = "ThongKeForm3";
             this.Load += new System.EventHandler(this.ThongKeForm3_Load);
             this.panel1.ResumeLayout(false);

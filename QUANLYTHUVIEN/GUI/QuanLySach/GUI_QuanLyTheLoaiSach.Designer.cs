@@ -49,6 +49,7 @@
             this.lsvTheLoai.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.colIDCate,
             this.colNameCate});
+            this.lsvTheLoai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lsvTheLoai.FullRowSelect = true;
             this.lsvTheLoai.GridLines = true;
             this.lsvTheLoai.HideSelection = false;
@@ -73,13 +74,14 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.txtNamecate);
             this.groupBox1.Controls.Add(this.txtIDcate);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(16, 218);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(314, 207);
+            this.groupBox1.Size = new System.Drawing.Size(309, 207);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin thể loại";
@@ -89,7 +91,7 @@
             this.txtNamecate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtNamecate.Location = new System.Drawing.Point(53, 154);
             this.txtNamecate.Name = "txtNamecate";
-            this.txtNamecate.Size = new System.Drawing.Size(235, 27);
+            this.txtNamecate.Size = new System.Drawing.Size(235, 23);
             this.txtNamecate.TabIndex = 3;
             // 
             // txtIDcate
@@ -98,7 +100,7 @@
             this.txtIDcate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtIDcate.Location = new System.Drawing.Point(53, 76);
             this.txtIDcate.Name = "txtIDcate";
-            this.txtIDcate.Size = new System.Drawing.Size(235, 27);
+            this.txtIDcate.Size = new System.Drawing.Size(235, 23);
             this.txtIDcate.TabIndex = 2;
             // 
             // label2
@@ -107,7 +109,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.Location = new System.Drawing.Point(23, 116);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 20);
+            this.label2.Size = new System.Drawing.Size(83, 17);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên thể loại";
             // 
@@ -117,12 +119,13 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.Location = new System.Drawing.Point(23, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 20);
+            this.label1.Size = new System.Drawing.Size(77, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã thể loại";
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.White;
             this.groupBox2.Controls.Add(this.btnXoa);
             this.groupBox2.Controls.Add(this.btnEdit);
             this.groupBox2.Controls.Add(this.btnAdd);
@@ -135,42 +138,48 @@
             // 
             // btnXoa
             // 
+            this.btnXoa.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Location = new System.Drawing.Point(34, 147);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(154, 43);
             this.btnXoa.TabIndex = 2;
             this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.UseVisualStyleBackColor = false;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnEdit
             // 
+            this.btnEdit.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.Location = new System.Drawing.Point(34, 93);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(154, 43);
             this.btnEdit.TabIndex = 1;
             this.btnEdit.Text = "Sửa";
-            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Location = new System.Drawing.Point(34, 33);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(154, 43);
             this.btnAdd.TabIndex = 0;
             this.btnAdd.Text = "Thêm";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // CategoryManagement
+            // GUI_QuanLyTheLoaiSach
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(608, 450);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lsvTheLoai);
-            this.Name = "CategoryManagement";
+            this.Name = "GUI_QuanLyTheLoaiSach";
             this.Text = "Quản lý thể loại";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

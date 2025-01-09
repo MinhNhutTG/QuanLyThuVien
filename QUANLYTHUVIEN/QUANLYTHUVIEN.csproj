@@ -76,11 +76,11 @@
     <Compile Include="GUI\QuanLyThuThu\GUI_ThemSuaThuThu.Designer.cs">
       <DependentUpon>GUI_ThemSuaThuThu.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\QuanLyDocGia\frmQuanLyDocGia_Them.cs">
+    <Compile Include="GUI\QuanLyDocGia\GUI_ThemSuaDocGia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\QuanLyDocGia\frmQuanLyDocGia_Them.Designer.cs">
-      <DependentUpon>frmQuanLyDocGia_Them.cs</DependentUpon>
+    <Compile Include="GUI\QuanLyDocGia\GUI_ThemSuaDocGia.Designer.cs">
+      <DependentUpon>GUI_ThemSuaDocGia.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\QuanLySach\GUI_XemChiTietSach.cs">
       <SubType>Form</SubType>
@@ -112,11 +112,11 @@
     <Compile Include="GUI\GUI_BackgroundMain.Designer.cs">
       <DependentUpon>GUI_BackgroundMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\QuanLyDocGia\GUI_ReaderManagement.cs">
+    <Compile Include="GUI\QuanLyDocGia\GUI_QuanLyDocGia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\QuanLyDocGia\GUI_ReaderManagement.Designer.cs">
-      <DependentUpon>GUI_ReaderManagement.cs</DependentUpon>
+    <Compile Include="GUI\QuanLyDocGia\GUI_QuanLyDocGia.Designer.cs">
+      <DependentUpon>GUI_QuanLyDocGia.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\QuanLyMuonTraSach\GUI_QuanLyMuonTra.cs">
       <SubType>Form</SubType>
@@ -181,8 +181,8 @@
     <EmbeddedResource Include="GUI\QuanLyThuThu\GUI_ThemSuaThuThu.resx">
       <DependentUpon>GUI_ThemSuaThuThu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\QuanLyDocGia\frmQuanLyDocGia_Them.resx">
-      <DependentUpon>frmQuanLyDocGia_Them.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\QuanLyDocGia\GUI_ThemSuaDocGia.resx">
+      <DependentUpon>GUI_ThemSuaDocGia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\QuanLySach\GUI_XemChiTietSach.resx">
       <DependentUpon>GUI_XemChiTietSach.cs</DependentUpon>
@@ -199,8 +199,8 @@
     <EmbeddedResource Include="GUI\GUI_BackgroundMain.resx">
       <DependentUpon>GUI_BackgroundMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\QuanLyDocGia\GUI_ReaderManagement.resx">
-      <DependentUpon>GUI_ReaderManagement.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\QuanLyDocGia\GUI_QuanLyDocGia.resx">
+      <DependentUpon>GUI_QuanLyDocGia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\QuanLyMuonTraSach\GUI_QuanLyMuonTra.resx">
       <DependentUpon>GUI_QuanLyMuonTra.cs</DependentUpon>

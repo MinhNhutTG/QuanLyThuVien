@@ -88,7 +88,7 @@ namespace QUANLYTHUVIEN.DAL
                 " FROM PHIEU_MUON " +
                 " JOIN DOC_GIA ON PHIEU_MUON.MaDocGia = DOC_GIA.MaDocGia " +
                 " JOIN THU_THU ON PHIEU_MUON.MaThuThu = THU_THU.MaThuThu " +
-                " WHERE MaPhieuMuon LIKE N'%{0}%'  OR  DOC_GIA.MaDocGia = '{0}' OR THU_THU.MaThuThu = '{0}'", key);
+                " WHERE MaPhieuMuon LIKE '%{0}%'  OR  DOC_GIA.MaDocGia = '{0}' OR THU_THU.MaThuThu = '{0}'", key);
             DataTable dt = db.Execute(strSearch);
             return dt;
         } //tìm kiếm phiếu mượn

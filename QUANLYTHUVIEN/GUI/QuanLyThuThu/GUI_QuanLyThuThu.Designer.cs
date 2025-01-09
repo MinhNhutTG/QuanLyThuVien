@@ -54,7 +54,7 @@
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnThoat.Location = new System.Drawing.Point(39, 383);
+            this.btnThoat.Location = new System.Drawing.Point(908, 27);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(140, 54);
             this.btnThoat.TabIndex = 5;
@@ -65,7 +65,7 @@
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnXoa.Location = new System.Drawing.Point(39, 282);
+            this.btnXoa.Location = new System.Drawing.Point(634, 27);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(140, 54);
             this.btnXoa.TabIndex = 5;
@@ -76,7 +76,7 @@
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnSua.Location = new System.Drawing.Point(39, 180);
+            this.btnSua.Location = new System.Drawing.Point(386, 27);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(140, 54);
             this.btnSua.TabIndex = 5;
@@ -87,7 +87,7 @@
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnThem.Location = new System.Drawing.Point(39, 79);
+            this.btnThem.Location = new System.Drawing.Point(161, 27);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(140, 54);
             this.btnThem.TabIndex = 5;
@@ -112,10 +112,10 @@
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.BackColor = System.Drawing.Color.DarkCyan;
+            this.btnTimKiem.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.Location = new System.Drawing.Point(968, 101);
+            this.btnTimKiem.Location = new System.Drawing.Point(1001, 90);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(110, 36);
             this.btnTimKiem.TabIndex = 25;
@@ -144,9 +144,9 @@
             this.listView1.FullRowSelect = true;
             this.listView1.GridLines = true;
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(13, 154);
+            this.listView1.Location = new System.Drawing.Point(13, 132);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1065, 554);
+            this.listView1.Size = new System.Drawing.Size(1111, 452);
             this.listView1.TabIndex = 27;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -179,28 +179,28 @@
             // txtTimKiem
             // 
             this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTimKiem.Location = new System.Drawing.Point(601, 107);
+            this.txtTimKiem.Location = new System.Drawing.Point(634, 96);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(348, 28);
             this.txtTimKiem.TabIndex = 26;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel2.Controls.Add(this.btnSua);
             this.panel2.Controls.Add(this.btnThem);
             this.panel2.Controls.Add(this.btnThoat);
             this.panel2.Controls.Add(this.btnXoa);
-            this.panel2.Location = new System.Drawing.Point(1113, 107);
+            this.panel2.Location = new System.Drawing.Point(0, 591);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(216, 600);
+            this.panel2.Size = new System.Drawing.Size(1155, 163);
             this.panel2.TabIndex = 29;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.DarkCyan;
+            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(0, -1);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
@@ -220,17 +220,17 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "QUẢN LÝ THỦ THƯ\r\n";
             // 
-            // QuanLyThuThu
+            // GUI_QuanLyThuThu
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.ClientSize = new System.Drawing.Size(1394, 720);
+            this.ClientSize = new System.Drawing.Size(1148, 750);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.txtTimKiem);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "QuanLyThuThu";
+            this.Name = "GUI_QuanLyThuThu";
             this.Text = "Quản lý thủ thư";
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);

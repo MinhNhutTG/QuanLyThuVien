@@ -58,7 +58,6 @@ C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUAN
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI.frmQuanLyDocGia_Them.resources
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIE3Layer\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI.QuanLyDocGiaForm.resources
 C:\Users\tuhin\Desktop\WorkSpace\LibraryManagement\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.csproj.AssemblyReference.cache
-C:\Users\tuhin\Desktop\WorkSpace\LibraryManagement\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI.frmQuanLyDocGia_Them.resources
 C:\Users\tuhin\Desktop\WorkSpace\LibraryManagement\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.Properties.Resources.resources
 C:\Users\tuhin\Desktop\WorkSpace\LibraryManagement\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.csproj.GenerateResource.cache
 C:\Users\tuhin\Desktop\WorkSpace\LibraryManagement\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.csproj.CoreCompileInputs.cache
@@ -84,3 +83,4 @@ C:\Users\tuhin\Desktop\WorkSpace\LibraryManagement\QuanLyThuVien\QUANLYTHUVIEN\o
 C:\Users\tuhin\Desktop\WorkSpace\LibraryManagement\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI_QLThongKe.GUI_ThongKeTaiLieu.resources
 C:\Users\tuhin\Desktop\WorkSpace\LibraryManagement\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI_QLThongKe.GUI_ThongKeMuonTra.resources
 C:\Users\tuhin\Desktop\WorkSpace\LibraryManagement\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI_QLThongKe.GUI_ThongKeViPham.resources
+C:\Users\tuhin\Desktop\WorkSpace\LibraryManagement\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI.GUI_ThemSuaDocGia.resources

@@ -26,7 +26,7 @@ namespace QUANLYTHUVIEN
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new GUI_Login());
-            //Application.Run(new Main());
+            //Application.Run(new GUI_Main());
             //Application.Run(new QuanLySachForm());
             //Application.Run(new frmQuanLySach_ThemSach());
             //Application.Run(new frmQuanLySachXemChiTiet());
