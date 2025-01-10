@@ -27,19 +27,19 @@ namespace QUANLYTHUVIEN.GUI_QLThongKe
         private void button1_Click(object sender, EventArgs e)
         {
             GUI_ThongKeTaiLieu ThongkeForm1 = new GUI_ThongKeTaiLieu();
-            ThongkeForm1.Show();
+            ThongkeForm1.ShowDialog();
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
             GUI_ThongKeMuonTra ThongKeForm2 = new GUI_ThongKeMuonTra();
-            ThongKeForm2.Show();
+            ThongKeForm2.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             GUI_ThongKeViPham ThongkeForm3 = new GUI_ThongKeViPham();
-            ThongkeForm3.Show();
+            ThongkeForm3.ShowDialog();
         }
 
         private void label3_Click(object sender, EventArgs e)

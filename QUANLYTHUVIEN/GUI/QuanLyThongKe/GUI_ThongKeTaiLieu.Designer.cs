@@ -47,8 +47,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(126, 13);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(168, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(316, 36);
             this.label1.TabIndex = 0;
@@ -57,11 +56,11 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.lsvdanhsach);
-            this.groupBox1.Location = new System.Drawing.Point(12, 135);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Location = new System.Drawing.Point(16, 166);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(517, 198);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(689, 244);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Danh sách";
@@ -74,10 +73,10 @@
             this.colTinhTrang});
             this.lsvdanhsach.GridLines = true;
             this.lsvdanhsach.HideSelection = false;
-            this.lsvdanhsach.Location = new System.Drawing.Point(4, 16);
-            this.lsvdanhsach.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lsvdanhsach.Location = new System.Drawing.Point(5, 20);
+            this.lsvdanhsach.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lsvdanhsach.Name = "lsvdanhsach";
-            this.lsvdanhsach.Size = new System.Drawing.Size(515, 180);
+            this.lsvdanhsach.Size = new System.Drawing.Size(685, 221);
             this.lsvdanhsach.TabIndex = 0;
             this.lsvdanhsach.UseCompatibleStateImageBehavior = false;
             this.lsvdanhsach.View = System.Windows.Forms.View.Details;
@@ -101,19 +100,19 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(3, 2);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(4, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(526, 55);
+            this.panel1.Size = new System.Drawing.Size(701, 68);
             this.panel1.TabIndex = 7;
             // 
             // rdbSachdangchomuon
             // 
             this.rdbSachdangchomuon.AutoSize = true;
-            this.rdbSachdangchomuon.Location = new System.Drawing.Point(43, 95);
-            this.rdbSachdangchomuon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbSachdangchomuon.Location = new System.Drawing.Point(57, 117);
+            this.rdbSachdangchomuon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbSachdangchomuon.Name = "rdbSachdangchomuon";
-            this.rdbSachdangchomuon.Size = new System.Drawing.Size(145, 19);
+            this.rdbSachdangchomuon.Size = new System.Drawing.Size(154, 20);
             this.rdbSachdangchomuon.TabIndex = 9;
             this.rdbSachdangchomuon.TabStop = true;
             this.rdbSachdangchomuon.Text = "Sách đang cho mượn";
@@ -123,10 +122,10 @@
             // rdbSachcontrongkho
             // 
             this.rdbSachcontrongkho.AutoSize = true;
-            this.rdbSachcontrongkho.Location = new System.Drawing.Point(293, 95);
-            this.rdbSachcontrongkho.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rdbSachcontrongkho.Location = new System.Drawing.Point(391, 117);
+            this.rdbSachcontrongkho.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rdbSachcontrongkho.Name = "rdbSachcontrongkho";
-            this.rdbSachcontrongkho.Size = new System.Drawing.Size(133, 19);
+            this.rdbSachcontrongkho.Size = new System.Drawing.Size(142, 20);
             this.rdbSachcontrongkho.TabIndex = 10;
             this.rdbSachcontrongkho.TabStop = true;
             this.rdbSachcontrongkho.Text = "Sách còn trong kho";
@@ -136,10 +135,10 @@
             // btnXuatFile
             // 
             this.btnXuatFile.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnXuatFile.Location = new System.Drawing.Point(429, 359);
-            this.btnXuatFile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXuatFile.Location = new System.Drawing.Point(572, 442);
+            this.btnXuatFile.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXuatFile.Name = "btnXuatFile";
-            this.btnXuatFile.Size = new System.Drawing.Size(97, 31);
+            this.btnXuatFile.Size = new System.Drawing.Size(129, 38);
             this.btnXuatFile.TabIndex = 11;
             this.btnXuatFile.Text = "Xuất file";
             this.btnXuatFile.UseVisualStyleBackColor = false;
@@ -147,18 +146,19 @@
             // 
             // GUI_ThongKeTaiLieu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(529, 418);
+            this.ClientSize = new System.Drawing.Size(705, 514);
             this.Controls.Add(this.btnXuatFile);
             this.Controls.Add(this.rdbSachcontrongkho);
             this.Controls.Add(this.rdbSachdangchomuon);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "GUI_ThongKeTaiLieu";
             this.Text = "ThongKeForm1";
+            this.Load += new System.EventHandler(this.GUI_ThongKeTaiLieu_Load);
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

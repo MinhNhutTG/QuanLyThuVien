@@ -66,7 +66,7 @@ namespace QUANLYTHUVIEN
         {
             GUI_ThemSuaPhieu Add = new GUI_ThemSuaPhieu(MaThuThu, true);
             Add.sendData += LoadDuLieu;
-            Add.Show();
+            Add.ShowDialog();
         }
 
         private void btnUpdate_Click_1(object sender, EventArgs e)
@@ -75,7 +75,7 @@ namespace QUANLYTHUVIEN
             {
                 GUI_ThemSuaPhieu Update = new GUI_ThemSuaPhieu(false, lsvPhieuMuon.SelectedItems[0].SubItems[0].Text);
                 Update.sendData += LoadDuLieu;
-                Update.Show();
+                Update.ShowDialog();
             }
             else
             {

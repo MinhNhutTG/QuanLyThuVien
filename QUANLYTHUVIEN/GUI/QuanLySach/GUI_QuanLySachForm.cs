@@ -128,7 +128,6 @@ namespace QUANLYTHUVIEN.GUI
                 MessageBox.Show("Chọn sách cần xem!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void btnThoat_Click(object sender, EventArgs e)
         {
             DialogResult dg = MessageBox.Show("Bạn có muốn trở lại Trang chủ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -144,121 +143,13 @@ namespace QUANLYTHUVIEN.GUI
             frm.ShowDialog();
         }
 
+        private void txtTimKiem_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.F)
+            {
+                txtTimKiem.Focus();
+            }
+        }
 
-
-
-
-
-
-
-        //private void btnTimKiem_Click(object sender, EventArgs e)
-        //{
-
-        //    DataTable dt = s.TimKiem(txtTimKiem.Text);
-
-        //    LoadDanhSach(dt);
-        //}
-
-        //private void CbbTheLoai_SelectedIndexChanged(object sender, EventArgs e)
-        //{
-        //    DataTable dt = s.TimKiem(CbbTheLoai.Text);
-
-        //    LoadDanhSach(dt);
-        //}
-
-        //private void btnLamMoi_Click_1(object sender, EventArgs e)
-        //{
-        //    DataTable dt = s.LayDSSach();
-        //    LoadDanhSach(dt);
-        //}
-
-        //private void btnThemSach_Click(object sender, EventArgs e)
-        //{
-        //   frmQuanLySach_ThemSach ThemSach = new frmQuanLySach_ThemSach(true);
-        //   ThemSach.Owner = this;
-        //   ThemSach.sendData += LoadDuLieu;
-        //   ThemSach.ShowDialog();
-        //}
-
-        //private void btnXoaSach_Click(object sender, EventArgs e)
-        //{
-        //    if (lsvSach.SelectedItems.Count == 1)
-        //    {
-        //        DialogResult dg = MessageBox.Show("Bạn có muốn xóa sách : "+ lsvSach.SelectedItems[0].Text + " không? \n Việc xóa sách sẽ dẫn đến xóa các phiếu mượnn có liên quan đến sách", "Lỗi xóa Sách", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //        XuLyFormSach xuLyFormSach = new XuLyFormSach();
-        //        xuLyFormSach.XoaSach(lsvSach.SelectedItems[0].Text);
-
-        //        DataTable dt = xuLyFormSach.LayDSSach();
-        //        LoadDanhSach(dt);
-        //    }
-        //    else
-        //    { 
-        //        MessageBox.Show("Chọn sách cần xóa !!!","Lỗi xóa Sách",MessageBoxButtons.OK,MessageBoxIcon.Error);
-        //    }
-        //}
-
-        //private void btnSuaSach_Click(object sender, EventArgs e)
-        //{
-
-        //    if (lsvSach.SelectedItems.Count == 1)
-        //    {
-        //        frmQuanLySach_ThemSach SuaSach = new frmQuanLySach_ThemSach(false , lsvSach.SelectedItems[0].SubItems[0].Text);
-        //        SuaSach.sendData += LoadDuLieu;
-        //        SuaSach.ShowDialog();
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("Chọn sách cần chỉnh sửa!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //    }
-
-        //}
-
-        //private void btnXemChiTiet_Click(object sender, EventArgs e)
-        //{
-        //    if (lsvSach.SelectedItems.Count > 0) {
-        //        frmQuanLySachXemChiTiet frmChiTiet = new frmQuanLySachXemChiTiet(lsvSach.SelectedItems[0].SubItems[0].Text);
-        //        frmChiTiet.Show();
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("Chọn  sách cần xem chi tiết!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //    }
-
-        //}
-
-
-
-        //private void txtTimKiem_KeyDown(object sender, KeyEventArgs e)
-        //{
-        //    if (e.KeyCode == Keys.Enter)
-        //    {
-        //        btnTimKiem.PerformClick();
-        //    }
-        //}
-
-        //private void QuanLySachForm_CtrlF_KeyDown(object sender, KeyEventArgs e)
-        //{
-        //    if (e.Control && e.KeyCode == Keys.F) { 
-        //        txtTimKiem.Focus();
-        //    }
-        //}
-
-        //private void txtTimKiem_TextChanged(object sender, EventArgs e)
-        //{
-
-        //}
-
-        //private void btnThoat_Click(object sender, EventArgs e)
-        //{
-        //    DialogResult dg = MessageBox.Show("Bạn có muốn trở lại Trang chủ?", "Thông báo",MessageBoxButtons .YesNo, MessageBoxIcon.Question);
-        //    if (dg == DialogResult.Yes) { 
-        //        this.Close();
-        //    }
-        //}
-
-        //private void panel2_Paint(object sender, PaintEventArgs e)
-        //{
-
-        //}
     }
 }

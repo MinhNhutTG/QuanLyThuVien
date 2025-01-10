@@ -84,3 +84,7 @@ C:\Users\tuhin\Desktop\WorkSpace\LibraryManagement\QuanLyThuVien\QUANLYTHUVIEN\o
 C:\Users\tuhin\Desktop\WorkSpace\LibraryManagement\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI_QLThongKe.GUI_ThongKeMuonTra.resources
 C:\Users\tuhin\Desktop\WorkSpace\LibraryManagement\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI_QLThongKe.GUI_ThongKeViPham.resources
 C:\Users\tuhin\Desktop\WorkSpace\LibraryManagement\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI.GUI_ThemSuaDocGia.resources
+C:\Users\tuhin\Desktop\WorkSpace\LibraryManagement\QuanLyThuVien\QUANLYTHUVIEN\bin\Debug\Xceed.Document.NET.dll
+C:\Users\tuhin\Desktop\WorkSpace\LibraryManagement\QuanLyThuVien\QUANLYTHUVIEN\bin\Debug\Xceed.Pdf.dll
+C:\Users\tuhin\Desktop\WorkSpace\LibraryManagement\QuanLyThuVien\QUANLYTHUVIEN\bin\Debug\Xceed.Words.NET.dll
+C:\Users\tuhin\Desktop\WorkSpace\LibraryManagement\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTH.E22296E5.Up2Date

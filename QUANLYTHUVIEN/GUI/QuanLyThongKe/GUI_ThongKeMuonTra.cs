@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using QUANLYTHUVIEN.BLL;
+using Xceed.Words.NET;
+
 
 namespace QUANLYTHUVIEN.GUI_QLThongKe
 {
@@ -29,7 +31,7 @@ namespace QUANLYTHUVIEN.GUI_QLThongKe
             DateTime date = DateTime.Now;
             lsvDanhsach.Items.Clear();
             string key =  date.ToShortDateString(); // Thay "YourKeyHere" bằng giá trị bạn muốn truyền
-            MessageBox.Show(key);
+           
             DataTable dt = bus.ThongKeMuonTrongNgay(key); //truyền key vào DAL
             for (int i = 0; i < dt.Rows.Count; i++)
             {
@@ -95,45 +97,46 @@ namespace QUANLYTHUVIEN.GUI_QLThongKe
 
         }
 
+       
         private void btnXuatFile_Click(object sender, EventArgs e)
         {
-            string PATH = AppDomain.CurrentDomain.BaseDirectory;
-
+            
+            DateTime date = DateTime.Now;
+            string path = string.Empty;
 
             if (rdbMuonTrongNgay.Checked)
             {
-                PATH += "\\FileLog\\ThongKeMuonTrongNgay.txt";
+                 path = @"\FileLog\TK_MuonTrongNgay.docx";
             }
-            else if (rdbMuontrongtuan.Checked)
+            if (rdbMuontrongtuan.Checked) 
             {
-
-                PATH += "\\FileLog\\ThongKeMuonTrongTuan.txt";
+                path = @"\FileLog\TK_MuonTrongTuan.docx";
             }
-            else if (rdbMuontrongthang.Checked)
+            if (rdbMuontrongthang.Checked)
             {
-                PATH += "\\FileLog\\ThongKeMuonTrongThang.txt";
+                path = @"\FileLog\TK_MuonTrongThang.docx";
             }
-            else if (rdbDangmuon.Checked) 
-            {
-                PATH += "\\FileLog\\ThongKeDangMuon.txt";
+            if (rdbDangmuon.Checked) {
+                path = @"\FileLog\TK_PhieuDangMuon.docx";
             }
 
+            string content = "\t \t \t --------- THỐNG KÊ -------- " + date + "\n \n";
 
-            string content = "";
             for (int i = 0; i < lsvDanhsach.Items.Count; i++)
             {
-                content += " ";
                 content += lsvDanhsach.Items[i].SubItems[0].Text + " -- ";
                 content += lsvDanhsach.Items[i].SubItems[1].Text + " -- ";
                 content += lsvDanhsach.Items[i].SubItems[2].Text + "\n ";
-
             }
-            File.WriteAllText(PATH, content);
-            MessageBox.Show("File Log đã được lưu!!", "Thông báo", MessageBoxButtons.OK);
-        }
-       
 
-          
-        
+            CreateFileDoc  doc = new CreateFileDoc();
+            doc.CreateFileWord(path, content);
+
+        }
+
+        private void GUI_ThongKeMuonTra_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

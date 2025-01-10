@@ -132,7 +132,7 @@ namespace QUANLYTHUVIEN.DAL
                 string SqlXoaSach = string.Format("BEGIN TRANSACTION;" +
                 "\r\n\n\r\nDELETE FROM CHI_TIET_PHIEU_MUON\r" +
                 "\nWHERE MaCuonSach IN (\r\n    SELECT MaCuonSach FROM SACH WHERE MaCuonSach = '{0}'\r\n);" +
-                "\r\n\r\n\r\nDELETE FROM PHIEUMUON\r\nWHERE MaPhieuMuon IN (\r\n    SELECT DISTINCT MaPhieuMuon\r\n    FROM CHI_TIET_PHIEU_MUON\r\n    WHERE MaCuonSach = '{0}'\r\n);" +
+                "\r\n\r\n\r\nDELETE FROM PHIEU_MUON\r\nWHERE MaPhieuMuon IN (\r\n    SELECT DISTINCT MaPhieuMuon\r\n    FROM CHI_TIET_PHIEU_MUON\r\n    WHERE MaCuonSach = '{0}'\r\n);" +
                 "\r\n\r\n\r\nDELETE FROM SACH\r\nWHERE MaCuonSach = '{0}';\r\n\r\nCOMMIT;", key);
                 db.ExecuteNonQuery(SqlXoaSach);
                 CapNhatSoLuongSach();

@@ -60,8 +60,8 @@ namespace QUANLYTHUVIEN.DAL
             try
             {
                 string SqlXoaDocGia = string.Format("DELETE FROM CHI_TIET_PHIEU_MUON\nWHERE MaPhieuMuon IN (\n" +
-                                                "SELECT MaPhieuMuon FROM PhieuMuon WHERE MaDocGia = '{0}'\n)\n" +
-                                                "DELETE FROM PHIEUMUON\nWHERE MaDocGia = '{0}'\n" +
+                                                "SELECT MaPhieuMuon FROM Phieu_Muon WHERE MaDocGia = '{0}'\n)\n" +
+                                                "DELETE FROM PHIEU_MUON\nWHERE MaDocGia = '{0}'\n" +
                                                 "DELETE FROM DOC_GIA\nWHERE MaDocGia = '{0}'", key);
                 db.ExecuteNonQuery(SqlXoaDocGia);
                 return true;

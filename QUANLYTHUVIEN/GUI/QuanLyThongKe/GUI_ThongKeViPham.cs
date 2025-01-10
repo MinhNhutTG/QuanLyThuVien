@@ -55,28 +55,21 @@ namespace QUANLYTHUVIEN.GUI_QLThongKe
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string PATH = AppDomain.CurrentDomain.BaseDirectory;
 
+            DateTime date = DateTime.Now;
+            string path = @"\\FileLog\ThongKeMuonTrongThang.docx";
 
-            
-           
-            {
+            string content = "\t \t \t --------- THỐNG KÊ -------- " + date + "\n \n";
 
-                PATH += "\\FileLog\\ThongKeViPham.txt";
-            }
-
-
-            string content = "";
             for (int i = 0; i < lsvDanhSach.Items.Count; i++)
             {
-                content += " ";
                 content += lsvDanhSach.Items[i].SubItems[0].Text + " -- ";
                 content += lsvDanhSach.Items[i].SubItems[1].Text + " -- ";
                 content += lsvDanhSach.Items[i].SubItems[2].Text + "\n ";
-
             }
-            File.WriteAllText(PATH, content);
-            MessageBox.Show("File Log đã được lưu!!", "Thông báo", MessageBoxButtons.OK);
+
+            CreateFileDoc doc = new CreateFileDoc();
+            doc.CreateFileWord(path, content);
         }
     }
 }
