@@ -63,19 +63,25 @@ namespace QUANLYTHUVIEN.GUI_QLThongKe
         private void button1_Click(object sender, EventArgs e)
         {
             DateTime date = DateTime.Now;
-            string path = "ThongKeMuonTrongThang";
+            string filename = string.Empty;
+            if (rdbSachdangchomuon.Checked) {
+                 filename = "TK_SachDangMuon";
+            }
+            if (rdbSachcontrongkho.Checked)
+            {
+                filename = "TK_SachConTrongKho";
+            }
 
-            string content = "\t \t \t --------- THỐNG KÊ -------- " + date + "\n \n";
+            string content = "\t \t \t DANH SÁCH THỐNG KÊ -------- " + date + "\n \n";
 
             for (int i = 0; i < lsvdanhsach.Items.Count; i++)
             {
-                content += lsvdanhsach.Items[i].SubItems[0].Text + " -- ";
-                content += lsvdanhsach.Items[i].SubItems[1].Text + " -- ";
-                content += lsvdanhsach.Items[i].SubItems[2].Text + "\n ";
+                content += lsvdanhsach.Items[i].SubItems[0].Text + " - - - ";
+                content += lsvdanhsach.Items[i].SubItems[1].Text + " - - - ";
+                content += lsvdanhsach.Items[i].SubItems[2].Text + "\n";
             }
-
-            CreateFileDoc doc = new CreateFileDoc();
-            doc.CreateFileWord(path, content);
+            CreateFileDoc  doc = new CreateFileDoc();
+            doc.CreateFileWord(filename, content);
         }
 
         private void GUI_ThongKeTaiLieu_Load(object sender, EventArgs e)

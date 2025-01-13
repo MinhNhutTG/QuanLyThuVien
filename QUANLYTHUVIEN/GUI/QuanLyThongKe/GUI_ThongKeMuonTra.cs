@@ -120,12 +120,12 @@ namespace QUANLYTHUVIEN.GUI_QLThongKe
                 filename = "TK_PhieuDangMuon";
             }
 
-            string content = "\t \t \t --------- THỐNG KÊ -------- " + date + "\n \n";
+            string content = "\t \t \t DANH SÁCH THỐNG KÊ -------- " + date + "\n \n";
 
             for (int i = 0; i < lsvDanhsach.Items.Count; i++)
             {
-                content += lsvDanhsach.Items[i].SubItems[0].Text + " -- ";
-                content += lsvDanhsach.Items[i].SubItems[1].Text + " -- ";
+                content += lsvDanhsach.Items[i].SubItems[0].Text + " - - - ";
+                content += lsvDanhsach.Items[i].SubItems[1].Text + " - - - ";
                 content += lsvDanhsach.Items[i].SubItems[2].Text + "\n";
             }
 

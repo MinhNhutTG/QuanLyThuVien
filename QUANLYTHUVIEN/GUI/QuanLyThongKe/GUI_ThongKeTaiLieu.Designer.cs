@@ -140,7 +140,7 @@
             this.btnXuatFile.Name = "btnXuatFile";
             this.btnXuatFile.Size = new System.Drawing.Size(129, 38);
             this.btnXuatFile.TabIndex = 11;
-            this.btnXuatFile.Text = "Xuất file";
+            this.btnXuatFile.Text = "Ghi log";
             this.btnXuatFile.UseVisualStyleBackColor = false;
             this.btnXuatFile.Click += new System.EventHandler(this.button1_Click);
             // 

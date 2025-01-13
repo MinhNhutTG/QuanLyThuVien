@@ -55,21 +55,20 @@ namespace QUANLYTHUVIEN.GUI_QLThongKe
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             DateTime date = DateTime.Now;
-            string path = @"\\FileLog\ThongKeMuonTrongThang.docx";
-
-            string content = "\t \t \t --------- THỐNG KÊ -------- " + date + "\n \n";
+            string filename = "TK_ViPham";
+        
+            string content = "\t \t \t DANH SÁCH THỐNG KÊ -------- " + date + "\n \n";
 
             for (int i = 0; i < lsvDanhSach.Items.Count; i++)
             {
-                content += lsvDanhSach.Items[i].SubItems[0].Text + " -- ";
-                content += lsvDanhSach.Items[i].SubItems[1].Text + " -- ";
-                content += lsvDanhSach.Items[i].SubItems[2].Text + "\n ";
+                content += lsvDanhSach.Items[i].SubItems[0].Text + " - - - ";
+                content += lsvDanhSach.Items[i].SubItems[1].Text + " - - - ";
+                content += lsvDanhSach.Items[i].SubItems[2].Text + "\n";
             }
 
             CreateFileDoc doc = new CreateFileDoc();
-            doc.CreateFileWord(path, content);
+            doc.CreateFileWord(filename, content);
         }
     }
 }
