@@ -63,7 +63,7 @@ namespace QUANLYTHUVIEN.GUI_QLThongKe
         private void button1_Click(object sender, EventArgs e)
         {
             DateTime date = DateTime.Now;
-            string path = @"\\FileLog\ThongKeMuonTrongThang.docx";
+            string path = "ThongKeMuonTrongThang";
 
             string content = "\t \t \t --------- THỐNG KÊ -------- " + date + "\n \n";
 

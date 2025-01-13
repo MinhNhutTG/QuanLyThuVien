@@ -102,22 +102,22 @@ namespace QUANLYTHUVIEN.GUI_QLThongKe
         {
             
             DateTime date = DateTime.Now;
-            string path = string.Empty;
+            string filename = string.Empty;
 
             if (rdbMuonTrongNgay.Checked)
             {
-                 path = @"\FileLog\TK_MuonTrongNgay.docx";
+                filename = "TK_MuonTrongNgay";
             }
             if (rdbMuontrongtuan.Checked) 
             {
-                path = @"\FileLog\TK_MuonTrongTuan.docx";
+                filename = "TK_MuonTrongTuan";
             }
             if (rdbMuontrongthang.Checked)
             {
-                path = @"\FileLog\TK_MuonTrongThang.docx";
+                filename = "TK_MuonTrongThang";
             }
             if (rdbDangmuon.Checked) {
-                path = @"\FileLog\TK_PhieuDangMuon.docx";
+                filename = "TK_PhieuDangMuon";
             }
 
             string content = "\t \t \t --------- THỐNG KÊ -------- " + date + "\n \n";
@@ -126,11 +126,11 @@ namespace QUANLYTHUVIEN.GUI_QLThongKe
             {
                 content += lsvDanhsach.Items[i].SubItems[0].Text + " -- ";
                 content += lsvDanhsach.Items[i].SubItems[1].Text + " -- ";
-                content += lsvDanhsach.Items[i].SubItems[2].Text + "\n ";
+                content += lsvDanhsach.Items[i].SubItems[2].Text + "\n";
             }
 
             CreateFileDoc  doc = new CreateFileDoc();
-            doc.CreateFileWord(path, content);
+            doc.CreateFileWord(filename, content);
 
         }
 
