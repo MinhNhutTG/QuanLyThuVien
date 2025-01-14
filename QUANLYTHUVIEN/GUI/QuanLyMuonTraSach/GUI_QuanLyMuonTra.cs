@@ -47,6 +47,18 @@ namespace QUANLYTHUVIEN
                 }
             }
         }
+        public void HienThiTimKiem(DataTable dt)
+        {
+            lsvPhieuMuon.Items.Clear();     // Xóa dữ liệu cũ trên ListView
+            for (int i = 0; i < dt.Rows.Count; i++)     // Duyệt qua tất cả các dòng của DataTable
+            {
+                ListViewItem item = lsvPhieuMuon.Items.Add(dt.Rows[i][0].ToString()); // Lấy dữ liệu từ cột đầu tiên của DataTable
+                for (int j = 1; j < dt.Columns.Count; j++) // Duyệt theo số lượng cột có trong DataTable
+                {
+                    item.SubItems.Add(dt.Rows[i][j].ToString());    // Lấy dữ liệu từ các cột còn lại của DataTable
+                }
+            }
+        }
 
         private void QuanLyMuonTraForm_Load(object sender, EventArgs e)
         {
@@ -57,7 +69,7 @@ namespace QUANLYTHUVIEN
         private void btnSearch_Click(object sender, EventArgs e)
         {
             DataTable dt = BusPM.Search(txtSearch.Text);
-            HienThiDanhSach();
+            HienThiTimKiem(dt);
         }
 
       
