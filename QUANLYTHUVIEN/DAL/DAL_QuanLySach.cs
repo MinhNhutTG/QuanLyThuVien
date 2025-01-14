@@ -100,7 +100,9 @@ namespace QUANLYTHUVIEN.DAL
         }
         public DataTable TimKiemTheLoai(string maTheLoai)
         {
-            string strTheLoai = string.Format("select * from SACH where SACH.MaTheLoai = '{0}'",maTheLoai);
+            string strTheLoai = string.Format("select MaCuonSach , MaSach, TenSach, THE_LOAI.TenTheLoai, TacGia, NamXuatBan, Gia , TinhTrang " +
+                "FROM SACH JOIN THE_LOAI ON SACH.MaTheLoai = THE_LOAI.MaTheLoai  where SACH.MaTheLoai = '{0}'", maTheLoai);
+
             DataTable dt = db.Execute(strTheLoai);
             return dt;
         }

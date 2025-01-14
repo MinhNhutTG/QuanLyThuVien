@@ -3,23 +3,39 @@
   "WorkspaceRootPath": "C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|c:\\users\\tuhin\\desktop\\workspace\\quanlythuvien\\quanlythuvien\\quanlythuvien\\gui\\quanlysach\\gui_themsuasach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|c:\\users\\tuhin\\desktop\\workspace\\quanlythuvien\\quanlythuvien\\quanlythuvien\\dal\\dal_quanlysach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|solutionrelative:quanlythuvien\\dal\\dal_quanlysach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|c:\\users\\tuhin\\desktop\\workspace\\quanlythuvien\\quanlythuvien\\quanlythuvien\\gui\\quanlymuontrasach\\gui_quanlymuontra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|solutionrelative:quanlythuvien\\gui\\quanlymuontrasach\\gui_quanlymuontra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\quanlythuvien\\gui\\quanlysach\\gui_themsuasach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|solutionrelative:quanlythuvien\\gui\\quanlysach\\gui_themsuasach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|c:\\users\\tuhin\\desktop\\workspace\\quanlythuvien\\quanlythuvien\\quanlythuvien\\gui\\quanlysach\\gui_quanlytheloaisach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|solutionrelative:quanlythuvien\\gui\\quanlysach\\gui_quanlytheloaisach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|c:\\users\\tuhin\\desktop\\workspace\\quanlythuvien\\quanlythuvien\\quanlythuvien\\gui\\quanlysach\\gui_quanlysachform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|solutionrelative:quanlythuvien\\gui\\quanlysach\\gui_quanlysachform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|c:\\users\\tuhin\\desktop\\workspace\\quanlythuvien\\quanlythuvien\\quanlythuvien\\gui\\quanlysach\\gui_quanlysachform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|c:\\users\\tuhin\\desktop\\workspace\\quanlythuvien\\quanlythuvien\\quanlythuvien\\bll\\bus_sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|solutionrelative:quanlythuvien\\bll\\bus_sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\quanlythuvien\\gui\\quanlysach\\gui_quanlysachform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|solutionrelative:quanlythuvien\\gui\\quanlysach\\gui_quanlysachform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|c:\\users\\tuhin\\desktop\\workspace\\quanlythuvien\\quanlythuvien\\quanlythuvien\\bll\\bus_docgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\quanlythuvien\\gui\\quanlysach\\gui_quanlytheloaisach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|solutionrelative:quanlythuvien\\gui\\quanlysach\\gui_quanlytheloaisach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\quanlythuvien\\bll\\bus_docgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|solutionrelative:quanlythuvien\\bll\\bus_docgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|c:\\users\\tuhin\\desktop\\workspace\\quanlythuvien\\quanlythuvien\\quanlythuvien\\gui\\quanlythongke\\gui_thongkevipham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\quanlythuvien\\gui\\quanlythongke\\gui_thongkevipham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{06DFF041-CB20-4F8B-9581-073FB21A3075}|QUANLYTHUVIEN\\QUANLYTHUVIEN.csproj|solutionrelative:quanlythuvien\\gui\\quanlythongke\\gui_thongkevipham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -54,11 +70,78 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BUS_Sach.cs",
+              "DocumentMoniker": "C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\QUANLYTHUVIEN\\BLL\\BUS_Sach.cs",
+              "RelativeDocumentMoniker": "QUANLYTHUVIEN\\BLL\\BUS_Sach.cs",
+              "ToolTip": "C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\QUANLYTHUVIEN\\BLL\\BUS_Sach.cs",
+              "RelativeToolTip": "QUANLYTHUVIEN\\BLL\\BUS_Sach.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAnwDQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T02:59:12.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GUI_QuanLySachForm.cs",
+              "DocumentMoniker": "C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\QUANLYTHUVIEN\\GUI\\QuanLySach\\GUI_QuanLySachForm.cs",
+              "RelativeDocumentMoniker": "QUANLYTHUVIEN\\GUI\\QuanLySach\\GUI_QuanLySachForm.cs",
+              "ToolTip": "C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\QUANLYTHUVIEN\\GUI\\QuanLySach\\GUI_QuanLySachForm.cs",
+              "RelativeToolTip": "QUANLYTHUVIEN\\GUI\\QuanLySach\\GUI_QuanLySachForm.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAvwEwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T02:23:30.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GUI_QuanLyMuonTra.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\QUANLYTHUVIEN\\GUI\\QuanLyMuonTraSach\\GUI_QuanLyMuonTra.cs",
+              "RelativeDocumentMoniker": "QUANLYTHUVIEN\\GUI\\QuanLyMuonTraSach\\GUI_QuanLyMuonTra.cs",
+              "ToolTip": "C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\QUANLYTHUVIEN\\GUI\\QuanLyMuonTraSach\\GUI_QuanLyMuonTra.cs [Design]",
+              "RelativeToolTip": "QUANLYTHUVIEN\\GUI\\QuanLyMuonTraSach\\GUI_QuanLyMuonTra.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T02:22:52.885Z",
+              "EditorCaption": " [Design]"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DAL_QuanLySach.cs",
+              "DocumentMoniker": "C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\QUANLYTHUVIEN\\DAL\\DAL_QuanLySach.cs",
+              "RelativeDocumentMoniker": "QUANLYTHUVIEN\\DAL\\DAL_QuanLySach.cs",
+              "ToolTip": "C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\QUANLYTHUVIEN\\DAL\\DAL_QuanLySach.cs",
+              "RelativeToolTip": "QUANLYTHUVIEN\\DAL\\DAL_QuanLySach.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAEwGcAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T13:51:20.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "GUI_ThemSuaSach.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\QUANLYTHUVIEN\\GUI\\QuanLySach\\GUI_ThemSuaSach.cs",
               "RelativeDocumentMoniker": "QUANLYTHUVIEN\\GUI\\QuanLySach\\GUI_ThemSuaSach.cs",
@@ -70,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "GUI_QuanLyTheLoaiSach.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\QUANLYTHUVIEN\\GUI\\QuanLySach\\GUI_QuanLyTheLoaiSach.cs",
               "RelativeDocumentMoniker": "QUANLYTHUVIEN\\GUI\\QuanLySach\\GUI_QuanLyTheLoaiSach.cs",
@@ -82,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "GUI_QuanLySachForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\QUANLYTHUVIEN\\GUI\\QuanLySach\\GUI_QuanLySachForm.cs",
               "RelativeDocumentMoniker": "QUANLYTHUVIEN\\GUI\\QuanLySach\\GUI_QuanLySachForm.cs",
@@ -94,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "BUS_DocGia.cs",
               "DocumentMoniker": "C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\QUANLYTHUVIEN\\BLL\\BUS_DocGia.cs",
               "RelativeDocumentMoniker": "QUANLYTHUVIEN\\BLL\\BUS_DocGia.cs",
@@ -102,12 +185,11 @@
               "RelativeToolTip": "QUANLYTHUVIEN\\BLL\\BUS_DocGia.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T12:38:43.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T12:38:43.301Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "GUI_ThongKeViPham.cs",
               "DocumentMoniker": "C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\QUANLYTHUVIEN\\GUI\\QuanLyThongKe\\GUI_ThongKeViPham.cs",
               "RelativeDocumentMoniker": "QUANLYTHUVIEN\\GUI\\QuanLyThongKe\\GUI_ThongKeViPham.cs",
@@ -115,12 +197,11 @@
               "RelativeToolTip": "QUANLYTHUVIEN\\GUI\\QuanLyThongKe\\GUI_ThongKeViPham.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAgwDoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T12:30:33.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-13T12:30:33.839Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "GUI_ThongKeViPham.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\QUANLYTHUVIEN\\GUI\\QuanLyThongKe\\GUI_ThongKeViPham.cs",
               "RelativeDocumentMoniker": "QUANLYTHUVIEN\\GUI\\QuanLyThongKe\\GUI_ThongKeViPham.cs",
@@ -131,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "GUI_ThongKeTaiLieu.cs",
               "DocumentMoniker": "C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\QUANLYTHUVIEN\\GUI\\QuanLyThongKe\\GUI_ThongKeTaiLieu.cs",
               "RelativeDocumentMoniker": "QUANLYTHUVIEN\\GUI\\QuanLyThongKe\\GUI_ThongKeTaiLieu.cs",
@@ -143,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "GUI_ThongKeTaiLieu.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\QUANLYTHUVIEN\\GUI\\QuanLyThongKe\\GUI_ThongKeTaiLieu.cs",
               "RelativeDocumentMoniker": "QUANLYTHUVIEN\\GUI\\QuanLyThongKe\\GUI_ThongKeTaiLieu.cs",
@@ -154,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "GUI_ThongKeMuonTra.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\QUANLYTHUVIEN\\GUI\\QuanLyThongKe\\GUI_ThongKeMuonTra.cs",
               "RelativeDocumentMoniker": "QUANLYTHUVIEN\\GUI\\QuanLyThongKe\\GUI_ThongKeMuonTra.cs",
@@ -165,7 +246,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "GUI_ThongKeMuonTra.cs",
               "DocumentMoniker": "C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\QUANLYTHUVIEN\\GUI\\QuanLyThongKe\\GUI_ThongKeMuonTra.cs",
               "RelativeDocumentMoniker": "QUANLYTHUVIEN\\GUI\\QuanLyThongKe\\GUI_ThongKeMuonTra.cs",
@@ -177,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "GUI_QuanLyThongKe.cs [Design]",
               "DocumentMoniker": "C:\\Users\\tuhin\\Desktop\\WorkSpace\\QUANLYTHUVIEN\\QuanLyThuVien\\QUANLYTHUVIEN\\GUI\\QuanLyThongKe\\GUI_QuanLyThongKe.cs",
               "RelativeDocumentMoniker": "QUANLYTHUVIEN\\GUI\\QuanLyThongKe\\GUI_QuanLyThongKe.cs",
