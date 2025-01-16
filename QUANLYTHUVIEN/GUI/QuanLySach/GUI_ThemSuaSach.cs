@@ -17,6 +17,8 @@ namespace QUANLYTHUVIEN.GUI
 {
     public partial class GUI_ThemSuaSach : Form
     {
+
+        //... Khai bao bien
         BUS_Sach busSach = new BUS_Sach();
         private string PATH = AppDomain.CurrentDomain.BaseDirectory;
         private string duongDanAnh = string.Empty;
@@ -25,20 +27,20 @@ namespace QUANLYTHUVIEN.GUI
 
         public class BusinessLogicException : Exception
         {
-            public BusinessLogicException(string message) : base(message) { }
+             public BusinessLogicException(string message) : base(message) { }
         }
 
         public GUI_ThemSuaSach()  // Constructer tao form them sach voi 1 tham so enable de an nut cap nhat
         {
             InitializeComponent();
-
         }
         public GUI_ThemSuaSach(bool enable)  // Constructer tao form them sach voi 1 tham so enable de an nut cap nhat
         {
             InitializeComponent();
             setButton(enable);    
             HienThiTheLoai();
-           
+            cbBTrangThai.SelectedIndex = 0;
+            
         }
         public GUI_ThemSuaSach(bool enable, string MaCuonSach)  // Constructer tao form su sach voi 2 tham so enable de an nut them va MaCuonSach de hien chi tiet
         {
@@ -55,7 +57,7 @@ namespace QUANLYTHUVIEN.GUI
             btnLamMoi.Enabled = enable;
             btnThoat.Enabled = true;
         }
-        public void HienThiChiTietSach(string key)     
+        private void HienThiChiTietSach(string key)     
         {
             DataTable dt = busSach.TiemKiemSachTheoMaCuonSach(key);
             txtMaCuonSach.Text = dt.Rows[0][0].ToString();         
@@ -75,7 +77,7 @@ namespace QUANLYTHUVIEN.GUI
             }
             cbBTheLoai.Text = dt.Rows[0][11].ToString();
         }
-        public void HienThiTheLoai()            // Ham Nay Hien Thi Cac the loai cua sach
+        private void HienThiTheLoai()            // Ham Nay Hien Thi Cac the loai cua sach
         {
             DataTable dt = busSach.GetTheLoai();       // Goi den Ham Lay The Loai Sach de tra ve 1 DataTable The loai
             cbBTheLoai.DataSource = dt;
@@ -90,8 +92,7 @@ namespace QUANLYTHUVIEN.GUI
             if (openfile.ShowDialog() == DialogResult.OK)
             {
                 pictureSach.Image = Image.FromFile(openfile.FileName);
-                duongDanAnh = "Asset\\Image Books\\" + Path.GetFileName(openfile.FileName);
-              
+                duongDanAnh = "Asset\\Image Books\\" + Path.GetFileName(openfile.FileName); 
             }
         }
 
@@ -120,7 +121,7 @@ namespace QUANLYTHUVIEN.GUI
             Sach s = LaySach();
             try
             {
-               
+
                 if (busSach.ThemSach(s))
                 {
                     MessageBox.Show("Thêm sách thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -133,15 +134,15 @@ namespace QUANLYTHUVIEN.GUI
                 }
 
             }
-            catch (BusinessLogicException ex)
+            catch (BUS_Sach.BusinessLogicException ex)
             {
-                MessageBox.Show("Loi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lỗi nghiệp vụ: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Không thể thêm sách hãy kiếm tra lại ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Loi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
+           
         }
 
 
@@ -185,7 +186,11 @@ namespace QUANLYTHUVIEN.GUI
                     MessageBox.Show("Cập nhật sách không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (BusinessLogicException ex)
+            catch (BUS_Sach.BusinessLogicException ex)
+            {
+                MessageBox.Show("Lỗi nghiệp vụ: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show("Lỗi : " +ex.Message , "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -197,7 +202,6 @@ namespace QUANLYTHUVIEN.GUI
             if (dg == DialogResult.Yes)
             {
                 this.Close();
-
             }
         }
 

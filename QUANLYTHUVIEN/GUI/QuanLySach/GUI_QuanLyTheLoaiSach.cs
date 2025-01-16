@@ -15,12 +15,16 @@ namespace QUANLYTHUVIEN.GUI
     
     public partial class GUI_QuanLyTheLoaiSach : Form
     {
+        //Khai bao bien
         BUS_Sach busSach = new BUS_Sach();
+
+        //Ham tạo
         public GUI_QuanLyTheLoaiSach()
         {
             InitializeComponent();
             HienThiTheLoai();
         }
+
         public void HienThiTheLoai()
         {
             lsvTheLoai.Items.Clear();
@@ -29,7 +33,6 @@ namespace QUANLYTHUVIEN.GUI
             {
                 ListViewItem item = lsvTheLoai.Items.Add(dt.Rows[i][0].ToString());
                 item.SubItems.Add(dt.Rows[i][1].ToString());    
-                
             }
 
         }
@@ -94,8 +97,6 @@ namespace QUANLYTHUVIEN.GUI
                 {
                     MessageBox.Show("Xóa thất bại", "Thông báo");
                 }
-               
-            
             }
             else
             {

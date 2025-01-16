@@ -12,9 +12,9 @@ namespace QUANLYTHUVIEN.BLL
 
     internal class BUS_ThuThu
     {
-        public class BusinessLogicExcepttion : Exception
+        public class BusinessLogicException : Exception
         {
-            public BusinessLogicExcepttion(string message) : base(message) { }
+            public BusinessLogicException(string message) : base(message) { }
         }
 
         DAL_QuanLyThuThu dalQLThuThu = new DAL_QuanLyThuThu();
@@ -38,44 +38,40 @@ namespace QUANLYTHUVIEN.BLL
         {
             if (dalQLThuThu.KiemTraTaiKhoan(th.UserName).Rows.Count > 0)
             {
-                throw new BusinessLogicExcepttion("UserName này đã tồn tại !");
+                throw new BusinessLogicException("UserName này đã tồn tại !");
             }
 
             if (string.IsNullOrWhiteSpace(th.UserName))
             {
-                throw new BusinessLogicExcepttion("UserName không được để trống !");
+                throw new BusinessLogicException("UserName không được để trống !");
             }
             if (string.IsNullOrWhiteSpace(th.PassWord))
             {
-                throw new BusinessLogicExcepttion("Password không được để trống !");
+                throw new BusinessLogicException("Password không được để trống !");
             }
             if (th.PhanQuyen != "admin" && th.PhanQuyen != "nhanvien")
             {
-                throw new BusinessLogicExcepttion("Phân quyền không hợp lệ!");
+                throw new BusinessLogicException("Phân quyền không hợp lệ!");
             }
             if (string.IsNullOrWhiteSpace(th.MaThuThu))
             {
-                throw new BusinessLogicExcepttion("Mã thủ thư không được để trống !");
+                throw new BusinessLogicException("Mã thủ thư không được để trống !");
             }
             if (string.IsNullOrWhiteSpace(th.TenThuThu))
             {
-                throw new BusinessLogicExcepttion("Tên thủ thư không được để trống !");
+                throw new BusinessLogicException("Tên thủ thư không được để trống !");
             }
             if (string.IsNullOrWhiteSpace(th.NgaySinh))
             {
-                throw new BusinessLogicExcepttion("Ngày sinh không được để trống !");
+                throw new BusinessLogicException("Ngày sinh không được để trống !");
             }
             if (th.GioiTinh != "True" && th.GioiTinh != "False" )
             {
-                throw new BusinessLogicExcepttion("Giới tính không hợp lệ !");
+                throw new BusinessLogicException("Giới tính không hợp lệ !");
             }
-            //if (string.IsNullOrWhiteSpace(th.DiaChi))
-            //{
-            //    throw new BusinessLogicExcepttion("Địa chỉ không được để trống !");
-            //}
             if (string.IsNullOrWhiteSpace(th.SoDT))
             {
-                throw new BusinessLogicExcepttion("Số điện thoại không được để trống !");
+                throw new BusinessLogicException("Số điện thoại không được để trống !");
             }
 
             return dalQLThuThu.ThemThuThu(th);
@@ -93,39 +89,39 @@ namespace QUANLYTHUVIEN.BLL
           
             if (string.IsNullOrWhiteSpace(th.UserName))
             {
-                throw new BusinessLogicExcepttion("UserName không được để trống !");
+                throw new BusinessLogicException("UserName không được để trống !");
             }
             if (string.IsNullOrWhiteSpace(th.PassWord))
             {
-                throw new BusinessLogicExcepttion("Password không được để trống !");
+                throw new BusinessLogicException("Password không được để trống !");
             }
             if (th.PhanQuyen != "admin" && th.PhanQuyen != "nhanvien")
             {
-                throw new BusinessLogicExcepttion("Phân quyền không hợp lệ!");
+                throw new BusinessLogicException("Phân quyền không hợp lệ!");
             }
             if (string.IsNullOrWhiteSpace(th.MaThuThu))
             {
-                throw new BusinessLogicExcepttion("Mã thủ thư không được để trống !");
+                throw new BusinessLogicException("Mã thủ thư không được để trống !");
             }
             if (string.IsNullOrWhiteSpace(th.TenThuThu))
             {
-                throw new BusinessLogicExcepttion("Tên thủ thư không được để trống !");
+                throw new BusinessLogicException("Tên thủ thư không được để trống !");
             }
             if (string.IsNullOrWhiteSpace(th.NgaySinh))
             {
-                throw new BusinessLogicExcepttion("Ngày sinh không được để trống !");
+                throw new BusinessLogicException("Ngày sinh không được để trống !");
             }
             if (string.IsNullOrWhiteSpace(th.GioiTinh))
             {
-                throw new BusinessLogicExcepttion("Giới tính không được để trống !");
+                throw new BusinessLogicException("Giới tính không được để trống !");
             }
             if (string.IsNullOrWhiteSpace(th.DiaChi))
             {
-                throw new BusinessLogicExcepttion("Địa chỉ không được để trống !");
+                throw new BusinessLogicException("Địa chỉ không được để trống !");
             }
             if (string.IsNullOrWhiteSpace(th.SoDT))
             {
-                throw new BusinessLogicExcepttion("Số điện thoại không được để trống !");
+                throw new BusinessLogicException("Số điện thoại không được để trống !");
             }
 
             return dalQLThuThu.CapNhatThuThu(th);

@@ -55,20 +55,23 @@
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(651, 98);
+            this.txtSearch.Location = new System.Drawing.Point(868, 121);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSearch.MaxLength = 6;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(315, 28);
+            this.txtSearch.Size = new System.Drawing.Size(419, 28);
             this.txtSearch.TabIndex = 4;
+            this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
             // 
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnSearch.Font = new System.Drawing.Font("Times New Roman", 10.2F);
             this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(997, 90);
+            this.btnSearch.Location = new System.Drawing.Point(1329, 111);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(124, 42);
+            this.btnSearch.Size = new System.Drawing.Size(165, 52);
             this.btnSearch.TabIndex = 5;
             this.btnSearch.Text = "Tìm kiếm";
             this.btnSearch.UseVisualStyleBackColor = false;
@@ -90,9 +93,10 @@
             this.lsvPhieuMuon.FullRowSelect = true;
             this.lsvPhieuMuon.GridLines = true;
             this.lsvPhieuMuon.HideSelection = false;
-            this.lsvPhieuMuon.Location = new System.Drawing.Point(27, 138);
+            this.lsvPhieuMuon.Location = new System.Drawing.Point(36, 170);
+            this.lsvPhieuMuon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lsvPhieuMuon.Name = "lsvPhieuMuon";
-            this.lsvPhieuMuon.Size = new System.Drawing.Size(1094, 455);
+            this.lsvPhieuMuon.Size = new System.Drawing.Size(1457, 559);
             this.lsvPhieuMuon.TabIndex = 7;
             this.lsvPhieuMuon.UseCompatibleStateImageBehavior = false;
             this.lsvPhieuMuon.View = System.Windows.Forms.View.Details;
@@ -150,18 +154,19 @@
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.btnAdd);
-            this.panel1.Location = new System.Drawing.Point(-1, 613);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(-1, 754);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1454, 295);
+            this.panel1.Size = new System.Drawing.Size(1939, 363);
             this.panel1.TabIndex = 9;
             // 
             // btnView
             // 
             this.btnView.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnView.Location = new System.Drawing.Point(468, 26);
+            this.btnView.Location = new System.Drawing.Point(624, 32);
+            this.btnView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(154, 46);
+            this.btnView.Size = new System.Drawing.Size(205, 57);
             this.btnView.TabIndex = 9;
             this.btnView.Text = "Xem";
             this.btnView.UseVisualStyleBackColor = true;
@@ -170,9 +175,10 @@
             // btnOut
             // 
             this.btnOut.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnOut.Location = new System.Drawing.Point(929, 26);
+            this.btnOut.Location = new System.Drawing.Point(1239, 32);
+            this.btnOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOut.Name = "btnOut";
-            this.btnOut.Size = new System.Drawing.Size(154, 46);
+            this.btnOut.Size = new System.Drawing.Size(205, 57);
             this.btnOut.TabIndex = 8;
             this.btnOut.Text = "Thoát";
             this.btnOut.UseVisualStyleBackColor = true;
@@ -181,9 +187,10 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnDelete.Location = new System.Drawing.Point(697, 26);
+            this.btnDelete.Location = new System.Drawing.Point(929, 32);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(154, 46);
+            this.btnDelete.Size = new System.Drawing.Size(205, 57);
             this.btnDelete.TabIndex = 7;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -192,9 +199,10 @@
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnUpdate.Location = new System.Drawing.Point(255, 26);
+            this.btnUpdate.Location = new System.Drawing.Point(340, 32);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(154, 46);
+            this.btnUpdate.Size = new System.Drawing.Size(205, 57);
             this.btnUpdate.TabIndex = 6;
             this.btnUpdate.Text = "Sửa";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -203,9 +211,10 @@
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnAdd.Location = new System.Drawing.Point(51, 26);
+            this.btnAdd.Location = new System.Drawing.Point(68, 32);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(154, 46);
+            this.btnAdd.Size = new System.Drawing.Size(205, 57);
             this.btnAdd.TabIndex = 5;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -215,10 +224,10 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(-1, -3);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Location = new System.Drawing.Point(-1, -4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1973, 74);
+            this.panel3.Size = new System.Drawing.Size(2631, 91);
             this.panel3.TabIndex = 8;
             // 
             // label2
@@ -226,8 +235,8 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(352, 23);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(469, 28);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(399, 32);
             this.label2.TabIndex = 1;
@@ -235,16 +244,17 @@
             // 
             // GUI_QuanLyMuonTra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1148, 750);
+            this.ClientSize = new System.Drawing.Size(1531, 923);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.lsvPhieuMuon);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "GUI_QuanLyMuonTra";
             this.Text = "QuanLyMuonTraForm";
             this.Load += new System.EventHandler(this.QuanLyMuonTraForm_Load);

@@ -49,72 +49,7 @@ namespace QUANLYTHUVIEN
             btnOut.Enabled = true;
         }
 
-        //private bool CheckData()
-        //{
-            //if (string.IsNullOrEmpty(txtMaphieumuon.Text))
-            //{
-            //    MessageBox.Show("Mã phiếu mượn không được để trống");
-            //    return false;
-            //}
-            //if (string.IsNullOrEmpty(txtMadocgia.Text))
-            //{
-            //    MessageBox.Show("Mã độc giả không được để trống");
-            //    return false;
-            //}
-            //if (string.IsNullOrEmpty(txtMathuthu.Text))
-            //{
-            //    MessageBox.Show("Mã thủ thư không được để trống");
-            //    return false;
-            //}
-            //if (string.IsNullOrEmpty(txtPhiphat.Text))
-            //{
-            //    MessageBox.Show("Phí phạt không được để trống");
-            //    return false;
-            //}
-            //if (string.IsNullOrEmpty(dtpNgaymuon.Text))
-            //{
-            //    MessageBox.Show("Ngày mượn không được để trống");
-            //    return false;
-            //}
-            //if (string.IsNullOrEmpty(dtpNgaytra.Text))
-            //{
-            //    MessageBox.Show("Ngày trả không được để trống");
-            //    return false;
-            //}
-            //if (string.IsNullOrEmpty(dtpHantra.Text))
-            //{
-            //    MessageBox.Show("Hạn trả không được để trống");
-            //    return false;
-            //}
-            //if (string.IsNullOrEmpty(cboTinhtrang.Text))
-            //{
-            //    MessageBox.Show("Tình trạng không được để trống");
-            //    return false;
-            //}
-            //if (string.IsNullOrEmpty(nudSoluong.Text))
-            //{
-            //    MessageBox.Show("Số lượng không được để trống");
-            //    return false;
-            //}
-            //if (lsvListSach.Items.Count == 0)
-            //{
-            //    MessageBox.Show("Danh sách sách không được để trống");
-            //    return false;
-            //}
-            //if (dtpNgaytra.Value < dtpNgaymuon.Value)
-            //{
-            //    MessageBox.Show("Ngày trả không được nhỏ hơn ngày mượn");
-            //    return false;
-            //}
-            //if (dtpHantra.Value < dtpNgaymuon.Value)
-            //{
-            //    MessageBox.Show("Hạn trả không được nhỏ hơn ngày mượn");
-            //    return false;
-            //}
-
-            //return true;
-        //}
-
+       
         public void HienThiChiTietPhieu(DataTable dt) //Hien thi danh sach cac cuon sach trong phieu muon
         {
            
@@ -221,8 +156,11 @@ namespace QUANLYTHUVIEN
                     MessageBox.Show("Không thể thêm phiếu mượn", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-          
-            catch (BusinessLogicException ex)
+            catch (BUS_PhieuMuon.BusinessLogicException ex)
+            {
+                MessageBox.Show("Lỗi nghiệp vụ: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -267,7 +205,11 @@ namespace QUANLYTHUVIEN
                 Refesh();
                 sendData?.Invoke();
             }
-            catch (BusinessLogicException ex)
+            catch (BUS_PhieuMuon.BusinessLogicException ex)
+            {
+                MessageBox.Show("Lỗi nghiệp vụ: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

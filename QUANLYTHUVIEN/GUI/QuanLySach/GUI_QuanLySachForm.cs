@@ -16,34 +16,23 @@ namespace QUANLYTHUVIEN.GUI
 {
     public partial class GUI_QuanLySachForm : Form
     {
+
+        //Khai bao bien
         BUS_Sach busSach = new BUS_Sach();
+
+        //Ham Tao
         public GUI_QuanLySachForm()
         {
             DataTable dt = busSach.GetDanhSachSach();
             InitializeComponent();
             HienComboBoxTheLoai();
-            LoadDanhSach(dt);
-        }
-        public void LoadDuLieu()
-        {
-            DataTable dt = busSach.GetDanhSachSach();
-            LoadDanhSach(dt);
-        }
-        public void HienComboBoxTheLoai()
-        {
-
-            CbbTheLoai.DataSource = busSach.GetTheLoai();
-            CbbTheLoai.DisplayMember = "TenTheLoai";
-            CbbTheLoai.ValueMember = "MaTheLoai";
+            ShowListSach(dt);
         }
 
-   
-        public void  LoadDanhSach(DataTable dt)
+        // Function Show
+        public void ShowListSach(DataTable dt)
         {
-
             lsvSach.Items.Clear();
-           
-            //l.CapNhatSoLuongSach();
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 ListViewItem item = lsvSach.Items.Add(dt.Rows[i][0].ToString());
@@ -54,45 +43,50 @@ namespace QUANLYTHUVIEN.GUI
                 item.SubItems.Add(dt.Rows[i][5].ToString());
                 item.SubItems.Add(dt.Rows[i][6].ToString());
                 item.SubItems.Add(dt.Rows[i][7].ToString());
-               
             }
-
         }
-       
-
-   
-
-        private void btnTimKiem_Click(object sender, EventArgs e)
+        public void LoadData()
         {
-
-           DataTable  dt =  busSach.TimKiemSach(txtTimKiem.Text);
-            LoadDanhSach(dt);
-
+            DataTable dt = busSach.GetDanhSachSach();
+            ShowListSach(dt);
         }
-
+        public void HienComboBoxTheLoai()
+        {
+            CbbTheLoai.DataSource = busSach.GetTheLoai();
+            CbbTheLoai.DisplayMember = "TenTheLoai";
+            CbbTheLoai.ValueMember = "MaTheLoai";
+        }
         private void CbbTheLoai_SelectedIndexChanged(object sender, EventArgs e)
         {
             DataTable dt = busSach.TimSachTheoTheLoai(CbbTheLoai.SelectedValue.ToString());
-            LoadDanhSach(dt);
+            ShowListSach(dt);
         }
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            DataTable dt = busSach.TimKiemSach(txtTimKiem.Text);
+            ShowListSach(dt);
+        }
+
+        //Functon Add View Remove Update Exit
 
         private void btnThemSach_Click(object sender, EventArgs e)
         {
             GUI_ThemSuaSach frm = new GUI_ThemSuaSach(true);
-            frm.sendData+= LoadDuLieu;
+            frm.sendData += LoadData;
             frm.ShowDialog();
         }
 
         private void btnXoaSach_Click(object sender, EventArgs e)
         {
-            if (lsvSach.SelectedItems.Count == 1) {
-                DialogResult dg = MessageBox.Show("Bạn có muốn xóa sách?","Thông báo",MessageBoxButtons .YesNo);
-                if (dg == DialogResult.Yes) {
+            if (lsvSach.SelectedItems.Count == 1)
+            {
+                DialogResult dg = MessageBox.Show("Bạn có muốn xóa sách?", "Thông báo", MessageBoxButtons.YesNo);
+                if (dg == DialogResult.Yes)
+                {
                     if (busSach.XoaSach(lsvSach.SelectedItems[0].Text))
                     {
-                        LoadDuLieu();
+                        LoadData();
                         MessageBox.Show("Đã xóa thành công", "Thông báo");
-                       
                     }
                 }
             }
@@ -107,7 +101,7 @@ namespace QUANLYTHUVIEN.GUI
             if (lsvSach.SelectedItems.Count == 1)
             {
                 GUI_ThemSuaSach SuaSach = new GUI_ThemSuaSach(false, lsvSach.SelectedItems[0].SubItems[0].Text);
-                SuaSach.sendData += LoadDuLieu;
+                SuaSach.sendData += LoadData;
                 SuaSach.ShowDialog();
             }
             else
@@ -128,6 +122,11 @@ namespace QUANLYTHUVIEN.GUI
                 MessageBox.Show("Chọn sách cần xem!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        private void btnCategory_Click(object sender, EventArgs e)
+        {
+            GUI_QuanLyTheLoaiSach frm = new GUI_QuanLyTheLoaiSach();
+            frm.ShowDialog();
+        }
         private void btnThoat_Click(object sender, EventArgs e)
         {
             DialogResult dg = MessageBox.Show("Bạn có muốn trở lại Trang chủ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -137,19 +136,17 @@ namespace QUANLYTHUVIEN.GUI
             }
         }
 
-        private void btnCategory_Click(object sender, EventArgs e)
-        {
-            GUI_QuanLyTheLoaiSach frm = new GUI_QuanLyTheLoaiSach();
-            frm.ShowDialog();
-        }
+        //Function keys
 
-        private void txtTimKiem_KeyDown(object sender, KeyEventArgs e)
+
+
+        private void GUI_QuanLySachForm_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Control && e.KeyCode == Keys.F)
             {
                 txtTimKiem.Focus();
             }
         }
-
     }
 }
+

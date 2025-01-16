@@ -17,8 +17,7 @@ namespace QUANLYTHUVIEN.GUI
     public partial class GUI_Main : Form
     {
         public string MaNhanVienDangSuDungHeThong { get; set; }
-        private int currentFormIndex = 0;
-        private List<Form> listFrom = new List<Form>();
+      
 
         public GUI_Main()
         {
@@ -41,10 +40,6 @@ namespace QUANLYTHUVIEN.GUI
                 setButton(false, true);
             }
             MaNhanVienDangSuDungHeThong = maNhanVien;
-
-     
-
-
         }
       
         private void MainStart()
@@ -90,25 +85,7 @@ namespace QUANLYTHUVIEN.GUI
             this.Hide();
         }
 
-        //private void btnMoFormSach_Click(object sender, EventArgs e)  // Hàm này là khi nhấn 1 nút ở bảng bên trái sẽ tạo form con 
-        //{
-
-        //    foreach (Form frm in this.MdiChildren)  // Chạy for từng form con 
-        //    {
-        //        if (frm.Name == "QuanLySachForm")  //kiểm tra nếu là form QuanLySachForm thì kích hoạt form khi nó đã được mở
-        //        {
-        //            frm.Activate();  // kích hoạt nè
-        //            return;     // return này là dừng lại để tránh tạo form nữa 
-        //        }
-        //    }
-        //    QuanLySachForm frmSach = new QuanLySachForm();        // nếy mà chưa có form dc tạo ra sẳn thì sẽ tạo form mới nè
-
-        //    frmSach.MdiParent = this;  //set cho form là form con
-
-        //    frmSach.Dock = DockStyle.Fill;  // form con lấp đầy không gia của form cha 
-        //    frmSach.Show();
-
-        //}
+      
 
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -119,7 +96,6 @@ namespace QUANLYTHUVIEN.GUI
             }
 
         }
-
 
 
         private void btnMoFormQLPhieu_Click(object sender, EventArgs e)

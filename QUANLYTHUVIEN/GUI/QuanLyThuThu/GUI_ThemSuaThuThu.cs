@@ -163,9 +163,9 @@ namespace QUANLYTHUVIEN.GUI
                     MessageBox.Show("Thêm thủ thư không thành công !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            catch (BusinessLogicException ex)
+            catch (BUS_ThuThu.BusinessLogicException ex)
             {
-                MessageBox.Show(ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lỗi nghiệp vụ: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)
             {
@@ -190,7 +190,11 @@ namespace QUANLYTHUVIEN.GUI
                     MessageBox.Show("Cập nhật thủ thư không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (BusinessLogicException ex)
+            catch (BUS_ThuThu.BusinessLogicException ex)
+            {
+                MessageBox.Show("Lỗi nghiệp vụ: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show("Lỗi : " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

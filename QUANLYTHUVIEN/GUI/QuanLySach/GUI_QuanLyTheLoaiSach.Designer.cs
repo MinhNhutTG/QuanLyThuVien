@@ -91,7 +91,7 @@
             this.txtNamecate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtNamecate.Location = new System.Drawing.Point(53, 154);
             this.txtNamecate.Name = "txtNamecate";
-            this.txtNamecate.Size = new System.Drawing.Size(235, 23);
+            this.txtNamecate.Size = new System.Drawing.Size(235, 27);
             this.txtNamecate.TabIndex = 3;
             // 
             // txtIDcate
@@ -100,7 +100,7 @@
             this.txtIDcate.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtIDcate.Location = new System.Drawing.Point(53, 76);
             this.txtIDcate.Name = "txtIDcate";
-            this.txtIDcate.Size = new System.Drawing.Size(235, 23);
+            this.txtIDcate.Size = new System.Drawing.Size(235, 27);
             this.txtIDcate.TabIndex = 2;
             // 
             // label2
@@ -109,7 +109,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.Location = new System.Drawing.Point(23, 116);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 17);
+            this.label2.Size = new System.Drawing.Size(96, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tên thể loại";
             // 
@@ -119,7 +119,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.Location = new System.Drawing.Point(23, 44);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 17);
+            this.label1.Size = new System.Drawing.Size(91, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã thể loại";
             // 
@@ -179,6 +179,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lsvTheLoai);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "GUI_QuanLyTheLoaiSach";
             this.Text = "Quản lý thể loại";
             this.groupBox1.ResumeLayout(false);

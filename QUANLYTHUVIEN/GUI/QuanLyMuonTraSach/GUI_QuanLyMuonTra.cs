@@ -142,5 +142,10 @@ namespace QUANLYTHUVIEN
                 this.Close();
             }
         }
+
+        private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+        }
     }
 }

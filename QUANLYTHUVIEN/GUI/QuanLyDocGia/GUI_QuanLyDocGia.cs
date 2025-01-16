@@ -44,7 +44,7 @@ namespace QUANLYTHUVIEN.GUI
         private void btnThem_Click(object sender, EventArgs e)
         { 
             GUI_ThemSuaDocGia ThemDocGia = new GUI_ThemSuaDocGia();
-            ThemDocGia.Show();
+            ThemDocGia.ShowDialog();
             ThemDocGia.sendData += LoadDuLieu;
         }
 
@@ -74,7 +74,7 @@ namespace QUANLYTHUVIEN.GUI
             {
                 GUI_ThemSuaDocGia SuaDocGia = new GUI_ThemSuaDocGia(false, lsvDocGia.SelectedItems[0].SubItems[0].Text);
                 SuaDocGia.sendData += LoadDuLieu;
-                SuaDocGia.Show();
+                SuaDocGia.ShowDialog();
             }
             else
             {

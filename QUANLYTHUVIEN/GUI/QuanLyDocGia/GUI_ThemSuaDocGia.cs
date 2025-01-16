@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.IO;
 using QUANLYTHUVIEN.BLL;
 using QUANLYTHUVIEN.DTO;
-using static QUANLYTHUVIEN.BLL.BUS_DocGia;
+
 
 namespace QUANLYTHUVIEN.GUI
 {
@@ -99,9 +99,9 @@ namespace QUANLYTHUVIEN.GUI
                 }
 
             }
-            catch (BusinessLogicException ex)
+            catch (BUS_DocGia.BusinessLogicException ex)
             {
-                MessageBox.Show("Loi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lỗi nghiệp vụ: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)
             {
@@ -124,7 +124,7 @@ namespace QUANLYTHUVIEN.GUI
                     MessageBox.Show("Cập nhật không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (BusinessLogicException ex)
+            catch (BUS_DocGia.BusinessLogicException ex)
             {
                 MessageBox.Show("Lỗi : " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
