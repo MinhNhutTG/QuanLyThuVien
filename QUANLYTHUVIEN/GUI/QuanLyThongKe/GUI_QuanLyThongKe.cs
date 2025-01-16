@@ -13,10 +13,11 @@ namespace QUANLYTHUVIEN.GUI_QLThongKe
 {
     public partial class GUI_QuanLyThongKe : Form
     {
-        
+        BUS_ThongKe bustk = new BUS_ThongKe();
         public GUI_QuanLyThongKe()
         {
             InitializeComponent();
+            HienThiLabelThongKe();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -54,5 +55,18 @@ namespace QUANLYTHUVIEN.GUI_QLThongKe
                 this.Close();   
             }
         }
+        public void HienThiLabelThongKe()
+        {
+            int numQuanLySach = bustk.ThongKeSachConTrongKho().Rows.Count;
+            int numQuanLyMuonTra = bustk.ThongKeDangMuon().Rows.Count;
+            int numQuanLyViPham = bustk.ThongKeViPham().Rows.Count ;
+
+
+            lblQuanlityThongKeSach.Text = numQuanLySach.ToString();
+            lblNumTKMuonTra.Text = numQuanLyMuonTra.ToString();
+            lblNumTKViPham.Text = numQuanLyViPham.ToString();
+        }
+
+       
     }
 }

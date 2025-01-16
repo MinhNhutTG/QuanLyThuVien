@@ -62,9 +62,12 @@
             this.toolStrip1.Size = new System.Drawing.Size(192, 712);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
+           
+            this.toolStrip1.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.toolStrip1_PreviewKeyDown);
             // 
             // btnMoFormQLSACH
             // 
+            this.btnMoFormQLSACH.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnMoFormQLSACH.Font = new System.Drawing.Font("Times New Roman", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMoFormQLSACH.ForeColor = System.Drawing.Color.White;
             this.btnMoFormQLSACH.Image = ((System.Drawing.Image)(resources.GetObject("btnMoFormQLSACH.Image")));
@@ -180,7 +183,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GUI_Main";
             this.Text = "Quản lý thư viện";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

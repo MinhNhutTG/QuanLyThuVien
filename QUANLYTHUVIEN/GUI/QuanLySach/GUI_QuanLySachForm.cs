@@ -147,6 +147,11 @@ namespace QUANLYTHUVIEN.GUI
                 txtTimKiem.Focus();
             }
         }
+
+        private void GUI_QuanLySachForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+           
+        }
     }
 }
 
