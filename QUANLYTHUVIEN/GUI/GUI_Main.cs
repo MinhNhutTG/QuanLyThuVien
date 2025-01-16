@@ -16,7 +16,10 @@ namespace QUANLYTHUVIEN.GUI
 {
     public partial class GUI_Main : Form
     {
-        public string MaNhanVienDangSuDungHeThong {  get; set; }
+        public string MaNhanVienDangSuDungHeThong { get; set; }
+        private int currentFormIndex = 0;
+        private List<Form> listFrom = new List<Form>();
+
         public GUI_Main()
         {
             InitializeComponent();
@@ -24,12 +27,13 @@ namespace QUANLYTHUVIEN.GUI
             setButton(true, true);
         }
 
-        public GUI_Main(string quyen , string maNhanVien)
+        public GUI_Main(string quyen, string maNhanVien)
         {
             InitializeComponent();
             MainStart();
-            
-            if (quyen == "admin") {
+
+            if (quyen == "admin")
+            {
                 setButton(true, true);
             }
             else if (quyen == "nhanvien")
@@ -37,10 +41,12 @@ namespace QUANLYTHUVIEN.GUI
                 setButton(false, true);
             }
             MaNhanVienDangSuDungHeThong = maNhanVien;
-          
-           
-        }
 
+     
+
+
+        }
+      
         private void MainStart()
         {
 
@@ -60,7 +66,7 @@ namespace QUANLYTHUVIEN.GUI
             frm.Show();
         }
 
-        private void setButton(bool Admin , bool NhanVien)
+        private void setButton(bool Admin, bool NhanVien)
         {
             btnMoFormQLSACH.Enabled = NhanVien;
             btnMoFormQLPhieu.Enabled = NhanVien;
@@ -71,7 +77,8 @@ namespace QUANLYTHUVIEN.GUI
         private void toolStripButton6_Click(object sender, EventArgs e)
         {
             DialogResult dg = MessageBox.Show("Bạn có muốn thoát khỏi chương trình", "Thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dg == DialogResult.Yes) { 
+            if (dg == DialogResult.Yes)
+            {
                 Application.Exit();
             }
         }
@@ -105,14 +112,15 @@ namespace QUANLYTHUVIEN.GUI
 
         private void Main_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult dg = MessageBox.Show("Bạn có muốn đóng chương trình?","Thoát",MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (dg == DialogResult.Cancel) { 
+            DialogResult dg = MessageBox.Show("Bạn có muốn đóng chương trình?", "Thoát", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (dg == DialogResult.Cancel)
+            {
                 e.Cancel = true;
             }
-            
+
         }
 
-       
+
 
         private void btnMoFormQLPhieu_Click(object sender, EventArgs e)
         {
@@ -142,7 +150,7 @@ namespace QUANLYTHUVIEN.GUI
                     return;
                 }
             }
-            GUI_QuanLyThuThu  frmThuThu= new GUI_QuanLyThuThu();
+            GUI_QuanLyThuThu frmThuThu = new GUI_QuanLyThuThu();
 
             frmThuThu.MdiParent = this;
 
@@ -160,7 +168,7 @@ namespace QUANLYTHUVIEN.GUI
                     return;
                 }
             }
-            GUI_ReaderManagement frmThuThu = new GUI_ReaderManagement();
+            GUI_QuanLyDocGia frmThuThu = new GUI_QuanLyDocGia();
 
             frmThuThu.MdiParent = this;
 
@@ -204,5 +212,8 @@ namespace QUANLYTHUVIEN.GUI
             frmSach.Dock = DockStyle.Fill;  // form con lấp đầy không gia của form cha 
             frmSach.Show();
         }
+        
+      
+        
     }
 }

@@ -46,5 +46,13 @@ namespace QUANLYTHUVIEN.GUI_QLThongKe
         {
 
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult dg = MessageBox.Show("Bạn có muốn thoát","Thoát",MessageBoxButtons.YesNo);
+            if (dg == DialogResult.Yes) { 
+                this.Close();   
+            }
+        }
     }
 }

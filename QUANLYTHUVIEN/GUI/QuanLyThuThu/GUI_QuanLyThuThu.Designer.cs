@@ -54,9 +54,9 @@
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnThoat.Location = new System.Drawing.Point(908, 27);
+            this.btnThoat.Location = new System.Drawing.Point(906, 22);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(140, 54);
+            this.btnThoat.Size = new System.Drawing.Size(140, 43);
             this.btnThoat.TabIndex = 5;
             this.btnThoat.Text = "Thoát ";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -65,9 +65,9 @@
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnXoa.Location = new System.Drawing.Point(634, 27);
+            this.btnXoa.Location = new System.Drawing.Point(632, 22);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(140, 54);
+            this.btnXoa.Size = new System.Drawing.Size(140, 43);
             this.btnXoa.TabIndex = 5;
             this.btnXoa.Text = "Xóa ";
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -76,9 +76,9 @@
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnSua.Location = new System.Drawing.Point(386, 27);
+            this.btnSua.Location = new System.Drawing.Point(384, 22);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(140, 54);
+            this.btnSua.Size = new System.Drawing.Size(140, 43);
             this.btnSua.TabIndex = 5;
             this.btnSua.Text = "Sửa ";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -87,9 +87,9 @@
             // btnThem
             // 
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnThem.Location = new System.Drawing.Point(161, 27);
+            this.btnThem.Location = new System.Drawing.Point(159, 22);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(140, 54);
+            this.btnThem.Size = new System.Drawing.Size(140, 43);
             this.btnThem.TabIndex = 5;
             this.btnThem.Text = "Thêm ";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -146,7 +146,7 @@
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(13, 132);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(1111, 452);
+            this.listView1.Size = new System.Drawing.Size(1111, 468);
             this.listView1.TabIndex = 27;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -181,7 +181,7 @@
             this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtTimKiem.Location = new System.Drawing.Point(634, 96);
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(348, 28);
+            this.txtTimKiem.Size = new System.Drawing.Size(348, 24);
             this.txtTimKiem.TabIndex = 26;
             // 
             // panel2
@@ -191,7 +191,7 @@
             this.panel2.Controls.Add(this.btnThem);
             this.panel2.Controls.Add(this.btnThoat);
             this.panel2.Controls.Add(this.btnXoa);
-            this.panel2.Location = new System.Drawing.Point(0, 591);
+            this.panel2.Location = new System.Drawing.Point(0, 607);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1155, 163);
@@ -213,12 +213,13 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(552, 27);
+            this.label1.Location = new System.Drawing.Point(474, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(244, 29);
+            this.label1.Size = new System.Drawing.Size(195, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "QUẢN LÝ THỦ THƯ\r\n";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // GUI_QuanLyThuThu
             // 

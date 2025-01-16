@@ -12,10 +12,10 @@ using QUANLYTHUVIEN.DTO;
 
 namespace QUANLYTHUVIEN.GUI
 {
-    public partial class GUI_ReaderManagement : Form
+    public partial class GUI_QuanLyDocGia : Form
     {
         BUS_DocGia busDocGia = new BUS_DocGia();
-        public GUI_ReaderManagement()
+        public GUI_QuanLyDocGia()
         {
             DataTable dt = busDocGia.GetDSDocGia();
             InitializeComponent();
@@ -62,7 +62,10 @@ namespace QUANLYTHUVIEN.GUI
             DialogResult dialog;
             dialog = MessageBox.Show("Bạn có muốn thoát không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dialog == DialogResult.Yes)
-                Application.Exit();
+            {
+                this.Close();
+            }
+               
         }
 
         private void btnSua_Click_1(object sender, EventArgs e)

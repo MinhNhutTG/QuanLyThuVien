@@ -1,6 +1,6 @@
 ﻿namespace QUANLYTHUVIEN.GUI
 {
-    partial class GUI_ReaderManagement
+    partial class GUI_QuanLyDocGia
     {
         /// <summary>
         /// Required designer variable.
@@ -64,7 +64,7 @@
             // txtTimKiem
             // 
             this.txtTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTimKiem.Location = new System.Drawing.Point(701, 95);
+            this.txtTimKiem.Location = new System.Drawing.Point(701, 96);
             this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4);
             this.txtTimKiem.Multiline = true;
             this.txtTimKiem.Name = "txtTimKiem";
@@ -158,9 +158,10 @@
             this.label1.Location = new System.Drawing.Point(535, 21);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(236, 29);
+            this.label1.Size = new System.Drawing.Size(189, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "QUẢN LÝ ĐỘC GIẢ";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // colMaDocGia
             // 
@@ -211,7 +212,7 @@
             this.lsvDocGia.UseCompatibleStateImageBehavior = false;
             this.lsvDocGia.View = System.Windows.Forms.View.Details;
             // 
-            // GUI_ReaderManagement
+            // GUI_QuanLyDocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -224,7 +225,7 @@
             this.Controls.Add(this.lsvDocGia);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "GUI_ReaderManagement";
+            this.Name = "GUI_QuanLyDocGia";
             this.Text = "QuanLyDocGiaForm";
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

@@ -18,16 +18,7 @@ namespace QUANLYTHUVIEN.GUI
         public GUI_Login()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-            txtUserName.Focus();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-            txtPassword.Focus();
+           
         }
 
         private void resetTextBox()
@@ -76,7 +67,15 @@ namespace QUANLYTHUVIEN.GUI
                
             }
         }
+
+        private void GUI_Login_Load(object sender, EventArgs e)
+        {
+            resetTextBox();
+        }
+
        
+      
+
        
     }
 }

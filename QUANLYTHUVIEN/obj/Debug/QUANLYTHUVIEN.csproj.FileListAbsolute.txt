@@ -103,7 +103,6 @@ C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIEN\QuanLyThuVien\QUANLYTHUVIEN\obj\D
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIEN\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI.GUI_Login.resources
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIEN\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI.GUI_Main.resources
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIEN\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI_BackgroundMain.resources
-C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIEN\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI.GUI_ReaderManagement.resources
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIEN\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI_QuanLyMuonTra.resources
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIEN\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI_ThemSuaPhieu.resources
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIEN\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI_XemChiTietPhieu.resources
@@ -119,3 +118,4 @@ C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIEN\QuanLyThuVien\QUANLYTHUVIEN\obj\D
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIEN\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTH.E22296E5.Up2Date
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIEN\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.exe
 C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIEN\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.pdb
+C:\Users\tuhin\Desktop\WorkSpace\QUANLYTHUVIEN\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI.GUI_QuanLyDocGia.resources

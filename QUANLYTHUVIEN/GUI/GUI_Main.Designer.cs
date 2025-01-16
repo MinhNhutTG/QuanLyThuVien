@@ -59,7 +59,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0);
-            this.toolStrip1.Size = new System.Drawing.Size(235, 712);
+            this.toolStrip1.Size = new System.Drawing.Size(192, 712);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -72,7 +72,7 @@
             this.btnMoFormQLSACH.Margin = new System.Windows.Forms.Padding(1, 300, 0, 2);
             this.btnMoFormQLSACH.Name = "btnMoFormQLSACH";
             this.btnMoFormQLSACH.Padding = new System.Windows.Forms.Padding(10);
-            this.btnMoFormQLSACH.Size = new System.Drawing.Size(233, 53);
+            this.btnMoFormQLSACH.Size = new System.Drawing.Size(190, 46);
             this.btnMoFormQLSACH.Text = "Quản lý sách";
             this.btnMoFormQLSACH.Click += new System.EventHandler(this.btnMoFormQLSACH_Click);
             // 
@@ -85,7 +85,7 @@
             this.btnMoFormQLPhieu.Margin = new System.Windows.Forms.Padding(0);
             this.btnMoFormQLPhieu.Name = "btnMoFormQLPhieu";
             this.btnMoFormQLPhieu.Padding = new System.Windows.Forms.Padding(10);
-            this.btnMoFormQLPhieu.Size = new System.Drawing.Size(234, 53);
+            this.btnMoFormQLPhieu.Size = new System.Drawing.Size(191, 46);
             this.btnMoFormQLPhieu.Text = "Quản lý mượn trả";
             this.btnMoFormQLPhieu.Click += new System.EventHandler(this.btnMoFormQLPhieu_Click);
             // 
@@ -98,7 +98,7 @@
             this.btnMoFormQLDocGia.Margin = new System.Windows.Forms.Padding(0);
             this.btnMoFormQLDocGia.Name = "btnMoFormQLDocGia";
             this.btnMoFormQLDocGia.Padding = new System.Windows.Forms.Padding(10);
-            this.btnMoFormQLDocGia.Size = new System.Drawing.Size(234, 53);
+            this.btnMoFormQLDocGia.Size = new System.Drawing.Size(191, 46);
             this.btnMoFormQLDocGia.Text = "Quản lý độc giả";
             this.btnMoFormQLDocGia.Click += new System.EventHandler(this.btnMoFormQLDocGia_Click);
             // 
@@ -110,7 +110,7 @@
             this.btnThongKe.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Padding = new System.Windows.Forms.Padding(10);
-            this.btnThongKe.Size = new System.Drawing.Size(234, 53);
+            this.btnThongKe.Size = new System.Drawing.Size(191, 46);
             this.btnThongKe.Text = "Thống kê";
             this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click_1);
             // 
@@ -123,7 +123,7 @@
             this.btnMoFormQLNhanVien.Margin = new System.Windows.Forms.Padding(0);
             this.btnMoFormQLNhanVien.Name = "btnMoFormQLNhanVien";
             this.btnMoFormQLNhanVien.Padding = new System.Windows.Forms.Padding(10);
-            this.btnMoFormQLNhanVien.Size = new System.Drawing.Size(234, 53);
+            this.btnMoFormQLNhanVien.Size = new System.Drawing.Size(191, 46);
             this.btnMoFormQLNhanVien.Text = "Nhân viên";
             this.btnMoFormQLNhanVien.Click += new System.EventHandler(this.btnMoFormQLNhanVien_Click);
             // 
@@ -136,7 +136,7 @@
             this.toolStripButton5.Margin = new System.Windows.Forms.Padding(1, 20, 0, 2);
             this.toolStripButton5.Name = "toolStripButton5";
             this.toolStripButton5.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton5.Size = new System.Drawing.Size(233, 53);
+            this.toolStripButton5.Size = new System.Drawing.Size(190, 46);
             this.toolStripButton5.Text = "Đăng xuất";
             this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
             // 
@@ -148,7 +148,7 @@
             this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton6.Name = "toolStripButton6";
             this.toolStripButton6.Padding = new System.Windows.Forms.Padding(10);
-            this.toolStripButton6.Size = new System.Drawing.Size(234, 53);
+            this.toolStripButton6.Size = new System.Drawing.Size(191, 46);
             this.toolStripButton6.Text = "Thoát";
             this.toolStripButton6.Click += new System.EventHandler(this.toolStripButton6_Click);
             // 
@@ -176,9 +176,10 @@
             this.Controls.Add(this.toolStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.IsMdiContainer = true;
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GUI_Main";
-            this.Text = "Trang chủ";
+            this.Text = "Quản lý thư viện";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
