@@ -57,8 +57,8 @@ namespace QUANLYTHUVIEN.DAL
                 string SqlThemThuThu = string.Format(" INSERT INTO THU_THU( MaThuThu, TenThuThu, NgaySinh, GioiTinh, DiaChi, SoDT ,UserName) " +
                     " VALUES(N'{0}', N'{1}', N'{2}', N'{3}', N'{4}', N'{5}' , '{6}')", th.MaThuThu, th.TenThuThu, th.NgaySinh, th.GioiTinh, th.DiaChi, th.SoDT, th.UserName);
 
-                db.ExecuteNonQuery(SqlThemTaiKhoan); //thuc thi lenh sql
-                db.ExecuteNonQuery(SqlThemThuThu); //thuc thi lenh sql
+                db.ExecuteNonQuery(SqlThemTaiKhoan);
+                db.ExecuteNonQuery(SqlThemThuThu); 
 
                 return true;
             }

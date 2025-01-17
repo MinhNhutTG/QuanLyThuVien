@@ -62,8 +62,7 @@
             this.toolStrip1.Size = new System.Drawing.Size(192, 712);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
-           
-            this.toolStrip1.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.toolStrip1_PreviewKeyDown);
+     
             // 
             // btnMoFormQLSACH
             // 

@@ -20,7 +20,10 @@ namespace QUANLYTHUVIEN.DAL
 
         public DataTable LayDSPhieuMuon()
         {
-            string strSQL = "select PHIEU_MUON.MaPhieuMuon, PHIEU_MUON.NgayMuon, PHIEU_MUON.NgayTra, \r\n       PHIEU_MUON.HanTra, PHIEU_MUON.SoLuong, PHIEU_MUON.TinhTrang, \r\n       PHIEU_MUON.PhiPhat, DOC_GIA.MaDocGia, THU_THU.MaThuThu\r\nFROM PHIEU_MUON\r\nJOIN DOC_GIA ON PHIEU_MUON.MaDocGia = DOC_GIA.MaDocGia\r\nJOIN THU_THU ON PHIEU_MUON.MaThuThu = THU_THU.MaThuThu";
+            string strSQL = "select PHIEU_MUON.MaPhieuMuon, PHIEU_MUON.NgayMuon, PHIEU_MUON.NgayTra,PHIEU_MUON.HanTra, PHIEU_MUON.SoLuong, PHIEU_MUON.TinhTrang,  PHIEU_MUON.PhiPhat, DOC_GIA.MaDocGia, THU_THU.MaThuThu" +
+                " FROM PHIEU_MUON" +
+                " JOIN DOC_GIA ON PHIEU_MUON.MaDocGia = DOC_GIA.MaDocGia" +
+                " JOIN THU_THU ON PHIEU_MUON.MaThuThu = THU_THU.MaThuThu";
 
             DataTable dt = db.Execute(strSQL);
             return dt;

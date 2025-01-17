@@ -16,7 +16,7 @@ namespace QUANLYTHUVIEN.DAL
         DataSet ds;
         public DBConnect()
         {
-            string strCnn = "Data source= MinhNhutSoftware\\SQLEXPRESS; Database=QuanLyThuVien; Integrated Security = True";                    // chỉnh lại cái Data source với database của bây
+            string strCnn = "Data source= MinhNhutSoftware\\SQLEXPRESS; Database=QuanLyThuVien; Integrated Security = True";    
             sqlConn = new SqlConnection(strCnn);
         }
         public DataTable Execute(string sqlStr)
