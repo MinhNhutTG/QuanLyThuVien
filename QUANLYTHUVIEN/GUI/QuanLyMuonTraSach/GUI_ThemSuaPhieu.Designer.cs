@@ -185,6 +185,8 @@
             this.txtPhiphat.Name = "txtPhiphat";
             this.txtPhiphat.Size = new System.Drawing.Size(149, 27);
             this.txtPhiphat.TabIndex = 12;
+            this.txtPhiphat.Text = "0";
+            this.txtPhiphat.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhiphat_KeyPress);
             // 
             // nudSoluong
             // 

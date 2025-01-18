@@ -335,8 +335,20 @@ namespace QUANLYTHUVIEN
 
                
                 txtPhiphat.Text = (songaytre * giaphat * soluong).ToString();
-
             }
+            else
+            {
+                cboTinhtrang.SelectedIndex = 1;
+                txtPhiphat.Text = null;
+            }
+        }
+
+        private void txtPhiphat_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true;
+            } 
         }
     }
 }
