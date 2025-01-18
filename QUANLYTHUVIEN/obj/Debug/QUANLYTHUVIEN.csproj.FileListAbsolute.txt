@@ -121,3 +121,5 @@ C:\Users\tuhin\Desktop\WorkSpace\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHU
 C:\Users\tuhin\Desktop\WorkSpace\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI_QLThongKe.GUI_ThongKeMuonTra.resources
 C:\Users\tuhin\Desktop\WorkSpace\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTHUVIEN.GUI_QLThongKe.GUI_ThongKeViPham.resources
 C:\Users\tuhin\Desktop\WorkSpace\QuanLyThuVien\QUANLYTHUVIEN\obj\Debug\QUANLYTH.E22296E5.Up2Date
+C:\Users\tuhin\Desktop\WorkSpace\QuanLyThuVien\QUANLYTHUVIEN\bin\Debug\Xceed.Document.NET.dll
+C:\Users\tuhin\Desktop\WorkSpace\QuanLyThuVien\QUANLYTHUVIEN\bin\Debug\Xceed.Words.NET.dll

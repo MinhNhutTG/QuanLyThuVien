@@ -174,7 +174,8 @@ namespace QUANLYTHUVIEN
 
             try
             {
-                if (pm.TinhTrang == "Đang mượn")
+                
+                if (pm.TinhTrang == "Đang mượn" || pm.TinhTrang == "Quá hạn")
                 {
                     BusPM.UpdatePhieu(pm); // Cập nhật thông tin phiếu mượn
 
@@ -202,7 +203,7 @@ namespace QUANLYTHUVIEN
 
                     MessageBox.Show("Cập nhật phiếu mượn thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                Refesh();
+               
                 sendData?.Invoke();
             }
             catch (BUS_PhieuMuon.BusinessLogicException ex)
@@ -214,7 +215,7 @@ namespace QUANLYTHUVIEN
                 MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+      
         private void Refesh() //Hàm làm mới form
         {
             txtMaphieumuon.Text = string.Empty;
@@ -320,14 +321,22 @@ namespace QUANLYTHUVIEN
             }
         }
 
-        private void QuanLyMuonTraForm_Update_Load(object sender, EventArgs e)
+     
+
+        private void dtpNgaytra_ValueChanged(object sender, EventArgs e)
         {
+            if (dtpNgaytra.Value > dtpHantra.Value)
+            {
+                float giaphat = 2000;
+                TimeSpan ngaytre = dtpNgaytra.Value - dtpHantra.Value;
+                int songaytre = Convert.ToInt32(ngaytre.Days);
+                int soluong = Convert.ToInt32(nudSoluong.Value);
+                cboTinhtrang.SelectedIndex = 2;
 
-        }
+               
+                txtPhiphat.Text = (songaytre * giaphat * soluong).ToString();
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
+            }
         }
     }
 }
