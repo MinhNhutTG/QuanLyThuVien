@@ -148,10 +148,7 @@ namespace QUANLYTHUVIEN.GUI
             }
         }
 
-        private void GUI_QuanLySachForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-           
-        }
+        
     }
 }
 
