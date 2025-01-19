@@ -13,8 +13,11 @@ using QUANLYTHUVIEN.DTO;
 
 
 
+
 namespace QUANLYTHUVIEN.GUI
 {
+    
+
     public partial class GUI_ThemSuaSach : Form
     {
 
@@ -124,7 +127,7 @@ namespace QUANLYTHUVIEN.GUI
 
                 if (busSach.ThemSach(s))
                 {
-                    MessageBox.Show("Thêm sách thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
                     ResetTextBox();
                     sendData?.Invoke();
                 }
@@ -134,15 +137,15 @@ namespace QUANLYTHUVIEN.GUI
                 }
 
             }
-            catch (BLL_Sach.BusinessLogicException ex)
+            catch (BLL_PhieuMuon.BusinessLogicException ex)
             {
                 MessageBox.Show("Lỗi nghiệp vụ: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Loi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lỗi hệ thống : " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-           
+
         }
 
 
@@ -186,13 +189,13 @@ namespace QUANLYTHUVIEN.GUI
                     MessageBox.Show("Cập nhật sách không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (BLL_Sach.BusinessLogicException ex)
+            catch (BLL_PhieuMuon.BusinessLogicException ex)
             {
                 MessageBox.Show("Lỗi nghiệp vụ: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi : " +ex.Message , "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lỗi hệ thống : " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

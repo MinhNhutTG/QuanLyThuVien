@@ -163,16 +163,15 @@ namespace QUANLYTHUVIEN.GUI
                     MessageBox.Show("Thêm thủ thư không thành công !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            catch (BLL_ThuThu.BusinessLogicException ex)
+            catch (BLL_PhieuMuon.BusinessLogicException ex)
             {
                 MessageBox.Show("Lỗi nghiệp vụ: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Đã có lỗi, vui lòng kiểm tra lại thông tin. Chi tiết lỗi: " + ex.Message, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-               
+                MessageBox.Show("Lỗi hệ thống : " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
+
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)
@@ -190,13 +189,13 @@ namespace QUANLYTHUVIEN.GUI
                     MessageBox.Show("Cập nhật thủ thư không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (BLL_ThuThu.BusinessLogicException ex)
+            catch (BLL_PhieuMuon.BusinessLogicException ex)
             {
                 MessageBox.Show("Lỗi nghiệp vụ: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi : " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lỗi hệ thống : " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

@@ -265,6 +265,7 @@
   <ItemGroup>
     <Content Include="Resources\analytics.png" />
     <Content Include="Resources\borrow.png" />
+    <Content Include="Resources\comments.png" />
     <Content Include="Resources\DocGia.png" />
     <Content Include="Resources\error.png" />
     <Content Include="Resources\folders.png" />
@@ -272,6 +273,7 @@
     <Content Include="Resources\log-out.png" />
     <Content Include="Resources\login.png" />
     <Content Include="Resources\open-book.png" />
+    <Content Include="Resources\remove.png" />
     <Content Include="Resources\school.png" />
     <Content Include="Resources\shutdown.png" />
     <Content Include="Resources\ThuThu.png" />

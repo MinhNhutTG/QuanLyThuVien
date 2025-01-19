@@ -105,7 +105,7 @@ namespace QUANLYTHUVIEN.GUI
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Không thể thêm ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lỗi hệ thống : " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -126,7 +126,11 @@ namespace QUANLYTHUVIEN.GUI
             }
             catch (BLL_DocGia.BusinessLogicException ex)
             {
-                MessageBox.Show("Lỗi : " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Lỗi nghiệp vụ : " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi hệ thống : " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
