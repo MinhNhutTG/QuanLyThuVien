@@ -165,7 +165,7 @@
             this.btnView.Location = new System.Drawing.Point(624, 32);
             this.btnView.Margin = new System.Windows.Forms.Padding(4);
             this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(205, 57);
+            this.btnView.Size = new System.Drawing.Size(173, 63);
             this.btnView.TabIndex = 9;
             this.btnView.Text = "Xem";
             this.btnView.UseVisualStyleBackColor = true;
@@ -177,7 +177,7 @@
             this.btnOut.Location = new System.Drawing.Point(1239, 32);
             this.btnOut.Margin = new System.Windows.Forms.Padding(4);
             this.btnOut.Name = "btnOut";
-            this.btnOut.Size = new System.Drawing.Size(205, 57);
+            this.btnOut.Size = new System.Drawing.Size(173, 63);
             this.btnOut.TabIndex = 8;
             this.btnOut.Text = "Thoát";
             this.btnOut.UseVisualStyleBackColor = true;
@@ -189,7 +189,7 @@
             this.btnDelete.Location = new System.Drawing.Point(929, 32);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(205, 57);
+            this.btnDelete.Size = new System.Drawing.Size(173, 63);
             this.btnDelete.TabIndex = 7;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -201,7 +201,7 @@
             this.btnUpdate.Location = new System.Drawing.Point(340, 32);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(205, 57);
+            this.btnUpdate.Size = new System.Drawing.Size(173, 63);
             this.btnUpdate.TabIndex = 6;
             this.btnUpdate.Text = "Sửa";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -213,7 +213,7 @@
             this.btnAdd.Location = new System.Drawing.Point(68, 32);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(205, 57);
+            this.btnAdd.Size = new System.Drawing.Size(173, 63);
             this.btnAdd.TabIndex = 5;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
