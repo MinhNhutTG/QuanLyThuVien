@@ -265,6 +265,20 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\analytics.png" />
+    <Content Include="Resources\borrow.png" />
+    <Content Include="Resources\borrowbook.png" />
+    <Content Include="Resources\DocGia.png" />
+    <Content Include="Resources\folders.png" />
+    <Content Include="Resources\library.png" />
+    <Content Include="Resources\log-out.png" />
+    <Content Include="Resources\open-book.png" />
+    <Content Include="Resources\school.png" />
+    <Content Include="Resources\shutdown.png" />
+    <Content Include="Resources\ThuThu.png" />
+    <Content Include="Resources\user-guide.png" />
+    <Content Include="Resources\yellow-card.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

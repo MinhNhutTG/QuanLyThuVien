@@ -62,7 +62,6 @@
             this.toolStrip1.Size = new System.Drawing.Size(192, 712);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
-     
             // 
             // btnMoFormQLSACH
             // 
@@ -170,8 +169,7 @@
             // 
             // GUI_Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1348, 712);
             this.Controls.Add(this.pictureBox1);
