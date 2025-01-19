@@ -14,7 +14,7 @@ namespace QUANLYTHUVIEN.GUI
 {
     public partial class GUI_QuanLyDocGia : Form
     {
-        BUS_DocGia busDocGia = new BUS_DocGia();
+        BLL_DocGia busDocGia = new BLL_DocGia();
         public GUI_QuanLyDocGia()
         {
             DataTable dt = busDocGia.GetDSDocGia();
@@ -100,6 +100,14 @@ namespace QUANLYTHUVIEN.GUI
             else
             {
                 MessageBox.Show("Chọn độc giả bạn cần xóa", "Thông báo");
+            }
+        }
+
+        private void GUI_QuanLyDocGia_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.F)
+            {
+                txtTimKiem.Focus();
             }
         }
     }

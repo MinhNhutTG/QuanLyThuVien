@@ -16,7 +16,7 @@ namespace QUANLYTHUVIEN.GUI
 {
     public partial class GUI_QuanLyThuThu : Form
     {
-        BUS_ThuThu busThuThu = new BUS_ThuThu();
+        BLL_ThuThu busThuThu = new BLL_ThuThu();
         public GUI_QuanLyThuThu()
         {
             DataTable dt = busThuThu.getDanhSachThuThu();
@@ -115,9 +115,11 @@ namespace QUANLYTHUVIEN.GUI
             }
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void GUI_QuanLyThuThu_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.Control && e.KeyCode == Keys.F) { 
+                txtTimKiem.Focus();
+            }
         }
     }
 }

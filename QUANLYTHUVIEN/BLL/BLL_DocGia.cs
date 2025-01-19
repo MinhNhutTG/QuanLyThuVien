@@ -9,7 +9,7 @@ using QUANLYTHUVIEN.DTO;
 
 namespace QUANLYTHUVIEN.BLL
 {
-    internal class BUS_DocGia
+    internal class BLL_DocGia
     {
         public class BusinessLogicException : Exception
         {

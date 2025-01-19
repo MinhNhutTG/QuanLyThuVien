@@ -30,7 +30,7 @@ namespace QUANLYTHUVIEN.GUI
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-          BUS_Login  busLogin = new BUS_Login();
+          BLL_Login  busLogin = new BLL_Login();
           TaiKhoan tk = busLogin.Login(txtUserName.Text, txtPassword.Text);
             if (tk != null) {
                 

@@ -61,7 +61,6 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(419, 28);
             this.txtSearch.TabIndex = 4;
-            this.txtSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSearch_KeyPress);
             // 
             // btnSearch
             // 
@@ -254,10 +253,12 @@
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.txtSearch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GUI_QuanLyMuonTra";
             this.Text = "QuanLyMuonTraForm";
             this.Load += new System.EventHandler(this.QuanLyMuonTraForm_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GUI_QuanLyMuonTra_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

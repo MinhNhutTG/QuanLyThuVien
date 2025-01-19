@@ -14,7 +14,7 @@ namespace QUANLYTHUVIEN.GUI
 {
     public partial class GUI_XemChiTietSach : Form
     {
-        BUS_Sach busSach = new BUS_Sach();
+        BLL_Sach busSach = new BLL_Sach();
         private string PATH = AppDomain.CurrentDomain.BaseDirectory ;          //Dan duong dan chua thu muc
         public GUI_XemChiTietSach()
         {

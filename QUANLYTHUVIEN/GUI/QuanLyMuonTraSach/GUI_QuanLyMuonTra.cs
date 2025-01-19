@@ -13,7 +13,7 @@ namespace QUANLYTHUVIEN
 {
     public partial class GUI_QuanLyMuonTra : Form
     {
-        BUS_PhieuMuon BusPM = new BUS_PhieuMuon();
+        BLL_PhieuMuon BusPM = new BLL_PhieuMuon();
         string MaThuThu = string.Empty;
 
         public GUI_QuanLyMuonTra()
@@ -143,9 +143,11 @@ namespace QUANLYTHUVIEN
             }
         }
 
-        private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)
+        private void GUI_QuanLyMuonTra_KeyDown(object sender, KeyEventArgs e)
         {
-
+            if (e.Control && e.KeyCode == Keys.F){
+                txtSearch.Focus();
+            }
         }
     }
 }

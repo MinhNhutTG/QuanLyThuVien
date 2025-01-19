@@ -18,7 +18,7 @@ namespace QUANLYTHUVIEN.GUI
     {
 
         //Khai bao bien
-        BUS_Sach busSach = new BUS_Sach();
+        BLL_Sach busSach = new BLL_Sach();
 
         //Ham Tao
         public GUI_QuanLySachForm()

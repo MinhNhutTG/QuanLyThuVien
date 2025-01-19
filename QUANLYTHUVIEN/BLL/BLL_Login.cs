@@ -8,7 +8,7 @@ using QUANLYTHUVIEN.DTO;
 
 namespace QUANLYTHUVIEN.BLL
 {
-    internal class BUS_Login
+    internal class BLL_Login
     {
         DAL_Login dalLogin = new DAL_Login();
         public TaiKhoan Login(string us, string  pw)

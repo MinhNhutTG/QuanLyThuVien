@@ -12,7 +12,7 @@ using QUANLYTHUVIEN.DTO;
 namespace QUANLYTHUVIEN.BLL
 {
 
-    internal  class BUS_Sach
+    internal  class BLL_Sach
     {
         public class BusinessLogicException : Exception
         {

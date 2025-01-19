@@ -14,7 +14,7 @@ namespace QUANLYTHUVIEN.GUI_QLThongKe
 {
     public partial class GUI_ThongKeTaiLieu : Form
     {
-        BUS_ThongKe bus= new BUS_ThongKe();
+        BLL_ThongKe bus= new BLL_ThongKe();
         public GUI_ThongKeTaiLieu()
         {
             InitializeComponent();

@@ -16,7 +16,7 @@ namespace QUANLYTHUVIEN.GUI
 {
     public partial class GUI_ThemSuaDocGia : Form
     {
-        BUS_DocGia busDocGia = new BUS_DocGia();
+        BLL_DocGia busDocGia = new BLL_DocGia();
         public delegate void LoadHandler();
         public event LoadHandler sendData;
         public GUI_ThemSuaDocGia()
@@ -99,7 +99,7 @@ namespace QUANLYTHUVIEN.GUI
                 }
 
             }
-            catch (BUS_DocGia.BusinessLogicException ex)
+            catch (BLL_DocGia.BusinessLogicException ex)
             {
                 MessageBox.Show("Lỗi nghiệp vụ: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -124,7 +124,7 @@ namespace QUANLYTHUVIEN.GUI
                     MessageBox.Show("Cập nhật không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (BUS_DocGia.BusinessLogicException ex)
+            catch (BLL_DocGia.BusinessLogicException ex)
             {
                 MessageBox.Show("Lỗi : " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }

@@ -18,7 +18,7 @@ namespace QUANLYTHUVIEN.GUI
 {
     public partial class GUI_ThemSuaThuThu : Form
     {
-        BUS_ThuThu busThuThu = new BUS_ThuThu();
+        BLL_ThuThu busThuThu = new BLL_ThuThu();
         public delegate void LoadHandler();
         public event LoadHandler sendData;
 
@@ -163,7 +163,7 @@ namespace QUANLYTHUVIEN.GUI
                     MessageBox.Show("Thêm thủ thư không thành công !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            catch (BUS_ThuThu.BusinessLogicException ex)
+            catch (BLL_ThuThu.BusinessLogicException ex)
             {
                 MessageBox.Show("Lỗi nghiệp vụ: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -190,7 +190,7 @@ namespace QUANLYTHUVIEN.GUI
                     MessageBox.Show("Cập nhật thủ thư không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (BUS_ThuThu.BusinessLogicException ex)
+            catch (BLL_ThuThu.BusinessLogicException ex)
             {
                 MessageBox.Show("Lỗi nghiệp vụ: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }

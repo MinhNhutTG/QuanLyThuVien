@@ -196,7 +196,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1155, 163);
             this.panel2.TabIndex = 29;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel1
             // 
@@ -231,8 +230,10 @@
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.txtTimKiem);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.KeyPreview = true;
             this.Name = "GUI_QuanLyThuThu";
             this.Text = "Quản lý thủ thư";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GUI_QuanLyThuThu_KeyDown);
             this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

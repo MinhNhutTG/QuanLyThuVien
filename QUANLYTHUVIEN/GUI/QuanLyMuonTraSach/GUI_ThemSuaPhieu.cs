@@ -10,7 +10,7 @@ namespace QUANLYTHUVIEN
 {
     public partial class GUI_ThemSuaPhieu : Form
     {
-        BUS_PhieuMuon BusPM = new BUS_PhieuMuon();
+        BLL_PhieuMuon BusPM = new BLL_PhieuMuon();
         public delegate void LoadHandler();
         public event LoadHandler sendData;
 
@@ -156,7 +156,7 @@ namespace QUANLYTHUVIEN
                     MessageBox.Show("Không thể thêm phiếu mượn", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
-            catch (BUS_PhieuMuon.BusinessLogicException ex)
+            catch (BLL_PhieuMuon.BusinessLogicException ex)
             {
                 MessageBox.Show("Lỗi nghiệp vụ: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -206,7 +206,7 @@ namespace QUANLYTHUVIEN
                
                 sendData?.Invoke();
             }
-            catch (BUS_PhieuMuon.BusinessLogicException ex)
+            catch (BLL_PhieuMuon.BusinessLogicException ex)
             {
                 MessageBox.Show("Lỗi nghiệp vụ: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }

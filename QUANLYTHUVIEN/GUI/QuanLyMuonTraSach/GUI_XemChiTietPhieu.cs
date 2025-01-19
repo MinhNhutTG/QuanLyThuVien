@@ -13,7 +13,7 @@ namespace QUANLYTHUVIEN
 {
     public partial class GUI_XemChiTietPhieu : Form
     {
-        BUS_PhieuMuon pm = new BUS_PhieuMuon();
+        BLL_PhieuMuon pm = new BLL_PhieuMuon();
         public GUI_XemChiTietPhieu(string key)
         {
 

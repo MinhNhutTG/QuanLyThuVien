@@ -16,7 +16,7 @@ namespace QUANLYTHUVIEN.GUI
     public partial class GUI_QuanLyTheLoaiSach : Form
     {
         //Khai bao bien
-        BUS_Sach busSach = new BUS_Sach();
+        BLL_Sach busSach = new BLL_Sach();
 
         //Ham tạo
         public GUI_QuanLyTheLoaiSach()

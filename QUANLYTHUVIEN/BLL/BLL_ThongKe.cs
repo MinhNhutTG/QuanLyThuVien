@@ -9,7 +9,7 @@ using QUANLYTHUVIEN.GUI;
 
 namespace QUANLYTHUVIEN.BLL
 {
-    internal class BUS_ThongKe
+    internal class BLL_ThongKe
     {
         DAL_ThongKe DALThongKe = new DAL_ThongKe();
         public DataTable ThongKeSachDangMuon()

@@ -10,7 +10,7 @@ using QUANLYTHUVIEN.DTO;
 
 namespace QUANLYTHUVIEN.BLL
 {
-    internal class BUS_PhieuMuon
+    internal class BLL_PhieuMuon
     {
 
 

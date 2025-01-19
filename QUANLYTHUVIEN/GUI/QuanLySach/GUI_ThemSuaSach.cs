@@ -19,7 +19,7 @@ namespace QUANLYTHUVIEN.GUI
     {
 
         //... Khai bao bien
-        BUS_Sach busSach = new BUS_Sach();
+        BLL_Sach busSach = new BLL_Sach();
         private string PATH = AppDomain.CurrentDomain.BaseDirectory;
         private string duongDanAnh = string.Empty;
         public delegate void LoadHandler();
@@ -134,7 +134,7 @@ namespace QUANLYTHUVIEN.GUI
                 }
 
             }
-            catch (BUS_Sach.BusinessLogicException ex)
+            catch (BLL_Sach.BusinessLogicException ex)
             {
                 MessageBox.Show("Lỗi nghiệp vụ: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
@@ -186,7 +186,7 @@ namespace QUANLYTHUVIEN.GUI
                     MessageBox.Show("Cập nhật sách không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (BUS_Sach.BusinessLogicException ex)
+            catch (BLL_Sach.BusinessLogicException ex)
             {
                 MessageBox.Show("Lỗi nghiệp vụ: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
