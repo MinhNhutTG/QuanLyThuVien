@@ -177,8 +177,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.IsMdiContainer = true;
             this.KeyPreview = true;
+            this.Location = new System.Drawing.Point(50, 50);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "GUI_Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Quản lý thư viện";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

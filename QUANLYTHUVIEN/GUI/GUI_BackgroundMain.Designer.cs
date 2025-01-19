@@ -66,7 +66,7 @@
             this.label1.Location = new System.Drawing.Point(669, 584);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(474, 54);
+            this.label1.Size = new System.Drawing.Size(383, 44);
             this.label1.TabIndex = 0;
             this.label1.Text = "QUẢN LÝ THƯ VIỆN";
             this.label1.Click += new System.EventHandler(this.label1_Click);

@@ -50,8 +50,8 @@
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.txtTheLoai = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureChiTiet)).BeginInit();
@@ -203,13 +203,13 @@
             this.txtTenSach.AutoSize = true;
             this.txtTenSach.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtTenSach.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtTenSach.Location = new System.Drawing.Point(31, 32);
+            this.txtTenSach.Location = new System.Drawing.Point(13, 53);
             this.txtTenSach.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtTenSach.MaximumSize = new System.Drawing.Size(300, 0);
             this.txtTenSach.Name = "txtTenSach";
-            this.txtTenSach.Size = new System.Drawing.Size(299, 60);
+            this.txtTenSach.Size = new System.Drawing.Size(101, 20);
             this.txtTenSach.TabIndex = 2;
-            this.txtTenSach.Text = "fdsgfgfddddddc ddddddddddddddddddddddddddddddddddddd";
+            this.txtTenSach.Text = "Name Book";
             this.txtTenSach.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
@@ -304,18 +304,6 @@
             this.label9.TabIndex = 14;
             this.label9.Text = "Giá sách";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(28, 131);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 18);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Tác giả";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -327,6 +315,18 @@
             this.label2.Size = new System.Drawing.Size(65, 18);
             this.label2.TabIndex = 0;
             this.label2.Text = "Mã sách";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(28, 131);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 18);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Tác giả";
             // 
             // label3
             // 
