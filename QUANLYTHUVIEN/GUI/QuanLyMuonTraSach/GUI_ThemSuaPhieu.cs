@@ -193,12 +193,12 @@ namespace QUANLYTHUVIEN
                 else if (pm.TinhTrang == "Đã trả") // Nếu tình trạng là "Đã trả"
                 {
                     // Cập nhật tình trạng phiếu mượn
-                    BusPM.CapNhatTrangThaiPhieu(pm.MaPhieuMuon);
+                    BusPM.UpdateTrangThaiPhieu(pm.MaPhieuMuon);
 
                     // Cập nhật tình trạng sách
                     foreach (Sach s in listSach)
                     {
-                        BusPM.CapNhatTinhTrangSach(s.getMaCuonSach());
+                        BusPM.UpdateTinhTrangSach(s.getMaCuonSach());
                     }
 
                     MessageBox.Show("Cập nhật phiếu mượn thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

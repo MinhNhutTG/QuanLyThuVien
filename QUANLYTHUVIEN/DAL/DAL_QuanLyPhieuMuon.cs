@@ -146,7 +146,7 @@ namespace QUANLYTHUVIEN.DAL
             db.ExecuteNonQuery(SqlUpdate);
         }
 
-        public void CapNhatTrangThaiPhieu(string maPhieuMuon)
+        public void UpdateTrangThaiPhieu(string maPhieuMuon)
         {
             try
             {
@@ -158,7 +158,7 @@ namespace QUANLYTHUVIEN.DAL
                 Console.WriteLine(ex.Message);
             }
         }
-        public void CapNhatTinhTrangSach(string maCuonSach)
+        public void UpdateTinhTrangSach(string maCuonSach)
         {
             try
             {
@@ -169,13 +169,6 @@ namespace QUANLYTHUVIEN.DAL
             {
                 Console.WriteLine(ex.Message);
             }
-        }
-
-
-        public void UpdateXoaChiTietPhieu(string maPhieuMuon) //xóa chi tiết phiếu
-        {
-            string SqlDelete = string.Format("DELETE FROM CHI_TIET_PHIEU_MUON WHERE MaPhieuMuon = '{0}';", maPhieuMuon);
-            db.ExecuteNonQuery(SqlDelete);
         }
 
 
@@ -192,6 +185,12 @@ namespace QUANLYTHUVIEN.DAL
             {
                 Console.WriteLine(ex.Message);
             }
+        }
+
+        public void UpdateXoaChiTietPhieu(string maPhieuMuon) //xóa chi tiết phiếu
+        {
+            string SqlDelete = string.Format("DELETE FROM CHI_TIET_PHIEU_MUON WHERE MaPhieuMuon = '{0}';", maPhieuMuon);
+            db.ExecuteNonQuery(SqlDelete);
         }
 
     }

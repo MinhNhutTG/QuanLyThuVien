@@ -157,26 +157,25 @@ namespace QUANLYTHUVIEN.BLL
             DalQLPM.UpdatePhieu(m);
         }
 
-        public void CapNhatTrangThaiPhieu(string maPhieuMuon)
+        public void UpdateTrangThaiPhieu(string maPhieuMuon)
         {
-            DalQLPM.CapNhatTrangThaiPhieu(maPhieuMuon);
+            DalQLPM.UpdateTrangThaiPhieu(maPhieuMuon);
         }
 
-        public void CapNhatTinhTrangSach(string maCuonSach)
+        public void UpdateTinhTrangSach(string maCuonSach)
         {
-            DalQLPM.CapNhatTinhTrangSach(maCuonSach);
+            DalQLPM.UpdateTinhTrangSach(maCuonSach);
         }
 
-        public void UpdateXoaChiTietPhieu(string maPhieuMuon)
-        {
-            DalQLPM.UpdateXoaChiTietPhieu(maPhieuMuon);
-        }
 
         public void Delete(string key)
         {
             DalQLPM.Delete(key);
         }
 
-
+        public void UpdateXoaChiTietPhieu(string maPhieuMuon)
+        {
+            DalQLPM.UpdateXoaChiTietPhieu(maPhieuMuon);
+        }
     }
 }
